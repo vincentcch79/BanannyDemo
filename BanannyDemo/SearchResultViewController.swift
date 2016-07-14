@@ -1,5 +1,5 @@
 //
-//  BabysitterSecondViewController.swift
+//  SearchResultViewController.swift
 //  BanannyDemo
 //
 //  Created by 張智涵 on 2016/7/14.
@@ -8,11 +8,8 @@
 
 import UIKit
 
-class BabysitterSecondViewController: UIViewController {
+class SearchResultViewController: UIViewController {
 
-    @IBOutlet weak var babysitterPWTextField: UITextField!
-    @IBOutlet weak var babysitterEmailTextField: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,11 +31,5 @@ class BabysitterSecondViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func babysitterLoginButton(sender: AnyObject) {
-        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let babtsitterDashboardViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("babysitterDashView")
-        self.presentViewController(babtsitterDashboardViewController, animated: true, completion: nil)
-
-    }
 
 }

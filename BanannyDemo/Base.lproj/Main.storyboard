@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="uJg-DH-ulb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -212,6 +212,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="parentLoginButton:" destination="T7j-rV-hHJ" eventType="touchUpInside" id="MTb-4k-BMT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -228,6 +231,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wdl-qM-ZtF"/>
+                    <connections>
+                        <outlet property="parentEmailTextField" destination="BoX-36-aLp" id="mVg-U1-Pym"/>
+                        <outlet property="parentPWTextField" destination="ZfM-9T-24L" id="hYT-ic-2t3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SEw-OC-R4L" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -275,6 +282,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="babysitterLoginButton:" destination="L7T-Ww-Aw3" eventType="touchUpInside" id="CIo-4P-DcC"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -291,6 +301,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zEF-KP-abm"/>
+                    <connections>
+                        <outlet property="babysitterEmailTextField" destination="rrS-HX-dmO" id="vP1-AQ-5ED"/>
+                        <outlet property="babysitterPWTextField" destination="8S5-en-pGi" id="sBA-KC-FOl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJ8-hR-2Qj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -299,7 +313,7 @@
         <!--Parent Dashboard View Controller-->
         <scene sceneID="Cve-6T-Xz2">
             <objects>
-                <viewController id="Bsk-De-nVa" customClass="ParentDashboardViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="parentDashView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bsk-De-nVa" customClass="ParentDashboardViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Avz-Mk-Nuj"/>
                         <viewControllerLayoutGuide type="bottom" id="TnA-I1-Y0j"/>
@@ -530,10 +544,29 @@
             </objects>
             <point key="canvasLocation" x="3418" y="-36"/>
         </scene>
+        <!--Search Result View Controller-->
+        <scene sceneID="S2z-uX-xNs">
+            <objects>
+                <viewController id="1Fb-m2-zml" customClass="SearchResultViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lQG-0T-utB"/>
+                        <viewControllerLayoutGuide type="bottom" id="QZP-m3-oiK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lnd-l6-ghZ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vkO-8p-rSC"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pP9-iX-dZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4102" y="-36"/>
+        </scene>
         <!--Babysitter Dashboard View Controller-->
         <scene sceneID="akT-oh-abq">
             <objects>
-                <viewController id="uJg-DH-ulb" customClass="BabysitterDashboardViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="babysitterDashView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uJg-DH-ulb" customClass="BabysitterDashboardViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hQL-lI-oU9"/>
                         <viewControllerLayoutGuide type="bottom" id="nCx-eO-Ptb"/>

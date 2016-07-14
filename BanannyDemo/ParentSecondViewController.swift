@@ -9,7 +9,9 @@
 import UIKit
 
 class ParentSecondViewController: UIViewController {
+    @IBOutlet weak var parentEmailTextField: UITextField!
 
+    @IBOutlet weak var parentPWTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,5 +33,10 @@ class ParentSecondViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func parentLoginButton(sender: AnyObject) {
+        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let parentDashboardViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("parentDashView")
+        self.presentViewController(parentDashboardViewController, animated: true, completion: nil)
+    }
 
 }
