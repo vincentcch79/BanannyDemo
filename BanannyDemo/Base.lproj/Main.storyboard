@@ -397,6 +397,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="tS5-AT-VyM"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="3" maxX="15" maxY="2"/>
                                 <state key="normal" title="通知" image="notification">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -408,6 +409,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="EFg-HW-ul1"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="3" maxX="15" maxY="2"/>
                                 <state key="normal" title="設定" image="settings">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -609,13 +611,74 @@
                                     <constraint firstAttribute="width" secondItem="8qj-EW-JeG" secondAttribute="height" multiplier="100:55" id="yhm-nC-05K"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4H-uO-1aR">
+                                <rect key="frame" x="200" y="330" width="200" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="TGv-el-VXo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="3" maxX="15" maxY="2"/>
+                                <state key="normal" title="通知" image="notification">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oRn-mD-mla">
+                                <rect key="frame" x="0.0" y="330" width="200" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="9t0-hs-Lhz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                <state key="normal" title="訊息" image="mail">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F3D-mI-RyO">
+                                <rect key="frame" x="400" y="330" width="200" height="60"/>
+                                <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="cIa-Tb-qaW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="3" maxX="15" maxY="2"/>
+                                <state key="normal" title="設定" image="settings">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWx-p9-8Y9" customClass="FSCalendar">
+                                <rect key="frame" x="0.0" y="398" width="600" height="194"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="d4H-uO-1aR" firstAttribute="leading" secondItem="oRn-mD-mla" secondAttribute="trailing" id="2HS-jy-3Fz"/>
+                            <constraint firstAttribute="trailing" secondItem="wWx-p9-8Y9" secondAttribute="trailing" id="3zh-kZ-cBI"/>
+                            <constraint firstItem="d4H-uO-1aR" firstAttribute="top" secondItem="8qj-EW-JeG" secondAttribute="bottom" id="B1x-Qf-KYN"/>
+                            <constraint firstItem="F3D-mI-RyO" firstAttribute="top" secondItem="8qj-EW-JeG" secondAttribute="bottom" id="DLd-3D-Sl8"/>
+                            <constraint firstItem="nCx-eO-Ptb" firstAttribute="top" secondItem="wWx-p9-8Y9" secondAttribute="bottom" constant="8" id="Fy3-aw-5KX"/>
+                            <constraint firstItem="oRn-mD-mla" firstAttribute="top" secondItem="8qj-EW-JeG" secondAttribute="bottom" id="PuD-6M-AtJ"/>
                             <constraint firstAttribute="trailing" secondItem="8qj-EW-JeG" secondAttribute="trailing" id="S1V-s4-bZE"/>
+                            <constraint firstItem="wWx-p9-8Y9" firstAttribute="top" secondItem="d4H-uO-1aR" secondAttribute="bottom" constant="8" id="Vh1-Jl-VeU"/>
+                            <constraint firstItem="oRn-mD-mla" firstAttribute="leading" secondItem="reE-Eh-g2j" secondAttribute="leading" id="Wqm-T7-I5S"/>
                             <constraint firstItem="8qj-EW-JeG" firstAttribute="top" secondItem="reE-Eh-g2j" secondAttribute="top" id="Ybj-p4-18N"/>
+                            <constraint firstItem="wWx-p9-8Y9" firstAttribute="leading" secondItem="reE-Eh-g2j" secondAttribute="leading" id="a6D-eo-zFR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="F3D-mI-RyO" secondAttribute="trailing" id="bYD-A7-Etx"/>
+                            <constraint firstItem="oRn-mD-mla" firstAttribute="width" secondItem="d4H-uO-1aR" secondAttribute="width" id="fbX-AM-6Gq"/>
+                            <constraint firstItem="oRn-mD-mla" firstAttribute="leading" secondItem="reE-Eh-g2j" secondAttribute="leadingMargin" id="gUt-c0-KAV"/>
+                            <constraint firstAttribute="trailing" secondItem="F3D-mI-RyO" secondAttribute="trailing" id="jaF-ux-3oz"/>
+                            <constraint firstItem="d4H-uO-1aR" firstAttribute="width" secondItem="F3D-mI-RyO" secondAttribute="width" id="nkH-p3-ZZC"/>
+                            <constraint firstItem="F3D-mI-RyO" firstAttribute="leading" secondItem="d4H-uO-1aR" secondAttribute="trailing" id="rUl-J8-P9G"/>
                             <constraint firstItem="8qj-EW-JeG" firstAttribute="leading" secondItem="reE-Eh-g2j" secondAttribute="leading" id="yYk-Ex-kRd"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="gUt-c0-KAV"/>
+                                <exclude reference="bYD-A7-Etx"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jsa-Zp-gdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
