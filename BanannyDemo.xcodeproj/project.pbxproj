@@ -64,7 +64,6 @@
 				9F2599721D3782070064C105 /* View */,
 				9F2599711D3781F90064C105 /* Model */,
 				9F25995C1D377ACA0064C105 /* AppDelegate.swift */,
-				9F25996E1D377DAE0064C105 /* loginView.storyboard */,
 				9F2599631D377ACA0064C105 /* Assets.xcassets */,
 				9F2599681D377ACA0064C105 /* Info.plist */,
 			);
@@ -83,6 +82,7 @@
 			children = (
 				9F2599651D377ACA0064C105 /* LaunchScreen.storyboard */,
 				9F2599601D377ACA0064C105 /* Main.storyboard */,
+				9F25996E1D377DAE0064C105 /* loginView.storyboard */,
 			);
 			name = View;
 			sourceTree = "<group>";
