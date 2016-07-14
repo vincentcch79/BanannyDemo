@@ -180,7 +180,51 @@
                     <view key="view" contentMode="scaleToFill" id="b5D-e1-Awu">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email帳號" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BoX-36-aLp">
+                                <rect key="frame" x="40" y="214" width="520" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kJH-jg-lP9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密碼" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZfM-9T-24L">
+                                <rect key="frame" x="40" y="344" width="520" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="kRO-hK-69n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vso-pc-gXv">
+                                <rect key="frame" x="100" y="454" width="400" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="OrN-8K-UNY"/>
+                                </constraints>
+                                <state key="normal" title="登入">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="BoX-36-aLp" secondAttribute="trailing" constant="20" id="0Fi-wN-Cwv"/>
+                            <constraint firstItem="BoX-36-aLp" firstAttribute="leading" secondItem="b5D-e1-Awu" secondAttribute="leadingMargin" constant="20" id="0M2-2A-L5I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ZfM-9T-24L" secondAttribute="trailing" constant="20" id="2pz-S4-tPP"/>
+                            <constraint firstItem="ZfM-9T-24L" firstAttribute="top" secondItem="BoX-36-aLp" secondAttribute="bottom" constant="100" id="Boi-23-Qrm"/>
+                            <constraint firstItem="BoX-36-aLp" firstAttribute="top" secondItem="3aR-ru-taP" secondAttribute="bottom" constant="150" id="CAI-ti-xcD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Vso-pc-gXv" secondAttribute="trailing" constant="80" id="FAi-7c-XrV"/>
+                            <constraint firstItem="Vso-pc-gXv" firstAttribute="top" secondItem="ZfM-9T-24L" secondAttribute="bottom" constant="80" id="Jpr-7H-nyn"/>
+                            <constraint firstItem="ZfM-9T-24L" firstAttribute="leading" secondItem="b5D-e1-Awu" secondAttribute="leadingMargin" constant="20" id="UmA-CA-ace"/>
+                            <constraint firstItem="Vso-pc-gXv" firstAttribute="leading" secondItem="b5D-e1-Awu" secondAttribute="leadingMargin" constant="80" id="i5X-R5-JMA"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Wdl-qM-ZtF"/>
                 </viewController>
@@ -199,7 +243,51 @@
                     <view key="view" contentMode="scaleToFill" id="cQa-Py-VXx">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email帳號" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rrS-HX-dmO">
+                                <rect key="frame" x="40" y="214" width="520" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Pru-eH-Znv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="密碼" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8S5-en-pGi">
+                                <rect key="frame" x="40" y="344" width="520" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="zvX-dW-olL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqs-YL-wSg">
+                                <rect key="frame" x="100" y="454" width="400" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Iya-Gg-Gs1"/>
+                                </constraints>
+                                <state key="normal" title="登入">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8S5-en-pGi" firstAttribute="top" secondItem="rrS-HX-dmO" secondAttribute="bottom" constant="100" id="1ZP-V2-55B"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8S5-en-pGi" secondAttribute="trailing" constant="20" id="3mS-cN-1Q7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wqs-YL-wSg" secondAttribute="trailing" constant="80" id="62I-Ul-oMe"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rrS-HX-dmO" secondAttribute="trailing" constant="20" id="IQq-SS-ecC"/>
+                            <constraint firstItem="wqs-YL-wSg" firstAttribute="top" secondItem="8S5-en-pGi" secondAttribute="bottom" constant="80" id="a1S-SM-d0t"/>
+                            <constraint firstItem="8S5-en-pGi" firstAttribute="leading" secondItem="cQa-Py-VXx" secondAttribute="leadingMargin" constant="20" id="asP-qE-TCI"/>
+                            <constraint firstItem="rrS-HX-dmO" firstAttribute="leading" secondItem="cQa-Py-VXx" secondAttribute="leadingMargin" constant="20" id="hKB-5A-7ht"/>
+                            <constraint firstItem="wqs-YL-wSg" firstAttribute="leading" secondItem="cQa-Py-VXx" secondAttribute="leadingMargin" constant="80" id="jOK-J5-jIG"/>
+                            <constraint firstItem="rrS-HX-dmO" firstAttribute="top" secondItem="kl3-aj-uFx" secondAttribute="bottom" constant="150" id="vrD-fQ-cYt"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zEF-KP-abm"/>
                 </viewController>
