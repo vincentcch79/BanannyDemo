@@ -1,0 +1,1603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		011F92E2F8365BE2C1AEE82CEFB040FA /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E393827EEE74DD8BD922964103BB17A /* FSCalendarCollectionView.m */; };
+		03688CDD22823DC004F978B4945D6B3E /* ChatViewController+Scrolling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B64F1B65E17F30DF6FB1E7E5CC2D51 /* ChatViewController+Scrolling.swift */; };
+		095406039B4D371E48D08B38A2975AC8 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163C62F281D3EAF721BF513CBDC0B875 /* Error.swift */; };
+		0A5DD6DC3C3256A516FFFEE28FC9B36D /* ChatDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEDB7E6C9EAEF83BC1FD088637AAE5A /* ChatDataSourceProtocol.swift */; };
+		0F1FC681700BF1AF0A5038E78ED7DE66 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = A606B3CFBEEBE5F2DF6618A106AB1A2C /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		130119C1E67865675CC8AB8CD210FB14 /* FSCalendarConstance.h in Headers */ = {isa = PBXBuildFile; fileRef = 3478A08129E5CD227F9EEE2B97A006B9 /* FSCalendarConstance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		142DB1EE4C340AFE27D851524CE9E95D /* NoChat-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B8BD16DEADD0D2C6C99EA93E6C7A686 /* NoChat-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		149C1027FDDFEBE424BD4B407A167906 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD1BCAA0556E5239D32CF9111A6D2B02 /* QuartzCore.framework */; };
+		14E0A5E3A6EE9CB3BEE7EFE7936A08AD /* CALayer+FSExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = E7CB045E621CD08AB8E78ECB9ABBA0EC /* CALayer+FSExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16102E4E35FAA0FC4161282FECE56469 /* Timeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F0EF2E7D3067961BA8BAD98EEBCB9 /* Timeline.swift */; };
+		16CEE335B25021CCEA3F64552B77E526 /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = 08CF78C1EA226D848F8601EC19908C59 /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		195E743F01B6F8388A496AA788CEA582 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70B201FB52FD48CB991E5CA7B5FEB588 /* ImageUtils.swift */; };
+		1B0527043FE99FCFB7F2C62FA4C973D0 /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EFC58E45CD318E25A0CAAF1F9FDFF62 /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20AAAC74DA04FBEEB5E37B44A6A831B0 /* TextBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2BD82EF1EE5E820221372775EB2C60 /* TextBubbleView.swift */; };
+		2336A7F0F45440935556D3DDAC798E27 /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127974A2386AEA5BD8742C70978D6450 /* CosmosLayerHelper.swift */; };
+		247B48F0E931BA651C06E8421C5A0CFB /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EB8F324786CF68DB5813CDF1FB94F0D /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2596BBD8BB2BEE40E4B92FA4D6897DE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3099B0034E9006FEACE655DBBAC4FEC3 /* Foundation.framework */; };
+		299992941CFA463D0A7204190D39FA73 /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28BB02EA01AD17A137725AB8D119E41B /* CosmosRating.swift */; };
+		2B308EB9576579A298B0FD2FEA61CF9A /* FSCalendarFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B231B19D0C6BC0D6FD2F54D97AD4BC06 /* FSCalendarFlowLayout.m */; };
+		2BED398461A1D57AAB6C1A744EA177DA /* FSCalendarFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = D623CD04DD963F239BF98FEB7DF75C79 /* FSCalendarFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E70BED83C63679D579DF2039AFFDBB7C /* Validation.swift */; };
+		30E45E89D9D7642736657563008A4F36 /* MessageViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E06171CABDD411FA494CB7A381B50406 /* MessageViewModelProtocol.swift */; };
+		34CCDCA848A701466256BC2927DA8856 /* NetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E516C1BCED3B0A610DD0E8770255D0 /* NetworkReachabilityManager.swift */; };
+		3981098E0B657A66D922281531878551 /* UIView+FSExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = B425D83B53850A2FCC7FC472B3B00099 /* UIView+FSExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CC3B6331F401FD5B668010886A5C2B8 /* CollectionChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6B7C559C3A531C0437AA7C91F20950 /* CollectionChanges.swift */; };
+		3E73DB65BEC900EFC6EC35C5F2A526B3 /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9002B8507CE999F1B57E8960BA8D3B6 /* CosmosAccessibility.swift */; };
+		3EA8F215C9C1432D74E5CCA4834AA8C0 /* ResponseSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17916EE432EB9DF0E75F3A7DB3A5825C /* ResponseSerialization.swift */; };
+		3EFCCC931EFB340108AB20B34C9FD626 /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EFFE3B788A456CBAE689C521D48ADC5 /* CosmosTouch.swift */; };
+		4081EA628AF0B73AC51FFB9D7AB3B89E /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48BAB6AE72134B5811517FE02154504F /* Manager.swift */; };
+		42295A0C098BB044F391C174DA9D5859 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3099B0034E9006FEACE655DBBAC4FEC3 /* Foundation.framework */; };
+		48028E7F10ED4E8BB153CA80E0003349 /* BaseChatItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8BE24686DABB0FB922B036A42174DCC /* BaseChatItemPresenter.swift */; };
+		4CAAC2E5B6ACD4100C3C3D744C1BCFE8 /* ChatCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED7316AEB3C01F49BC5B90AEEA4D251 /* ChatCollectionViewLayout.swift */; };
+		4EDA657F9D9A5999D7A055603221F8B0 /* DateItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608FDC06EFBF54B03528FACB60368FED /* DateItemPresenter.swift */; };
+		4F13A55CCC48C6914D91CE253B928EAE /* ChatItemDecorationAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B789FDE863E15959463A48FD5BD1FD5 /* ChatItemDecorationAttributes.swift */; };
+		522B4C9FD9B17629B4B0FAD94A2A08BD /* SerialTaskQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E413344A42E9AF92E3AFAFB20178E8F /* SerialTaskQueue.swift */; };
+		53AAF2AE800E9DEFBD7D52D9E58E65A9 /* ManualLayoutUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3584F79B76A7E1C585833450928599A /* ManualLayoutUtils.swift */; };
+		57BEF19D24A56162659239E30322EA67 /* FSCalendarAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = E06F33B120C8A27C9335B5E393D86BBF /* FSCalendarAnimator.m */; };
+		5ACC7C6D2D8AF714A1DD9CBCD8A96B61 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F83A4AE0E4DD9A64E5026730E94730C9 /* ColorUtils.swift */; };
+		5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF845BF55F6982BA9EE51D6FABFB5429 /* Upload.swift */; };
+		5CA7B37693BF3D25B1B90C385F6936EB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DBD83023758198EFFF4C1691EDE386D /* UIKit.framework */; };
+		5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4FD52390502AA3F89C2F2BE59CF0964 /* Download.swift */; };
+		5F355508B5125D6B20620FF946C02B65 /* ThreadHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F911E2D99C12CE4142D9FFDCD93448FE /* ThreadHelper.swift */; };
+		606A219B918881A70A78CD91EACDA8F7 /* Cosmos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AC373BEDC32D6936DC074E7A2F3F32F5 /* Cosmos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		618F3D1CA5886DF47A8843BDCB1AA084 /* ColorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF26B8ED64A70466876D30E16CD0C2BC /* ColorLabel.swift */; };
+		62A8CA31EA35172D3375E11586921F82 /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E3D9E172C5867A928B8A53F4AC1806 /* CosmosTouchTarget.swift */; };
+		62E8346F03C03E7F4D631361F325689E /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFD14004CBC728DF9BD60C0788BE7352 /* Response.swift */; };
+		63ECC77E4E536666556C8D2791280861 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA988ABFE893A170CAFD7727555601 /* StarLayer.swift */; };
+		65D5C8A7B0507ED39B218CB35A73D532 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = AC66887D667715E5DDAD81C81919766F /* FSCalendar+Deprecated.m */; };
+		66962AAA19A213FA5520E4766912616E /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = B197C8712E72D652AD37FEAF18146A63 /* Message.swift */; };
+		7021185442C524179D89A52AE5E25A7D /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 504D526020B1EFA18BBA2B780D694758 /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A7E7427D12ACA69C0244F8692C80B4F /* FSCalendar+IBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 56EA3B400B3E556FCC55378BDC8CE305 /* FSCalendar+IBExtension.m */; };
+		7AC93196CA5A05271D4757FB3F87305C /* DummyChatItemPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B1EA902B844D7272D876D558418378 /* DummyChatItemPresenter.swift */; };
+		7B48852C4D848FA2DA416A98F6425869 /* ServerTrustPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600C0C58DA0C4E0A44659A29E015F94B /* ServerTrustPolicy.swift */; };
+		7CCF424046BEED00EB99738D76C64132 /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9ACDA80D6D2AB98A9D5A4703E13AAA /* StarFillMode.swift */; };
+		7D85816491E22DB3C2C94D7C592E8DBC /* NoChat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 27651284D3CC8D1E40A56931C6C1E0B9 /* NoChat-dummy.m */; };
+		7F1E7CE3200B397BDD5314CD18A634F7 /* FSCalendarEventIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 43915244FA6AAA7C8AF70C2B9834EB5F /* FSCalendarEventIndicator.m */; };
+		7F9307578CCA3E964D7C6968CF113D2F /* ChatViewController+Changes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 245DE8219D202EF45042C204817F81BA /* ChatViewController+Changes.swift */; };
+		883E1BE9856159DB1EBBEBEEA85D8199 /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5C2796984AACB76C7A40B783AE4A99 /* CosmosSize.swift */; };
+		892DC9060582339CEA110DB2ED950ABF /* DateItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B8EC8F05404DBA4075485A69811892C /* DateItemCollectionViewCell.swift */; };
+		8D916AB423D125EB2FBE6998474E88E2 /* ChatItemProtocolDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1923C13F2CEE70A097243D31DFB353EB /* ChatItemProtocolDefinitions.swift */; };
+		8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C055E39BA48FA016F63DDBEF29EE58 /* Alamofire.swift */; };
+		8F916C386EF42182F80D5EFFC86BD039 /* NoChatTG.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEABC77F14207B0A498E8FDA4C852079 /* NoChatTG.xcassets */; };
+		91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3099B0034E9006FEACE655DBBAC4FEC3 /* Foundation.framework */; };
+		9467E445DAE93464CBEDD329CA525ADD /* MessagePresenterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648AEE4F400ABFCB5780DDF6C6B85ABE /* MessagePresenterBuilder.swift */; };
+		9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 40E94DA8043D760146694B8C3BE01865 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		952B836FBCFC614CB951DB820ECC125C /* Pods-BanannyDemo-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E3A7F666975312B3DCCDCFABB77F9B14 /* Pods-BanannyDemo-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		968F580D0EE01D0900DBC022B41B0C21 /* MessageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD624F41E8E01A129A01059B070E3AD /* MessageCollectionViewCell.swift */; };
+		984ACF077007E44906F6A2F419E3D3C9 /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68FFFF5639C1A6FC2CFA2FC5A4E520D /* CosmosLayers.swift */; };
+		9D1D58A5ED379ABDA6BF567CE70A6372 /* Cosmos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C290D0ED479BC58AFEA4036B51D352C5 /* Cosmos-dummy.m */; };
+		9E435CD53ABB2447735AD3B35DDE07FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3099B0034E9006FEACE655DBBAC4FEC3 /* Foundation.framework */; };
+		9FA3CDA57290EFD8A64E227312F13949 /* FSCalendarConstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 760AC597D02A0CB2ADC5F8152584C554 /* FSCalendarConstance.m */; };
+		A0C58A338DA547DC3EAA5CD10A7D305E /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A57DB32738541EDFDBC77C84F00C20 /* CosmosLocalizedRating.swift */; };
+		A32CE58793771D8A3B5EEE978CB11BF0 /* MessagePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 393CF910031E70474A443EBE543E2EE0 /* MessagePresenter.swift */; };
+		A7291604CA37481061C281665235591E /* FSCalendarScopeHandle.h in Headers */ = {isa = PBXBuildFile; fileRef = 627D6673F5EF0CE7CFB8FF5C411FF439 /* FSCalendarScopeHandle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A84E190C472D28E1EB771327D55A0257 /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B60341C0A96984FC7E22007B83BE87 /* CosmosView.swift */; };
+		AA314156AC500125F4078EE968DB14C6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41EE9D13177E60504ABDD346B450649 /* Result.swift */; };
+		AB15DA90B2A574DB30894F8E209C32B9 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 60643508F48C90731A1858BEFDE168C4 /* FSCalendar.m */; };
+		ADF19C953CE2A7D0B72EC93A81FCCC26 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BC4C0D831FA8F199A3CE94F43AA132 /* Alamofire-dummy.m */; };
+		AE4CF87C02C042DF13ED5B21C4FDC1E0 /* Stream.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC82A6A6DA1111F81C2B319652501CD1 /* Stream.swift */; };
+		AE5E0CA74B1ABA540EB21C25AD4735DD /* MessageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE207B2F1DCEC596BC77AB23A0C6E68 /* MessageProtocol.swift */; };
+		B062C5E76EE7FD0E48831B2744CCF969 /* KeyboardMan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495765796D9C1A414F0673DC17651996 /* KeyboardMan.swift */; };
+		B0DA426CE8F835356ACA960EC75146C9 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5E04512522A217E58ACE7945A75160 /* MessageViewModel.swift */; };
+		B23D17989AE7FB0F480FCB0C74D19DC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3099B0034E9006FEACE655DBBAC4FEC3 /* Foundation.framework */; };
+		B3D0F7D545EC32BFBE276DBA4B760AB8 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = C12B0DE9A5CD36B951DB8AF27E467CA6 /* FSCalendarAppearance.m */; };
+		B9246E40633E56B2A5415A78D2629841 /* BubbleViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156A65D055D4A4A18F57D8E48D82E6F0 /* BubbleViewProtocol.swift */; };
+		BD54DEF9E1421221348FD92E656E1DE2 /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52FAB5AE5A426E742D510115B911A443 /* FSCalendar-dummy.m */; };
+		BD627222A931F86B626CFF892E7E4AEF /* FSCalendarHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 70126CB03E3E47FD964C768B1CA72B46 /* FSCalendarHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE2009368FD51AF025C1B4945165F5D3 /* FSCalendarEventIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A7268B472EB4176767F9A8A8971CA4C /* FSCalendarEventIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE41196F6A3903E59C3306FE3F8B43FE /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268A3423FE71ABC7B375C22B4693DE75 /* Notifications.swift */; };
+		BECB33530B472227C99ED31AAF4109B1 /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E695721C85B723883D393814E1F198F /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C0810C5EB9CFC4C217252302EF6FA389 /* NoChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5019398C2BD39F8E595829914CFB8893 /* NoChat.framework */; };
+		C0DB70AB368765DC64BFB5FEA75E0696 /* ParameterEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F96A8E33D635089531CEBB2023D3210 /* ParameterEncoding.swift */; };
+		C1AE15DCDF4E77065D23AF1EB23957BB /* ImageFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08C6F38460D025D84822D3FB143F56 /* ImageFactory.swift */; };
+		C1F305CB2F53579B41DEAE4A78F7303D /* FSCalendar+IBExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8686614344F131ED76811824FBF5CECA /* FSCalendar+IBExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C63CB541DFFE0EBE0C98AA573A51A233 /* NoChatTG.h in Headers */ = {isa = PBXBuildFile; fileRef = 389D10A324CC37341070B2E3FD19B191 /* NoChatTG.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7B6DD7C0456C50289A2C381DFE9FA3F /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8634C6CB273760835451446976339B1 /* MultipartFormData.swift */; };
+		C9CEC7F7F02A90363A56324BE82BFE65 /* NoChatTG-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01577E1F3A35877BA7F2BDD7DEC9BB5B /* NoChatTG-dummy.m */; };
+		CA9986DC70DB1904D00045789FDF47FB /* FSCalendar+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = C4623D00CDB2AF74FCFD2A06B4F3A46C /* FSCalendar+DateTools.m */; };
+		CC00126E443C3CEEFA221930E1B0CC54 /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FB8566058A10BA0173D1D48DC1243E /* CosmosDefaultSettings.swift */; };
+		D08E3402855AB2CA47EE2A92E2859187 /* FSCalendarAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A4FE730FC36572F3837F871AB67083D /* FSCalendarAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D33CAF30C5185331F90F60DE5C954AED /* TextMessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37574B3275E7106590398F0D8A192310 /* TextMessageViewModel.swift */; };
+		D49074D67E1BE18C9962C2F58B1DB947 /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 60322DF9E91C7E75C7EF2AABD4E0994F /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6C14673FFDC863BA71406F511E67658 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C87D74E95A70DFF248792D0685DB23 /* Observable.swift */; };
+		D7453EEDB3CD57C33612C94FCBF8A57E /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB28ED965B7E361CC1C58E4DAA67657 /* CosmosSettings.swift */; };
+		D8B4C7B4DFF0B825EE64889145B7623D /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A1443F6E702A7508FEBA8636D9FAA9FF /* FSCalendarCell.m */; };
+		DDB28233EABD5BF71A9C3E33C4BEA870 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3099B0034E9006FEACE655DBBAC4FEC3 /* Foundation.framework */; };
+		DDD4D897D4BAE0A4281876CC5F9109BB /* NoChat.h in Headers */ = {isa = PBXBuildFile; fileRef = 5966815F5E82D317874CBD12E2DEE802 /* NoChat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF717A08CF1193FFCA4FE75041293A18 /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7340857C43963B9315F9949E5C3F3B6D /* CosmosText.swift */; };
+		DFFBEB0203A4C5390E7BEE2582FE78DC /* NoChatTG-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B57ADB745B26DE522C8115BE1D66F96D /* NoChatTG-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E22922291A8A81B1068FA9CD8D5F1A18 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC519FF8E288EAA9B12DEDC5745F9AD3 /* ChatViewController.swift */; };
+		E258C72F744D28F06BC21BAC66573318 /* FSCalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B7136F989EC33A440D3DC2074902A1 /* FSCalendarHeader.m */; };
+		E273DE8B6A73A331EE1C441095EE5182 /* DateItemPresenterBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65A69609DA7F8B9F28BBE1B3CE506901 /* DateItemPresenterBuilder.swift */; };
+		E510B05E313834415B03D00EBB16E3A4 /* DateItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F603DFEEDEE352D813672360DDB293B /* DateItem.swift */; };
+		E5B683BC0CCD66AE241604751078AA42 /* GrowTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1CB9C063B5AA44458528A32ED4BC2A /* GrowTextView.swift */; };
+		E93C4277D2B22DD7CDD174462CB3C2F3 /* Pods-BanannyDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C20D736CB35587F4CF501958DDA8B362 /* Pods-BanannyDemo-dummy.m */; };
+		EA88AF9E641CCBF0321CB1F5FFF92D1C /* ChatInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA7537EA512DDB61CBC63DB058A94917 /* ChatInputViewController.swift */; };
+		EB717CB50DCCEB28CCFDA01C39B432BB /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = CCF31583DD29D1F856CF1570F2EB2183 /* FSCalendarStickyHeader.m */; };
+		ECDFA6CDAFA2207ECE1733E8E1EB8980 /* UIView+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DBD883C13029A2837075229EFFB458C /* UIView+FSExtension.m */; };
+		EFE92E8D3813DD26E78E93EEAF6D7E7E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 363A43D4680E64AEEF88F7EBED6A5294 /* Request.swift */; };
+		F339E94E38E5065683FAE9BF97EFC592 /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = AE67633B3C56607D3EFF89DD89AD0F99 /* FSCalendarScopeHandle.m */; };
+		F48EDA67D4C1CC480914B980897BAA08 /* ClockProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11970DEB280646E3BE6FEA0FC9816CC2 /* ClockProgressView.swift */; };
+		F4AB627B9C977C6FED25013E2FA9E0C4 /* ChatViewController+Presenters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E45D81F5E1E233E79642F9A5884AC9D /* ChatViewController+Presenters.swift */; };
+		F8FBE1DB56050AD970A4F89D093B9CB7 /* CALayer+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A51F0441EE0F9F865D6AFBCFE32DBD3 /* CALayer+FSExtension.m */; };
+		FE7FB68A9BA9437CF8A4593E70C49330 /* ChatTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBB877E8635FA25338DF163D93B32BC /* ChatTextView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		388DCB7DBAB1AC303FB8C5454A3A4EB1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 868010619D7E6CBA5C6E6E2874668C85;
+			remoteInfo = FSCalendar;
+		};
+		752CE01090A2B1AB9531C3B41B5CA0D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 608B49B5DDACC601EE8044A1931993F9;
+			remoteInfo = Cosmos;
+		};
+		A4C6257C08BB88E0A87D66F702593FF8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E158DADAE0CCEC6FC90EE06F2126DBDD;
+			remoteInfo = NoChat;
+		};
+		AED04388545A781D689A1CFD0FC3061A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79C040AFDDCE1BCBF6D8B5EB0B85887F;
+			remoteInfo = Alamofire;
+		};
+		B99DF45BE7175DAA6F65DBADB7F7A0F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 21F3D4F8536269076794D8DE9946C5DA;
+			remoteInfo = NoChatTG;
+		};
+		C17726ED4936370ABA23E8CA7D11EEC8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E158DADAE0CCEC6FC90EE06F2126DBDD;
+			remoteInfo = NoChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01577E1F3A35877BA7F2BDD7DEC9BB5B /* NoChatTG-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NoChatTG-dummy.m"; sourceTree = "<group>"; };
+		080F0B348280C7738E1415B45316A87F /* NoChatTG.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NoChatTG.modulemap; sourceTree = "<group>"; };
+		08CF78C1EA226D848F8601EC19908C59 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
+		0F96A8E33D635089531CEBB2023D3210 /* ParameterEncoding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ParameterEncoding.swift; path = Source/ParameterEncoding.swift; sourceTree = "<group>"; };
+		11970DEB280646E3BE6FEA0FC9816CC2 /* ClockProgressView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClockProgressView.swift; path = NoChatTG/Source/ClockProgressView.swift; sourceTree = "<group>"; };
+		127974A2386AEA5BD8742C70978D6450 /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = Cosmos/CosmosLayerHelper.swift; sourceTree = "<group>"; };
+		156A65D055D4A4A18F57D8E48D82E6F0 /* BubbleViewProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BubbleViewProtocol.swift; path = NoChatTG/Source/BubbleViewProtocol.swift; sourceTree = "<group>"; };
+		163C62F281D3EAF721BF513CBDC0B875 /* Error.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Error.swift; path = Source/Error.swift; sourceTree = "<group>"; };
+		16BC4C0D831FA8F199A3CE94F43AA132 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
+		17916EE432EB9DF0E75F3A7DB3A5825C /* ResponseSerialization.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseSerialization.swift; path = Source/ResponseSerialization.swift; sourceTree = "<group>"; };
+		1923C13F2CEE70A097243D31DFB353EB /* ChatItemProtocolDefinitions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatItemProtocolDefinitions.swift; path = NoChat/Source/ChatItemProtocolDefinitions.swift; sourceTree = "<group>"; };
+		19B60341C0A96984FC7E22007B83BE87 /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
+		1ABEF19A90394073F33B8768E12A1876 /* Alamofire.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.xcconfig; sourceTree = "<group>"; };
+		1D27854F14DFE6695487E6C5D18C8580 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		213E3EAE1C7B646E64B8AE22F4ECB6B0 /* NoChat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NoChat.xcconfig; sourceTree = "<group>"; };
+		245DE8219D202EF45042C204817F81BA /* ChatViewController+Changes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ChatViewController+Changes.swift"; path = "NoChat/Source/ChatViewController+Changes.swift"; sourceTree = "<group>"; };
+		268A3423FE71ABC7B375C22B4693DE75 /* Notifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Notifications.swift; path = Source/Notifications.swift; sourceTree = "<group>"; };
+		27651284D3CC8D1E40A56931C6C1E0B9 /* NoChat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NoChat-dummy.m"; sourceTree = "<group>"; };
+		28BB02EA01AD17A137725AB8D119E41B /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
+		2B8BD16DEADD0D2C6C99EA93E6C7A686 /* NoChat-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NoChat-umbrella.h"; sourceTree = "<group>"; };
+		2DBA988ABFE893A170CAFD7727555601 /* StarLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = Cosmos/StarLayer.swift; sourceTree = "<group>"; };
+		2E695721C85B723883D393814E1F198F /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
+		2EFC58E45CD318E25A0CAAF1F9FDFF62 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		2F48065A05769CF60111BD79051E0C86 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30219CE09F1142E7AF1163D8397DA650 /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3099B0034E9006FEACE655DBBAC4FEC3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3478A08129E5CD227F9EEE2B97A006B9 /* FSCalendarConstance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstance.h; path = FSCalendar/FSCalendarConstance.h; sourceTree = "<group>"; };
+		363A43D4680E64AEEF88F7EBED6A5294 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Request.swift; sourceTree = "<group>"; };
+		37574B3275E7106590398F0D8A192310 /* TextMessageViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextMessageViewModel.swift; path = NoChatTG/Source/TextMessageViewModel.swift; sourceTree = "<group>"; };
+		389D10A324CC37341070B2E3FD19B191 /* NoChatTG.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NoChatTG.h; path = NoChatTG/Source/NoChatTG.h; sourceTree = "<group>"; };
+		38B64F1B65E17F30DF6FB1E7E5CC2D51 /* ChatViewController+Scrolling.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ChatViewController+Scrolling.swift"; path = "NoChat/Source/ChatViewController+Scrolling.swift"; sourceTree = "<group>"; };
+		393CF910031E70474A443EBE543E2EE0 /* MessagePresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessagePresenter.swift; path = NoChatTG/Source/MessagePresenter.swift; sourceTree = "<group>"; };
+		3A7268B472EB4176767F9A8A8971CA4C /* FSCalendarEventIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarEventIndicator.h; path = FSCalendar/FSCalendarEventIndicator.h; sourceTree = "<group>"; };
+		3B2BD82EF1EE5E820221372775EB2C60 /* TextBubbleView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TextBubbleView.swift; path = NoChatTG/Source/TextBubbleView.swift; sourceTree = "<group>"; };
+		3C04842174A8C2AF4CA6F66A16821F71 /* Pods-BanannyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BanannyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3DBD83023758198EFFF4C1691EDE386D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3F603DFEEDEE352D813672360DDB293B /* DateItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateItem.swift; path = NoChatTG/Source/DateItem.swift; sourceTree = "<group>"; };
+		3FEDB7E6C9EAEF83BC1FD088637AAE5A /* ChatDataSourceProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatDataSourceProtocol.swift; path = NoChat/Source/ChatDataSourceProtocol.swift; sourceTree = "<group>"; };
+		40E94DA8043D760146694B8C3BE01865 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
+		41A57DB32738541EDFDBC77C84F00C20 /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
+		41F9A017AC896FBF2D25632CDB120322 /* NoChatTG-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NoChatTG-prefix.pch"; sourceTree = "<group>"; };
+		41FB8566058A10BA0173D1D48DC1243E /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = Cosmos/CosmosDefaultSettings.swift; sourceTree = "<group>"; };
+		43915244FA6AAA7C8AF70C2B9834EB5F /* FSCalendarEventIndicator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarEventIndicator.m; path = FSCalendar/FSCalendarEventIndicator.m; sourceTree = "<group>"; };
+		47916C559EB6672A754E7477448A6A8E /* Pods-BanannyDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BanannyDemo-frameworks.sh"; sourceTree = "<group>"; };
+		48BAB6AE72134B5811517FE02154504F /* Manager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Manager.swift; path = Source/Manager.swift; sourceTree = "<group>"; };
+		495765796D9C1A414F0673DC17651996 /* KeyboardMan.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyboardMan.swift; path = NoChatTG/Source/KeyboardMan.swift; sourceTree = "<group>"; };
+		4A4FE730FC36572F3837F871AB67083D /* FSCalendarAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAnimator.h; path = FSCalendar/FSCalendarAnimator.h; sourceTree = "<group>"; };
+		4B5E04512522A217E58ACE7945A75160 /* MessageViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageViewModel.swift; path = NoChatTG/Source/MessageViewModel.swift; sourceTree = "<group>"; };
+		4C08C6F38460D025D84822D3FB143F56 /* ImageFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageFactory.swift; path = NoChatTG/Source/ImageFactory.swift; sourceTree = "<group>"; };
+		4E45D81F5E1E233E79642F9A5884AC9D /* ChatViewController+Presenters.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ChatViewController+Presenters.swift"; path = "NoChat/Source/ChatViewController+Presenters.swift"; sourceTree = "<group>"; };
+		5019398C2BD39F8E595829914CFB8893 /* NoChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		504D526020B1EFA18BBA2B780D694758 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		518AFA9408B1ACACE8F59861B4620FC2 /* Alamofire-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-prefix.pch"; sourceTree = "<group>"; };
+		52B7136F989EC33A440D3DC2074902A1 /* FSCalendarHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeader.m; path = FSCalendar/FSCalendarHeader.m; sourceTree = "<group>"; };
+		52C055E39BA48FA016F63DDBEF29EE58 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
+		52FAB5AE5A426E742D510115B911A443 /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
+		549BCE08FECC152F64D7AA7C4B18F9A5 /* Cosmos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-prefix.pch"; sourceTree = "<group>"; };
+		56EA3B400B3E556FCC55378BDC8CE305 /* FSCalendar+IBExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FSCalendar+IBExtension.m"; path = "FSCalendar/FSCalendar+IBExtension.m"; sourceTree = "<group>"; };
+		5966815F5E82D317874CBD12E2DEE802 /* NoChat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = NoChat.h; path = NoChat/Source/NoChat.h; sourceTree = "<group>"; };
+		59ED4ACD8E7A2621DD2723C2CDE051BD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CE207B2F1DCEC596BC77AB23A0C6E68 /* MessageProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageProtocol.swift; path = NoChatTG/Source/MessageProtocol.swift; sourceTree = "<group>"; };
+		5D8FEF15910F5D5455319230B9979EB4 /* NoChatTG.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NoChatTG.xcconfig; sourceTree = "<group>"; };
+		600C0C58DA0C4E0A44659A29E015F94B /* ServerTrustPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ServerTrustPolicy.swift; path = Source/ServerTrustPolicy.swift; sourceTree = "<group>"; };
+		60322DF9E91C7E75C7EF2AABD4E0994F /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
+		60643508F48C90731A1858BEFDE168C4 /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
+		608FDC06EFBF54B03528FACB60368FED /* DateItemPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateItemPresenter.swift; path = NoChatTG/Source/DateItemPresenter.swift; sourceTree = "<group>"; };
+		60B1EA902B844D7272D876D558418378 /* DummyChatItemPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DummyChatItemPresenter.swift; path = NoChat/Source/DummyChatItemPresenter.swift; sourceTree = "<group>"; };
+		60FBC3987B1F1CF9EC6E987F2E04D4D0 /* NoChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61DFB5F386375AD836868706C28BF330 /* Cosmos.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.xcconfig; sourceTree = "<group>"; };
+		627D6673F5EF0CE7CFB8FF5C411FF439 /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarScopeHandle.h; path = FSCalendar/FSCalendarScopeHandle.h; sourceTree = "<group>"; };
+		648AEE4F400ABFCB5780DDF6C6B85ABE /* MessagePresenterBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessagePresenterBuilder.swift; path = NoChatTG/Source/MessagePresenterBuilder.swift; sourceTree = "<group>"; };
+		65A69609DA7F8B9F28BBE1B3CE506901 /* DateItemPresenterBuilder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateItemPresenterBuilder.swift; path = NoChatTG/Source/DateItemPresenterBuilder.swift; sourceTree = "<group>"; };
+		6CB28ED965B7E361CC1C58E4DAA67657 /* CosmosSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = Cosmos/CosmosSettings.swift; sourceTree = "<group>"; };
+		6E393827EEE74DD8BD922964103BB17A /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		6E413344A42E9AF92E3AFAFB20178E8F /* SerialTaskQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerialTaskQueue.swift; path = NoChat/Source/SerialTaskQueue.swift; sourceTree = "<group>"; };
+		6EB8F324786CF68DB5813CDF1FB94F0D /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
+		6EFFE3B788A456CBAE689C521D48ADC5 /* CosmosTouch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = Cosmos/CosmosTouch.swift; sourceTree = "<group>"; };
+		70126CB03E3E47FD964C768B1CA72B46 /* FSCalendarHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeader.h; path = FSCalendar/FSCalendarHeader.h; sourceTree = "<group>"; };
+		70B201FB52FD48CB991E5CA7B5FEB588 /* ImageUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageUtils.swift; path = NoChatTG/Source/ImageUtils.swift; sourceTree = "<group>"; };
+		723FF947E442997DA2D1F49CAE872FAB /* Pods_BanannyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BanannyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7340857C43963B9315F9949E5C3F3B6D /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
+		734851B14AB672067A8D6238CDDC7DEE /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Cosmos.modulemap; sourceTree = "<group>"; };
+		760AC597D02A0CB2ADC5F8152584C554 /* FSCalendarConstance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstance.m; path = FSCalendar/FSCalendarConstance.m; sourceTree = "<group>"; };
+		7722D08F301A6280024EA0B8A4C01756 /* Pods-BanannyDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BanannyDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		7B789FDE863E15959463A48FD5BD1FD5 /* ChatItemDecorationAttributes.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatItemDecorationAttributes.swift; path = NoChatTG/Source/ChatItemDecorationAttributes.swift; sourceTree = "<group>"; };
+		7BBB877E8635FA25338DF163D93B32BC /* ChatTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatTextView.swift; path = NoChatTG/Source/ChatTextView.swift; sourceTree = "<group>"; };
+		7C9ACDA80D6D2AB98A9D5A4703E13AAA /* StarFillMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = Cosmos/StarFillMode.swift; sourceTree = "<group>"; };
+		8539455128D60F2F8E3D13A97543B7A9 /* NoChat-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NoChat-prefix.pch"; sourceTree = "<group>"; };
+		8686614344F131ED76811824FBF5CECA /* FSCalendar+IBExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "FSCalendar+IBExtension.h"; path = "FSCalendar/FSCalendar+IBExtension.h"; sourceTree = "<group>"; };
+		8A51F0441EE0F9F865D6AFBCFE32DBD3 /* CALayer+FSExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+FSExtension.m"; path = "FSCalendar/CALayer+FSExtension.m"; sourceTree = "<group>"; };
+		8AD624F41E8E01A129A01059B070E3AD /* MessageCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageCollectionViewCell.swift; path = NoChatTG/Source/MessageCollectionViewCell.swift; sourceTree = "<group>"; };
+		8DB47D319B623C5F8DA42D9AD8BC4751 /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FSCalendar.modulemap; sourceTree = "<group>"; };
+		8DBD883C13029A2837075229EFFB458C /* UIView+FSExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+FSExtension.m"; path = "FSCalendar/UIView+FSExtension.m"; sourceTree = "<group>"; };
+		8FE9AFE4E5DE6D7C1BD3C9629AA64A67 /* Pods-BanannyDemo.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BanannyDemo.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B8EC8F05404DBA4075485A69811892C /* DateItemCollectionViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateItemCollectionViewCell.swift; path = NoChatTG/Source/DateItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		A1443F6E702A7508FEBA8636D9FAA9FF /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
+		A41EE9D13177E60504ABDD346B450649 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Source/Result.swift; sourceTree = "<group>"; };
+		A4C5F7AEB219082D291B3F4593A619BB /* FSCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.xcconfig; sourceTree = "<group>"; };
+		A606B3CFBEEBE5F2DF6618A106AB1A2C /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
+		A7FD508C97C85A4047A69E7583D28143 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		AC373BEDC32D6936DC074E7A2F3F32F5 /* Cosmos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-umbrella.h"; sourceTree = "<group>"; };
+		AC66887D667715E5DDAD81C81919766F /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FSCalendar+Deprecated.m"; path = "FSCalendar/FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
+		AD1BCAA0556E5239D32CF9111A6D2B02 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		AE67633B3C56607D3EFF89DD89AD0F99 /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarScopeHandle.m; path = FSCalendar/FSCalendarScopeHandle.m; sourceTree = "<group>"; };
+		AF26B8ED64A70466876D30E16CD0C2BC /* ColorLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorLabel.swift; path = NoChatTG/Source/ColorLabel.swift; sourceTree = "<group>"; };
+		B0E516C1BCED3B0A610DD0E8770255D0 /* NetworkReachabilityManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkReachabilityManager.swift; path = Source/NetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		B197C8712E72D652AD37FEAF18146A63 /* Message.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Message.swift; path = NoChatTG/Source/Message.swift; sourceTree = "<group>"; };
+		B231B19D0C6BC0D6FD2F54D97AD4BC06 /* FSCalendarFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarFlowLayout.m; path = FSCalendar/FSCalendarFlowLayout.m; sourceTree = "<group>"; };
+		B425D83B53850A2FCC7FC472B3B00099 /* UIView+FSExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+FSExtension.h"; path = "FSCalendar/UIView+FSExtension.h"; sourceTree = "<group>"; };
+		B57ADB745B26DE522C8115BE1D66F96D /* NoChatTG-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NoChatTG-umbrella.h"; sourceTree = "<group>"; };
+		B68FFFF5639C1A6FC2CFA2FC5A4E520D /* CosmosLayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = Cosmos/CosmosLayers.swift; sourceTree = "<group>"; };
+		B9002B8507CE999F1B57E8960BA8D3B6 /* CosmosAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = Cosmos/CosmosAccessibility.swift; sourceTree = "<group>"; };
+		BA7537EA512DDB61CBC63DB058A94917 /* ChatInputViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatInputViewController.swift; path = NoChatTG/Source/ChatInputViewController.swift; sourceTree = "<group>"; };
+		BC1CB9C063B5AA44458528A32ED4BC2A /* GrowTextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GrowTextView.swift; path = NoChatTG/Source/GrowTextView.swift; sourceTree = "<group>"; };
+		BC82A6A6DA1111F81C2B319652501CD1 /* Stream.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Stream.swift; path = Source/Stream.swift; sourceTree = "<group>"; };
+		BF5C2796984AACB76C7A40B783AE4A99 /* CosmosSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = Cosmos/CosmosSize.swift; sourceTree = "<group>"; };
+		BF845BF55F6982BA9EE51D6FABFB5429 /* Upload.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Upload.swift; path = Source/Upload.swift; sourceTree = "<group>"; };
+		C12B0DE9A5CD36B951DB8AF27E467CA6 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		C20D736CB35587F4CF501958DDA8B362 /* Pods-BanannyDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BanannyDemo-dummy.m"; sourceTree = "<group>"; };
+		C290D0ED479BC58AFEA4036B51D352C5 /* Cosmos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cosmos-dummy.m"; sourceTree = "<group>"; };
+		C3584F79B76A7E1C585833450928599A /* ManualLayoutUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ManualLayoutUtils.swift; path = NoChatTG/Source/ManualLayoutUtils.swift; sourceTree = "<group>"; };
+		C37D00BCACA1F7C73198F1449E7679B8 /* Pods-BanannyDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BanannyDemo-resources.sh"; sourceTree = "<group>"; };
+		C4623D00CDB2AF74FCFD2A06B4F3A46C /* FSCalendar+DateTools.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "FSCalendar+DateTools.m"; path = "FSCalendar/FSCalendar+DateTools.m"; sourceTree = "<group>"; };
+		C655E5621CCCE8B3666E54EA691CCBDC /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C8BE24686DABB0FB922B036A42174DCC /* BaseChatItemPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BaseChatItemPresenter.swift; path = NoChat/Source/BaseChatItemPresenter.swift; sourceTree = "<group>"; };
+		CCF31583DD29D1F856CF1570F2EB2183 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		CED7316AEB3C01F49BC5B90AEEA4D251 /* ChatCollectionViewLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatCollectionViewLayout.swift; path = NoChat/Source/ChatCollectionViewLayout.swift; sourceTree = "<group>"; };
+		CFD14004CBC728DF9BD60C0788BE7352 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		D3E6953D186A1415505CD0302DB575FC /* NoChat.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = NoChat.modulemap; sourceTree = "<group>"; };
+		D53742F7A82214B267DB7624D73B5D25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D623CD04DD963F239BF98FEB7DF75C79 /* FSCalendarFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarFlowLayout.h; path = FSCalendar/FSCalendarFlowLayout.h; sourceTree = "<group>"; };
+		D7C87D74E95A70DFF248792D0685DB23 /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = NoChatTG/Source/Observable.swift; sourceTree = "<group>"; };
+		E06171CABDD411FA494CB7A381B50406 /* MessageViewModelProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MessageViewModelProtocol.swift; path = NoChatTG/Source/MessageViewModelProtocol.swift; sourceTree = "<group>"; };
+		E06F33B120C8A27C9335B5E393D86BBF /* FSCalendarAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAnimator.m; path = FSCalendar/FSCalendarAnimator.m; sourceTree = "<group>"; };
+		E36BDE21CA55F526CB7B3708E32665F5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A7F666975312B3DCCDCFABB77F9B14 /* Pods-BanannyDemo-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BanannyDemo-umbrella.h"; sourceTree = "<group>"; };
+		E6E3D9E172C5867A928B8A53F4AC1806 /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = Cosmos/Helpers/CosmosTouchTarget.swift; sourceTree = "<group>"; };
+		E70BED83C63679D579DF2039AFFDBB7C /* Validation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Validation.swift; path = Source/Validation.swift; sourceTree = "<group>"; };
+		E7CB045E621CD08AB8E78ECB9ABBA0EC /* CALayer+FSExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+FSExtension.h"; path = "FSCalendar/CALayer+FSExtension.h"; sourceTree = "<group>"; };
+		E808078AAA18FD5DB69A9E152BFD9827 /* NoChatTG.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NoChatTG.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6B7C559C3A531C0437AA7C91F20950 /* CollectionChanges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CollectionChanges.swift; path = NoChat/Source/CollectionChanges.swift; sourceTree = "<group>"; };
+		EC519FF8E288EAA9B12DEDC5745F9AD3 /* ChatViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = NoChat/Source/ChatViewController.swift; sourceTree = "<group>"; };
+		EEABC77F14207B0A498E8FDA4C852079 /* NoChatTG.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = NoChatTG.xcassets; path = NoChatTG/Source/NoChatTG.xcassets; sourceTree = "<group>"; };
+		EEF0D2BCAD56CB77AE572A8E2983F1B8 /* Cosmos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F12F0EF2E7D3067961BA8BAD98EEBCB9 /* Timeline.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Timeline.swift; path = Source/Timeline.swift; sourceTree = "<group>"; };
+		F258B251513D04B9800DE48878C63608 /* Pods-BanannyDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BanannyDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F2BAB8A504442B7FA3A207D4DB7ECBF6 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Alamofire.modulemap; sourceTree = "<group>"; };
+		F449272CA7D776D9770519C116A73D12 /* Pods-BanannyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BanannyDemo.release.xcconfig"; sourceTree = "<group>"; };
+		F4C5A7D589C6DE260621A685B14006C2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4FD52390502AA3F89C2F2BE59CF0964 /* Download.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Download.swift; path = Source/Download.swift; sourceTree = "<group>"; };
+		F83A4AE0E4DD9A64E5026730E94730C9 /* ColorUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ColorUtils.swift; path = NoChatTG/Source/ColorUtils.swift; sourceTree = "<group>"; };
+		F8634C6CB273760835451446976339B1 /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
+		F911E2D99C12CE4142D9FFDCD93448FE /* ThreadHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ThreadHelper.swift; path = NoChatTG/Source/ThreadHelper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D11380ECDC684E3A5735060604FC7ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23D17989AE7FB0F480FCB0C74D19DC5 /* Foundation.framework in Frameworks */,
+				C0810C5EB9CFC4C217252302EF6FA389 /* NoChat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A7E674E0456B599207C34EEB5C948725 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB28233EABD5BF71A9C3E33C4BEA870 /* Foundation.framework in Frameworks */,
+				149C1027FDDFEBE424BD4B407A167906 /* QuartzCore.framework in Frameworks */,
+				5CA7B37693BF3D25B1B90C385F6936EB /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1729F851F648EC60EE93CDB3C8BAEAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C09AC2A52ED69A27C8D923139A006F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF29492FA055C53559A30D4C6E1EE1E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42295A0C098BB044F391C174DA9D5859 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F63EC13792687F2569C53EDFA6A048EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2596BBD8BB2BEE40E4B92FA4D6897DE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FC08A5C1AB3498033122C23098C4B4A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E435CD53ABB2447735AD3B35DDE07FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12B410D1AA555020C53204DF86707102 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C038E5E2D80BBCE7E16964EEC530E20 /* Alamofire */,
+				C3015156F280CF7FD133280190CEBCDA /* Cosmos */,
+				62A6343A398ECF89A3CB470D7372AE4D /* FSCalendar */,
+				29375C521BCCE9E19B0657B97D4B9DAD /* NoChat */,
+				4843973B25F4143B777F457BF03A4E18 /* NoChatTG */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		29375C521BCCE9E19B0657B97D4B9DAD /* NoChat */ = {
+			isa = PBXGroup;
+			children = (
+				C8BE24686DABB0FB922B036A42174DCC /* BaseChatItemPresenter.swift */,
+				CED7316AEB3C01F49BC5B90AEEA4D251 /* ChatCollectionViewLayout.swift */,
+				3FEDB7E6C9EAEF83BC1FD088637AAE5A /* ChatDataSourceProtocol.swift */,
+				1923C13F2CEE70A097243D31DFB353EB /* ChatItemProtocolDefinitions.swift */,
+				EC519FF8E288EAA9B12DEDC5745F9AD3 /* ChatViewController.swift */,
+				245DE8219D202EF45042C204817F81BA /* ChatViewController+Changes.swift */,
+				4E45D81F5E1E233E79642F9A5884AC9D /* ChatViewController+Presenters.swift */,
+				38B64F1B65E17F30DF6FB1E7E5CC2D51 /* ChatViewController+Scrolling.swift */,
+				EA6B7C559C3A531C0437AA7C91F20950 /* CollectionChanges.swift */,
+				60B1EA902B844D7272D876D558418378 /* DummyChatItemPresenter.swift */,
+				5966815F5E82D317874CBD12E2DEE802 /* NoChat.h */,
+				6E413344A42E9AF92E3AFAFB20178E8F /* SerialTaskQueue.swift */,
+				B555FF032C41A4B992AB170958D9D7C4 /* Support Files */,
+			);
+			path = NoChat;
+			sourceTree = "<group>";
+		};
+		3C504800701945F904DA98C6824E9E07 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8792C88615FBA3077FE7AD7962407F98 /* Pods-BanannyDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		47593B36A0C2EEAE0BD3C0FE259A91C0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F2BAB8A504442B7FA3A207D4DB7ECBF6 /* Alamofire.modulemap */,
+				1ABEF19A90394073F33B8768E12A1876 /* Alamofire.xcconfig */,
+				16BC4C0D831FA8F199A3CE94F43AA132 /* Alamofire-dummy.m */,
+				518AFA9408B1ACACE8F59861B4620FC2 /* Alamofire-prefix.pch */,
+				40E94DA8043D760146694B8C3BE01865 /* Alamofire-umbrella.h */,
+				59ED4ACD8E7A2621DD2723C2CDE051BD /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Alamofire";
+			sourceTree = "<group>";
+		};
+		4843973B25F4143B777F457BF03A4E18 /* NoChatTG */ = {
+			isa = PBXGroup;
+			children = (
+				156A65D055D4A4A18F57D8E48D82E6F0 /* BubbleViewProtocol.swift */,
+				BA7537EA512DDB61CBC63DB058A94917 /* ChatInputViewController.swift */,
+				7B789FDE863E15959463A48FD5BD1FD5 /* ChatItemDecorationAttributes.swift */,
+				7BBB877E8635FA25338DF163D93B32BC /* ChatTextView.swift */,
+				11970DEB280646E3BE6FEA0FC9816CC2 /* ClockProgressView.swift */,
+				AF26B8ED64A70466876D30E16CD0C2BC /* ColorLabel.swift */,
+				F83A4AE0E4DD9A64E5026730E94730C9 /* ColorUtils.swift */,
+				3F603DFEEDEE352D813672360DDB293B /* DateItem.swift */,
+				9B8EC8F05404DBA4075485A69811892C /* DateItemCollectionViewCell.swift */,
+				608FDC06EFBF54B03528FACB60368FED /* DateItemPresenter.swift */,
+				65A69609DA7F8B9F28BBE1B3CE506901 /* DateItemPresenterBuilder.swift */,
+				BC1CB9C063B5AA44458528A32ED4BC2A /* GrowTextView.swift */,
+				4C08C6F38460D025D84822D3FB143F56 /* ImageFactory.swift */,
+				70B201FB52FD48CB991E5CA7B5FEB588 /* ImageUtils.swift */,
+				495765796D9C1A414F0673DC17651996 /* KeyboardMan.swift */,
+				C3584F79B76A7E1C585833450928599A /* ManualLayoutUtils.swift */,
+				B197C8712E72D652AD37FEAF18146A63 /* Message.swift */,
+				8AD624F41E8E01A129A01059B070E3AD /* MessageCollectionViewCell.swift */,
+				393CF910031E70474A443EBE543E2EE0 /* MessagePresenter.swift */,
+				648AEE4F400ABFCB5780DDF6C6B85ABE /* MessagePresenterBuilder.swift */,
+				5CE207B2F1DCEC596BC77AB23A0C6E68 /* MessageProtocol.swift */,
+				4B5E04512522A217E58ACE7945A75160 /* MessageViewModel.swift */,
+				E06171CABDD411FA494CB7A381B50406 /* MessageViewModelProtocol.swift */,
+				389D10A324CC37341070B2E3FD19B191 /* NoChatTG.h */,
+				D7C87D74E95A70DFF248792D0685DB23 /* Observable.swift */,
+				3B2BD82EF1EE5E820221372775EB2C60 /* TextBubbleView.swift */,
+				37574B3275E7106590398F0D8A192310 /* TextMessageViewModel.swift */,
+				F911E2D99C12CE4142D9FFDCD93448FE /* ThreadHelper.swift */,
+				8A8DE51800A2E6DD20AB099B3D8C6813 /* Resources */,
+				5C3294AA23B8218EF559806A7308C7C4 /* Support Files */,
+			);
+			path = NoChatTG;
+			sourceTree = "<group>";
+		};
+		4FA3196A6CB175A75B5D216B22C7E9D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C655E5621CCCE8B3666E54EA691CCBDC /* Alamofire.framework */,
+				EEF0D2BCAD56CB77AE572A8E2983F1B8 /* Cosmos.framework */,
+				30219CE09F1142E7AF1163D8397DA650 /* FSCalendar.framework */,
+				60FBC3987B1F1CF9EC6E987F2E04D4D0 /* NoChat.framework */,
+				E808078AAA18FD5DB69A9E152BFD9827 /* NoChatTG.framework */,
+				723FF947E442997DA2D1F49CAE872FAB /* Pods_BanannyDemo.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5C3294AA23B8218EF559806A7308C7C4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4C5A7D589C6DE260621A685B14006C2 /* Info.plist */,
+				080F0B348280C7738E1415B45316A87F /* NoChatTG.modulemap */,
+				5D8FEF15910F5D5455319230B9979EB4 /* NoChatTG.xcconfig */,
+				01577E1F3A35877BA7F2BDD7DEC9BB5B /* NoChatTG-dummy.m */,
+				41F9A017AC896FBF2D25632CDB120322 /* NoChatTG-prefix.pch */,
+				B57ADB745B26DE522C8115BE1D66F96D /* NoChatTG-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NoChatTG";
+			sourceTree = "<group>";
+		};
+		62A6343A398ECF89A3CB470D7372AE4D /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				E7CB045E621CD08AB8E78ECB9ABBA0EC /* CALayer+FSExtension.h */,
+				8A51F0441EE0F9F865D6AFBCFE32DBD3 /* CALayer+FSExtension.m */,
+				6EB8F324786CF68DB5813CDF1FB94F0D /* FSCalendar.h */,
+				60643508F48C90731A1858BEFDE168C4 /* FSCalendar.m */,
+				C4623D00CDB2AF74FCFD2A06B4F3A46C /* FSCalendar+DateTools.m */,
+				AC66887D667715E5DDAD81C81919766F /* FSCalendar+Deprecated.m */,
+				8686614344F131ED76811824FBF5CECA /* FSCalendar+IBExtension.h */,
+				56EA3B400B3E556FCC55378BDC8CE305 /* FSCalendar+IBExtension.m */,
+				4A4FE730FC36572F3837F871AB67083D /* FSCalendarAnimator.h */,
+				E06F33B120C8A27C9335B5E393D86BBF /* FSCalendarAnimator.m */,
+				08CF78C1EA226D848F8601EC19908C59 /* FSCalendarAppearance.h */,
+				C12B0DE9A5CD36B951DB8AF27E467CA6 /* FSCalendarAppearance.m */,
+				60322DF9E91C7E75C7EF2AABD4E0994F /* FSCalendarCell.h */,
+				A1443F6E702A7508FEBA8636D9FAA9FF /* FSCalendarCell.m */,
+				2EFC58E45CD318E25A0CAAF1F9FDFF62 /* FSCalendarCollectionView.h */,
+				6E393827EEE74DD8BD922964103BB17A /* FSCalendarCollectionView.m */,
+				3478A08129E5CD227F9EEE2B97A006B9 /* FSCalendarConstance.h */,
+				760AC597D02A0CB2ADC5F8152584C554 /* FSCalendarConstance.m */,
+				A606B3CFBEEBE5F2DF6618A106AB1A2C /* FSCalendarDynamicHeader.h */,
+				3A7268B472EB4176767F9A8A8971CA4C /* FSCalendarEventIndicator.h */,
+				43915244FA6AAA7C8AF70C2B9834EB5F /* FSCalendarEventIndicator.m */,
+				D623CD04DD963F239BF98FEB7DF75C79 /* FSCalendarFlowLayout.h */,
+				B231B19D0C6BC0D6FD2F54D97AD4BC06 /* FSCalendarFlowLayout.m */,
+				70126CB03E3E47FD964C768B1CA72B46 /* FSCalendarHeader.h */,
+				52B7136F989EC33A440D3DC2074902A1 /* FSCalendarHeader.m */,
+				627D6673F5EF0CE7CFB8FF5C411FF439 /* FSCalendarScopeHandle.h */,
+				AE67633B3C56607D3EFF89DD89AD0F99 /* FSCalendarScopeHandle.m */,
+				504D526020B1EFA18BBA2B780D694758 /* FSCalendarStickyHeader.h */,
+				CCF31583DD29D1F856CF1570F2EB2183 /* FSCalendarStickyHeader.m */,
+				B425D83B53850A2FCC7FC472B3B00099 /* UIView+FSExtension.h */,
+				8DBD883C13029A2837075229EFFB458C /* UIView+FSExtension.m */,
+				6D4E7DB93CDDC3F0D72F24E93CAC082A /* Support Files */,
+			);
+			path = FSCalendar;
+			sourceTree = "<group>";
+		};
+		6D4E7DB93CDDC3F0D72F24E93CAC082A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DB47D319B623C5F8DA42D9AD8BC4751 /* FSCalendar.modulemap */,
+				A4C5F7AEB219082D291B3F4593A619BB /* FSCalendar.xcconfig */,
+				52FAB5AE5A426E742D510115B911A443 /* FSCalendar-dummy.m */,
+				A7FD508C97C85A4047A69E7583D28143 /* FSCalendar-prefix.pch */,
+				2E695721C85B723883D393814E1F198F /* FSCalendar-umbrella.h */,
+				E36BDE21CA55F526CB7B3708E32665F5 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FSCalendar";
+			sourceTree = "<group>";
+		};
+		70E9757EC6DB0D02B35933405EE5F198 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5019398C2BD39F8E595829914CFB8893 /* NoChat.framework */,
+				80CDB998A2E9413612694187E4184603 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7C038E5E2D80BBCE7E16964EEC530E20 /* Alamofire */ = {
+			isa = PBXGroup;
+			children = (
+				52C055E39BA48FA016F63DDBEF29EE58 /* Alamofire.swift */,
+				F4FD52390502AA3F89C2F2BE59CF0964 /* Download.swift */,
+				163C62F281D3EAF721BF513CBDC0B875 /* Error.swift */,
+				48BAB6AE72134B5811517FE02154504F /* Manager.swift */,
+				F8634C6CB273760835451446976339B1 /* MultipartFormData.swift */,
+				B0E516C1BCED3B0A610DD0E8770255D0 /* NetworkReachabilityManager.swift */,
+				268A3423FE71ABC7B375C22B4693DE75 /* Notifications.swift */,
+				0F96A8E33D635089531CEBB2023D3210 /* ParameterEncoding.swift */,
+				363A43D4680E64AEEF88F7EBED6A5294 /* Request.swift */,
+				CFD14004CBC728DF9BD60C0788BE7352 /* Response.swift */,
+				17916EE432EB9DF0E75F3A7DB3A5825C /* ResponseSerialization.swift */,
+				A41EE9D13177E60504ABDD346B450649 /* Result.swift */,
+				600C0C58DA0C4E0A44659A29E015F94B /* ServerTrustPolicy.swift */,
+				BC82A6A6DA1111F81C2B319652501CD1 /* Stream.swift */,
+				F12F0EF2E7D3067961BA8BAD98EEBCB9 /* Timeline.swift */,
+				BF845BF55F6982BA9EE51D6FABFB5429 /* Upload.swift */,
+				E70BED83C63679D579DF2039AFFDBB7C /* Validation.swift */,
+				47593B36A0C2EEAE0BD3C0FE259A91C0 /* Support Files */,
+			);
+			path = Alamofire;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				70E9757EC6DB0D02B35933405EE5F198 /* Frameworks */,
+				12B410D1AA555020C53204DF86707102 /* Pods */,
+				4FA3196A6CB175A75B5D216B22C7E9D7 /* Products */,
+				3C504800701945F904DA98C6824E9E07 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		80CDB998A2E9413612694187E4184603 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3099B0034E9006FEACE655DBBAC4FEC3 /* Foundation.framework */,
+				AD1BCAA0556E5239D32CF9111A6D2B02 /* QuartzCore.framework */,
+				3DBD83023758198EFFF4C1691EDE386D /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		8792C88615FBA3077FE7AD7962407F98 /* Pods-BanannyDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1D27854F14DFE6695487E6C5D18C8580 /* Info.plist */,
+				8FE9AFE4E5DE6D7C1BD3C9629AA64A67 /* Pods-BanannyDemo.modulemap */,
+				F258B251513D04B9800DE48878C63608 /* Pods-BanannyDemo-acknowledgements.markdown */,
+				7722D08F301A6280024EA0B8A4C01756 /* Pods-BanannyDemo-acknowledgements.plist */,
+				C20D736CB35587F4CF501958DDA8B362 /* Pods-BanannyDemo-dummy.m */,
+				47916C559EB6672A754E7477448A6A8E /* Pods-BanannyDemo-frameworks.sh */,
+				C37D00BCACA1F7C73198F1449E7679B8 /* Pods-BanannyDemo-resources.sh */,
+				E3A7F666975312B3DCCDCFABB77F9B14 /* Pods-BanannyDemo-umbrella.h */,
+				3C04842174A8C2AF4CA6F66A16821F71 /* Pods-BanannyDemo.debug.xcconfig */,
+				F449272CA7D776D9770519C116A73D12 /* Pods-BanannyDemo.release.xcconfig */,
+			);
+			name = "Pods-BanannyDemo";
+			path = "Target Support Files/Pods-BanannyDemo";
+			sourceTree = "<group>";
+		};
+		8A8DE51800A2E6DD20AB099B3D8C6813 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EEABC77F14207B0A498E8FDA4C852079 /* NoChatTG.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		B555FF032C41A4B992AB170958D9D7C4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2F48065A05769CF60111BD79051E0C86 /* Info.plist */,
+				D3E6953D186A1415505CD0302DB575FC /* NoChat.modulemap */,
+				213E3EAE1C7B646E64B8AE22F4ECB6B0 /* NoChat.xcconfig */,
+				27651284D3CC8D1E40A56931C6C1E0B9 /* NoChat-dummy.m */,
+				8539455128D60F2F8E3D13A97543B7A9 /* NoChat-prefix.pch */,
+				2B8BD16DEADD0D2C6C99EA93E6C7A686 /* NoChat-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/NoChat";
+			sourceTree = "<group>";
+		};
+		C3015156F280CF7FD133280190CEBCDA /* Cosmos */ = {
+			isa = PBXGroup;
+			children = (
+				B9002B8507CE999F1B57E8960BA8D3B6 /* CosmosAccessibility.swift */,
+				41FB8566058A10BA0173D1D48DC1243E /* CosmosDefaultSettings.swift */,
+				127974A2386AEA5BD8742C70978D6450 /* CosmosLayerHelper.swift */,
+				B68FFFF5639C1A6FC2CFA2FC5A4E520D /* CosmosLayers.swift */,
+				41A57DB32738541EDFDBC77C84F00C20 /* CosmosLocalizedRating.swift */,
+				28BB02EA01AD17A137725AB8D119E41B /* CosmosRating.swift */,
+				6CB28ED965B7E361CC1C58E4DAA67657 /* CosmosSettings.swift */,
+				BF5C2796984AACB76C7A40B783AE4A99 /* CosmosSize.swift */,
+				7340857C43963B9315F9949E5C3F3B6D /* CosmosText.swift */,
+				6EFFE3B788A456CBAE689C521D48ADC5 /* CosmosTouch.swift */,
+				E6E3D9E172C5867A928B8A53F4AC1806 /* CosmosTouchTarget.swift */,
+				19B60341C0A96984FC7E22007B83BE87 /* CosmosView.swift */,
+				7C9ACDA80D6D2AB98A9D5A4703E13AAA /* StarFillMode.swift */,
+				2DBA988ABFE893A170CAFD7727555601 /* StarLayer.swift */,
+				FD785553CE5D35ED29A3E1D00B330C9E /* Support Files */,
+			);
+			path = Cosmos;
+			sourceTree = "<group>";
+		};
+		FD785553CE5D35ED29A3E1D00B330C9E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				734851B14AB672067A8D6238CDDC7DEE /* Cosmos.modulemap */,
+				61DFB5F386375AD836868706C28BF330 /* Cosmos.xcconfig */,
+				C290D0ED479BC58AFEA4036B51D352C5 /* Cosmos-dummy.m */,
+				549BCE08FECC152F64D7AA7C4B18F9A5 /* Cosmos-prefix.pch */,
+				AC373BEDC32D6936DC074E7A2F3F32F5 /* Cosmos-umbrella.h */,
+				D53742F7A82214B267DB7624D73B5D25 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Cosmos";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0AF0B50B7626849ECCAA168E7C65CBCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFBEB0203A4C5390E7BEE2582FE78DC /* NoChatTG-umbrella.h in Headers */,
+				C63CB541DFFE0EBE0C98AA573A51A233 /* NoChatTG.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EAFA4C38F7A42757B8E771A7CD86C90 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				952B836FBCFC614CB951DB820ECC125C /* Pods-BanannyDemo-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C3675572D5182F562E4C84BED3B3C11 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E0A5E3A6EE9CB3BEE7EFE7936A08AD /* CALayer+FSExtension.h in Headers */,
+				C1F305CB2F53579B41DEAE4A78F7303D /* FSCalendar+IBExtension.h in Headers */,
+				BECB33530B472227C99ED31AAF4109B1 /* FSCalendar-umbrella.h in Headers */,
+				247B48F0E931BA651C06E8421C5A0CFB /* FSCalendar.h in Headers */,
+				D08E3402855AB2CA47EE2A92E2859187 /* FSCalendarAnimator.h in Headers */,
+				16CEE335B25021CCEA3F64552B77E526 /* FSCalendarAppearance.h in Headers */,
+				D49074D67E1BE18C9962C2F58B1DB947 /* FSCalendarCell.h in Headers */,
+				1B0527043FE99FCFB7F2C62FA4C973D0 /* FSCalendarCollectionView.h in Headers */,
+				130119C1E67865675CC8AB8CD210FB14 /* FSCalendarConstance.h in Headers */,
+				0F1FC681700BF1AF0A5038E78ED7DE66 /* FSCalendarDynamicHeader.h in Headers */,
+				BE2009368FD51AF025C1B4945165F5D3 /* FSCalendarEventIndicator.h in Headers */,
+				2BED398461A1D57AAB6C1A744EA177DA /* FSCalendarFlowLayout.h in Headers */,
+				BD627222A931F86B626CFF892E7E4AEF /* FSCalendarHeader.h in Headers */,
+				A7291604CA37481061C281665235591E /* FSCalendarScopeHandle.h in Headers */,
+				7021185442C524179D89A52AE5E25A7D /* FSCalendarStickyHeader.h in Headers */,
+				3981098E0B657A66D922281531878551 /* UIView+FSExtension.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5AE91D1E4458566D1507A193595D7D6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				606A219B918881A70A78CD91EACDA8F7 /* Cosmos-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3A0375B087AB709F8B2CCB4CAA2A08 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142DB1EE4C340AFE27D851524CE9E95D /* NoChat-umbrella.h in Headers */,
+				DDD4D897D4BAE0A4281876CC5F9109BB /* NoChat.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFDF3B631BBB965A372347705CA14854 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9469DF81ECB494E84675969B5E13374C /* Alamofire-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		21F3D4F8536269076794D8DE9946C5DA /* NoChatTG */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1D405D8BF459ECC54B8B446D5AF59E8 /* Build configuration list for PBXNativeTarget "NoChatTG" */;
+			buildPhases = (
+				949CCF0065AB8DF753224F465A76D5C9 /* Sources */,
+				4D11380ECDC684E3A5735060604FC7ED /* Frameworks */,
+				0AF0B50B7626849ECCAA168E7C65CBCF /* Headers */,
+				1F28992567F6CC52D4AA67E55C8142D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				528548701EC3CD59B567E72E512351B4 /* PBXTargetDependency */,
+			);
+			name = NoChatTG;
+			productName = NoChatTG;
+			productReference = E808078AAA18FD5DB69A9E152BFD9827 /* NoChatTG.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		608B49B5DDACC601EE8044A1931993F9 /* Cosmos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B580BEC7E92B10FC3C82CD96A459AF5D /* Build configuration list for PBXNativeTarget "Cosmos" */;
+			buildPhases = (
+				64ACD90BE8F69E7FD4BDFC22146B42DF /* Sources */,
+				DDF29492FA055C53559A30D4C6E1EE1E /* Frameworks */,
+				B5AE91D1E4458566D1507A193595D7D6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cosmos;
+			productName = Cosmos;
+			productReference = EEF0D2BCAD56CB77AE572A8E2983F1B8 /* Cosmos.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CFB42910790CF0BDBCCEBAACD6B9367 /* Build configuration list for PBXNativeTarget "Alamofire" */;
+			buildPhases = (
+				95CC2C7E06DC188A05DAAEE9CAA555A3 /* Sources */,
+				B1729F851F648EC60EE93CDB3C8BAEAD /* Frameworks */,
+				EFDF3B631BBB965A372347705CA14854 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = C655E5621CCCE8B3666E54EA691CCBDC /* Alamofire.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		7C9481A74E72DB427EC7262F057650BD /* Pods-BanannyDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C40A07371866B783CC9E3FAEDC4B5F0 /* Build configuration list for PBXNativeTarget "Pods-BanannyDemo" */;
+			buildPhases = (
+				C5F098931393FB88C9FF50E8836A61A9 /* Sources */,
+				FC08A5C1AB3498033122C23098C4B4A6 /* Frameworks */,
+				3EAFA4C38F7A42757B8E771A7CD86C90 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7D853FE554DBBD0F43E3153F5DCA7000 /* PBXTargetDependency */,
+				0A1B99A026BF79DCD747EBD2FD6E4BBF /* PBXTargetDependency */,
+				30D39929B4AA417796EF2C53C11FF34D /* PBXTargetDependency */,
+				2006569611A5A75C929E6002E221FE84 /* PBXTargetDependency */,
+				7B008709D9B7EDDBA91D806802F4112B /* PBXTargetDependency */,
+			);
+			name = "Pods-BanannyDemo";
+			productName = "Pods-BanannyDemo";
+			productReference = 723FF947E442997DA2D1F49CAE872FAB /* Pods_BanannyDemo.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		868010619D7E6CBA5C6E6E2874668C85 /* FSCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074E1B768E755CAD2D14F733E80D73D9 /* Build configuration list for PBXNativeTarget "FSCalendar" */;
+			buildPhases = (
+				0FD1E1DB785459376F5AD033F11125CD /* Sources */,
+				A7E674E0456B599207C34EEB5C948725 /* Frameworks */,
+				4C3675572D5182F562E4C84BED3B3C11 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSCalendar;
+			productName = FSCalendar;
+			productReference = 30219CE09F1142E7AF1163D8397DA650 /* FSCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E158DADAE0CCEC6FC90EE06F2126DBDD /* NoChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E43F63EA48DF531AA854F74874803F58 /* Build configuration list for PBXNativeTarget "NoChat" */;
+			buildPhases = (
+				543A92ABFC2511FF6B84414919D1C2C5 /* Sources */,
+				F63EC13792687F2569C53EDFA6A048EF /* Frameworks */,
+				EE3A0375B087AB709F8B2CCB4CAA2A08 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoChat;
+			productName = NoChat;
+			productReference = 60FBC3987B1F1CF9EC6E987F2E04D4D0 /* NoChat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4FA3196A6CB175A75B5D216B22C7E9D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */,
+				608B49B5DDACC601EE8044A1931993F9 /* Cosmos */,
+				868010619D7E6CBA5C6E6E2874668C85 /* FSCalendar */,
+				E158DADAE0CCEC6FC90EE06F2126DBDD /* NoChat */,
+				21F3D4F8536269076794D8DE9946C5DA /* NoChatTG */,
+				7C9481A74E72DB427EC7262F057650BD /* Pods-BanannyDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F28992567F6CC52D4AA67E55C8142D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F916C386EF42182F80D5EFFC86BD039 /* NoChatTG.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0FD1E1DB785459376F5AD033F11125CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8FBE1DB56050AD970A4F89D093B9CB7 /* CALayer+FSExtension.m in Sources */,
+				CA9986DC70DB1904D00045789FDF47FB /* FSCalendar+DateTools.m in Sources */,
+				65D5C8A7B0507ED39B218CB35A73D532 /* FSCalendar+Deprecated.m in Sources */,
+				7A7E7427D12ACA69C0244F8692C80B4F /* FSCalendar+IBExtension.m in Sources */,
+				BD54DEF9E1421221348FD92E656E1DE2 /* FSCalendar-dummy.m in Sources */,
+				AB15DA90B2A574DB30894F8E209C32B9 /* FSCalendar.m in Sources */,
+				57BEF19D24A56162659239E30322EA67 /* FSCalendarAnimator.m in Sources */,
+				B3D0F7D545EC32BFBE276DBA4B760AB8 /* FSCalendarAppearance.m in Sources */,
+				D8B4C7B4DFF0B825EE64889145B7623D /* FSCalendarCell.m in Sources */,
+				011F92E2F8365BE2C1AEE82CEFB040FA /* FSCalendarCollectionView.m in Sources */,
+				9FA3CDA57290EFD8A64E227312F13949 /* FSCalendarConstance.m in Sources */,
+				7F1E7CE3200B397BDD5314CD18A634F7 /* FSCalendarEventIndicator.m in Sources */,
+				2B308EB9576579A298B0FD2FEA61CF9A /* FSCalendarFlowLayout.m in Sources */,
+				E258C72F744D28F06BC21BAC66573318 /* FSCalendarHeader.m in Sources */,
+				F339E94E38E5065683FAE9BF97EFC592 /* FSCalendarScopeHandle.m in Sources */,
+				EB717CB50DCCEB28CCFDA01C39B432BB /* FSCalendarStickyHeader.m in Sources */,
+				ECDFA6CDAFA2207ECE1733E8E1EB8980 /* UIView+FSExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		543A92ABFC2511FF6B84414919D1C2C5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48028E7F10ED4E8BB153CA80E0003349 /* BaseChatItemPresenter.swift in Sources */,
+				4CAAC2E5B6ACD4100C3C3D744C1BCFE8 /* ChatCollectionViewLayout.swift in Sources */,
+				0A5DD6DC3C3256A516FFFEE28FC9B36D /* ChatDataSourceProtocol.swift in Sources */,
+				8D916AB423D125EB2FBE6998474E88E2 /* ChatItemProtocolDefinitions.swift in Sources */,
+				7F9307578CCA3E964D7C6968CF113D2F /* ChatViewController+Changes.swift in Sources */,
+				F4AB627B9C977C6FED25013E2FA9E0C4 /* ChatViewController+Presenters.swift in Sources */,
+				03688CDD22823DC004F978B4945D6B3E /* ChatViewController+Scrolling.swift in Sources */,
+				E22922291A8A81B1068FA9CD8D5F1A18 /* ChatViewController.swift in Sources */,
+				3CC3B6331F401FD5B668010886A5C2B8 /* CollectionChanges.swift in Sources */,
+				7AC93196CA5A05271D4757FB3F87305C /* DummyChatItemPresenter.swift in Sources */,
+				7D85816491E22DB3C2C94D7C592E8DBC /* NoChat-dummy.m in Sources */,
+				522B4C9FD9B17629B4B0FAD94A2A08BD /* SerialTaskQueue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64ACD90BE8F69E7FD4BDFC22146B42DF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D1D58A5ED379ABDA6BF567CE70A6372 /* Cosmos-dummy.m in Sources */,
+				3E73DB65BEC900EFC6EC35C5F2A526B3 /* CosmosAccessibility.swift in Sources */,
+				CC00126E443C3CEEFA221930E1B0CC54 /* CosmosDefaultSettings.swift in Sources */,
+				2336A7F0F45440935556D3DDAC798E27 /* CosmosLayerHelper.swift in Sources */,
+				984ACF077007E44906F6A2F419E3D3C9 /* CosmosLayers.swift in Sources */,
+				A0C58A338DA547DC3EAA5CD10A7D305E /* CosmosLocalizedRating.swift in Sources */,
+				299992941CFA463D0A7204190D39FA73 /* CosmosRating.swift in Sources */,
+				D7453EEDB3CD57C33612C94FCBF8A57E /* CosmosSettings.swift in Sources */,
+				883E1BE9856159DB1EBBEBEEA85D8199 /* CosmosSize.swift in Sources */,
+				DF717A08CF1193FFCA4FE75041293A18 /* CosmosText.swift in Sources */,
+				3EFCCC931EFB340108AB20B34C9FD626 /* CosmosTouch.swift in Sources */,
+				62A8CA31EA35172D3375E11586921F82 /* CosmosTouchTarget.swift in Sources */,
+				A84E190C472D28E1EB771327D55A0257 /* CosmosView.swift in Sources */,
+				7CCF424046BEED00EB99738D76C64132 /* StarFillMode.swift in Sources */,
+				63ECC77E4E536666556C8D2791280861 /* StarLayer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		949CCF0065AB8DF753224F465A76D5C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9246E40633E56B2A5415A78D2629841 /* BubbleViewProtocol.swift in Sources */,
+				EA88AF9E641CCBF0321CB1F5FFF92D1C /* ChatInputViewController.swift in Sources */,
+				4F13A55CCC48C6914D91CE253B928EAE /* ChatItemDecorationAttributes.swift in Sources */,
+				FE7FB68A9BA9437CF8A4593E70C49330 /* ChatTextView.swift in Sources */,
+				F48EDA67D4C1CC480914B980897BAA08 /* ClockProgressView.swift in Sources */,
+				618F3D1CA5886DF47A8843BDCB1AA084 /* ColorLabel.swift in Sources */,
+				5ACC7C6D2D8AF714A1DD9CBCD8A96B61 /* ColorUtils.swift in Sources */,
+				E510B05E313834415B03D00EBB16E3A4 /* DateItem.swift in Sources */,
+				892DC9060582339CEA110DB2ED950ABF /* DateItemCollectionViewCell.swift in Sources */,
+				4EDA657F9D9A5999D7A055603221F8B0 /* DateItemPresenter.swift in Sources */,
+				E273DE8B6A73A331EE1C441095EE5182 /* DateItemPresenterBuilder.swift in Sources */,
+				E5B683BC0CCD66AE241604751078AA42 /* GrowTextView.swift in Sources */,
+				C1AE15DCDF4E77065D23AF1EB23957BB /* ImageFactory.swift in Sources */,
+				195E743F01B6F8388A496AA788CEA582 /* ImageUtils.swift in Sources */,
+				B062C5E76EE7FD0E48831B2744CCF969 /* KeyboardMan.swift in Sources */,
+				53AAF2AE800E9DEFBD7D52D9E58E65A9 /* ManualLayoutUtils.swift in Sources */,
+				66962AAA19A213FA5520E4766912616E /* Message.swift in Sources */,
+				968F580D0EE01D0900DBC022B41B0C21 /* MessageCollectionViewCell.swift in Sources */,
+				A32CE58793771D8A3B5EEE978CB11BF0 /* MessagePresenter.swift in Sources */,
+				9467E445DAE93464CBEDD329CA525ADD /* MessagePresenterBuilder.swift in Sources */,
+				AE5E0CA74B1ABA540EB21C25AD4735DD /* MessageProtocol.swift in Sources */,
+				B0DA426CE8F835356ACA960EC75146C9 /* MessageViewModel.swift in Sources */,
+				30E45E89D9D7642736657563008A4F36 /* MessageViewModelProtocol.swift in Sources */,
+				C9CEC7F7F02A90363A56324BE82BFE65 /* NoChatTG-dummy.m in Sources */,
+				D6C14673FFDC863BA71406F511E67658 /* Observable.swift in Sources */,
+				20AAAC74DA04FBEEB5E37B44A6A831B0 /* TextBubbleView.swift in Sources */,
+				D33CAF30C5185331F90F60DE5C954AED /* TextMessageViewModel.swift in Sources */,
+				5F355508B5125D6B20620FF946C02B65 /* ThreadHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95CC2C7E06DC188A05DAAEE9CAA555A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF19C953CE2A7D0B72EC93A81FCCC26 /* Alamofire-dummy.m in Sources */,
+				8EB11202167FCDDF1257AAAB1D1FB244 /* Alamofire.swift in Sources */,
+				5CB05FBCB32D21E194B5ECF680CB6AE0 /* Download.swift in Sources */,
+				095406039B4D371E48D08B38A2975AC8 /* Error.swift in Sources */,
+				4081EA628AF0B73AC51FFB9D7AB3B89E /* Manager.swift in Sources */,
+				C7B6DD7C0456C50289A2C381DFE9FA3F /* MultipartFormData.swift in Sources */,
+				34CCDCA848A701466256BC2927DA8856 /* NetworkReachabilityManager.swift in Sources */,
+				BE41196F6A3903E59C3306FE3F8B43FE /* Notifications.swift in Sources */,
+				C0DB70AB368765DC64BFB5FEA75E0696 /* ParameterEncoding.swift in Sources */,
+				EFE92E8D3813DD26E78E93EEAF6D7E7E /* Request.swift in Sources */,
+				62E8346F03C03E7F4D631361F325689E /* Response.swift in Sources */,
+				3EA8F215C9C1432D74E5CCA4834AA8C0 /* ResponseSerialization.swift in Sources */,
+				AA314156AC500125F4078EE968DB14C6 /* Result.swift in Sources */,
+				7B48852C4D848FA2DA416A98F6425869 /* ServerTrustPolicy.swift in Sources */,
+				AE4CF87C02C042DF13ED5B21C4FDC1E0 /* Stream.swift in Sources */,
+				16102E4E35FAA0FC4161282FECE56469 /* Timeline.swift in Sources */,
+				5BC19E6E0F199276003F0AF96838BCE5 /* Upload.swift in Sources */,
+				2D3405986FC586FA6C0A5E0B6BA7E64E /* Validation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5F098931393FB88C9FF50E8836A61A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E93C4277D2B22DD7CDD174462CB3C2F3 /* Pods-BanannyDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A1B99A026BF79DCD747EBD2FD6E4BBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cosmos;
+			target = 608B49B5DDACC601EE8044A1931993F9 /* Cosmos */;
+			targetProxy = 752CE01090A2B1AB9531C3B41B5CA0D4 /* PBXContainerItemProxy */;
+		};
+		2006569611A5A75C929E6002E221FE84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NoChat;
+			target = E158DADAE0CCEC6FC90EE06F2126DBDD /* NoChat */;
+			targetProxy = A4C6257C08BB88E0A87D66F702593FF8 /* PBXContainerItemProxy */;
+		};
+		30D39929B4AA417796EF2C53C11FF34D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FSCalendar;
+			target = 868010619D7E6CBA5C6E6E2874668C85 /* FSCalendar */;
+			targetProxy = 388DCB7DBAB1AC303FB8C5454A3A4EB1 /* PBXContainerItemProxy */;
+		};
+		528548701EC3CD59B567E72E512351B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NoChat;
+			target = E158DADAE0CCEC6FC90EE06F2126DBDD /* NoChat */;
+			targetProxy = C17726ED4936370ABA23E8CA7D11EEC8 /* PBXContainerItemProxy */;
+		};
+		7B008709D9B7EDDBA91D806802F4112B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NoChatTG;
+			target = 21F3D4F8536269076794D8DE9946C5DA /* NoChatTG */;
+			targetProxy = B99DF45BE7175DAA6F65DBADB7F7A0F6 /* PBXContainerItemProxy */;
+		};
+		7D853FE554DBBD0F43E3153F5DCA7000 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Alamofire;
+			target = 79C040AFDDCE1BCBF6D8B5EB0B85887F /* Alamofire */;
+			targetProxy = AED04388545A781D689A1CFD0FC3061A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1B24A155DCF7355F89DD93D73D4EF55C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DFB5F386375AD836868706C28BF330 /* Cosmos.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Cosmos;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		27B074DC150742349CF652ABD393A78D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D8FEF15910F5D5455319230B9979EB4 /* NoChatTG.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NoChatTG/NoChatTG-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NoChatTG/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NoChatTG/NoChatTG.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NoChatTG;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2CE5FFC0D2AD6D26866EDAFBD5783FC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F449272CA7D776D9770519C116A73D12 /* Pods-BanannyDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BanannyDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BanannyDemo/Pods-BanannyDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BanannyDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		32AD5F8918CA8B349E4671410FA624C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ABEF19A90394073F33B8768E12A1876 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5E1B8793CE4F0CDF37045A38AF7F9D7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C04842174A8C2AF4CA6F66A16821F71 /* Pods-BanannyDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BanannyDemo/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BanannyDemo/Pods-BanannyDemo.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_BanannyDemo;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		660DC941DE1B1E27F0DC16CC6D66C61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4C5F7AEB219082D291B3F4593A619BB /* FSCalendar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		75218111E718FACE36F771E8ABECDB62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1ABEF19A90394073F33B8768E12A1876 /* Alamofire.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Alamofire/Alamofire-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Alamofire/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Alamofire/Alamofire.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Alamofire;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		95A78D19B3BD5E9E34A876185136C2D9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213E3EAE1C7B646E64B8AE22F4ECB6B0 /* NoChat.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NoChat/NoChat-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NoChat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NoChat/NoChat.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = NoChat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ABA038DC5B09B6183AE1577C0833ADD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61DFB5F386375AD836868706C28BF330 /* Cosmos.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Cosmos/Cosmos-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Cosmos/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Cosmos/Cosmos.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Cosmos;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC109B752CAC2344FC05D525CB4B018A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4C5F7AEB219082D291B3F4593A619BB /* FSCalendar.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D24F7F05A14CBA1133EA5B431893115C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D8FEF15910F5D5455319230B9979EB4 /* NoChatTG.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NoChatTG/NoChatTG-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NoChatTG/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NoChatTG/NoChatTG.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NoChatTG;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB8D92ADC9DC9E2AABA38AD58A930C57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 213E3EAE1C7B646E64B8AE22F4ECB6B0 /* NoChat.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/NoChat/NoChat-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NoChat/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NoChat/NoChat.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = NoChat;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		074E1B768E755CAD2D14F733E80D73D9 /* Build configuration list for PBXNativeTarget "FSCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC109B752CAC2344FC05D525CB4B018A /* Debug */,
+				660DC941DE1B1E27F0DC16CC6D66C61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E62115DE8C09934BF8D2FE5D15FED1E /* Debug */,
+				3FA451D268613890FA8A5A03801E11D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CFB42910790CF0BDBCCEBAACD6B9367 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75218111E718FACE36F771E8ABECDB62 /* Debug */,
+				32AD5F8918CA8B349E4671410FA624C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C40A07371866B783CC9E3FAEDC4B5F0 /* Build configuration list for PBXNativeTarget "Pods-BanannyDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E1B8793CE4F0CDF37045A38AF7F9D7E /* Debug */,
+				2CE5FFC0D2AD6D26866EDAFBD5783FC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1D405D8BF459ECC54B8B446D5AF59E8 /* Build configuration list for PBXNativeTarget "NoChatTG" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D24F7F05A14CBA1133EA5B431893115C /* Debug */,
+				27B074DC150742349CF652ABD393A78D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B580BEC7E92B10FC3C82CD96A459AF5D /* Build configuration list for PBXNativeTarget "Cosmos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABA038DC5B09B6183AE1577C0833ADD8 /* Debug */,
+				1B24A155DCF7355F89DD93D73D4EF55C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E43F63EA48DF531AA854F74874803F58 /* Build configuration list for PBXNativeTarget "NoChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB8D92ADC9DC9E2AABA38AD58A930C57 /* Debug */,
+				95A78D19B3BD5E9E34A876185136C2D9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

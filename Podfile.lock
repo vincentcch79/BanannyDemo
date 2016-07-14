@@ -1,0 +1,25 @@
+PODS:
+  - Alamofire (3.4.1)
+  - Cosmos (3.0.0)
+  - FSCalendar (2.2.0)
+  - NoChat (0.2.1)
+  - NoChatTG (0.2.1):
+    - NoChat (~> 0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - Cosmos
+  - FSCalendar
+  - NoChat
+  - NoChatTG
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  Cosmos: df6d24193f3aa04e42eaf52d943361b778b3ce90
+  FSCalendar: 766367b91bcf2829c492c5ac50a58652c6df4ee8
+  NoChat: 7b25f4af971dd454b76eda972aaa7fa06dffe3a3
+  NoChatTG: ddb65bdbb258880271693e7229013821c89aea4d
+
+PODFILE CHECKSUM: 8c59caedbbd078c2f75eb25d6043ff2d468b6546
+
+COCOAPODS: 1.0.1
