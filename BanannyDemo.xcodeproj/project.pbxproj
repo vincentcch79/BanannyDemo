@@ -13,6 +13,8 @@
 		9F2599641D377ACA0064C105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2599631D377ACA0064C105 /* Assets.xcassets */; };
 		9F2599671D377ACA0064C105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2599651D377ACA0064C105 /* LaunchScreen.storyboard */; };
 		9F2599701D377DAE0064C105 /* loginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F25996E1D377DAE0064C105 /* loginView.storyboard */; };
+		9F2599751D3783920064C105 /* ParentFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2599741D3783910064C105 /* ParentFirstViewController.swift */; };
+		9F2599771D3783D10064C105 /* BabysitterFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2599761D3783D10064C105 /* BabysitterFirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		9F2599661D377ACA0064C105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F2599681D377ACA0064C105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F25996F1D377DAE0064C105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/loginView.storyboard; sourceTree = "<group>"; };
+		9F2599741D3783910064C105 /* ParentFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentFirstViewController.swift; sourceTree = "<group>"; };
+		9F2599761D3783D10064C105 /* BabysitterFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabysitterFirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,41 @@
 		9F25995B1D377ACA0064C105 /* BanannyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9F2599731D37820D0064C105 /* Controller */,
+				9F2599721D3782070064C105 /* View */,
+				9F2599711D3781F90064C105 /* Model */,
 				9F25995C1D377ACA0064C105 /* AppDelegate.swift */,
-				9F25995E1D377ACA0064C105 /* ViewController.swift */,
-				9F2599601D377ACA0064C105 /* Main.storyboard */,
 				9F25996E1D377DAE0064C105 /* loginView.storyboard */,
 				9F2599631D377ACA0064C105 /* Assets.xcassets */,
-				9F2599651D377ACA0064C105 /* LaunchScreen.storyboard */,
 				9F2599681D377ACA0064C105 /* Info.plist */,
 			);
 			path = BanannyDemo;
+			sourceTree = "<group>";
+		};
+		9F2599711D3781F90064C105 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		9F2599721D3782070064C105 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9F2599651D377ACA0064C105 /* LaunchScreen.storyboard */,
+				9F2599601D377ACA0064C105 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9F2599731D37820D0064C105 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9F25995E1D377ACA0064C105 /* ViewController.swift */,
+				9F2599741D3783910064C105 /* ParentFirstViewController.swift */,
+				9F2599761D3783D10064C105 /* BabysitterFirstViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F2599751D3783920064C105 /* ParentFirstViewController.swift in Sources */,
 				9F25995F1D377ACA0064C105 /* ViewController.swift in Sources */,
+				9F2599771D3783D10064C105 /* BabysitterFirstViewController.swift in Sources */,
 				9F25995D1D377ACA0064C105 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
