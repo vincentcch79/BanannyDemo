@@ -12,6 +12,7 @@
 		9F2599621D377ACA0064C105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2599601D377ACA0064C105 /* Main.storyboard */; };
 		9F2599641D377ACA0064C105 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F2599631D377ACA0064C105 /* Assets.xcassets */; };
 		9F2599671D377ACA0064C105 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2599651D377ACA0064C105 /* LaunchScreen.storyboard */; };
+		9F2599701D377DAE0064C105 /* loginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F25996E1D377DAE0064C105 /* loginView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		9F2599631D377ACA0064C105 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F2599661D377ACA0064C105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F2599681D377ACA0064C105 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F25996F1D377DAE0064C105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/loginView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				9F25995C1D377ACA0064C105 /* AppDelegate.swift */,
 				9F25995E1D377ACA0064C105 /* ViewController.swift */,
 				9F2599601D377ACA0064C105 /* Main.storyboard */,
+				9F25996E1D377DAE0064C105 /* loginView.storyboard */,
 				9F2599631D377ACA0064C105 /* Assets.xcassets */,
 				9F2599651D377ACA0064C105 /* LaunchScreen.storyboard */,
 				9F2599681D377ACA0064C105 /* Info.plist */,
@@ -125,6 +128,7 @@
 				9F2599671D377ACA0064C105 /* LaunchScreen.storyboard in Resources */,
 				9F2599641D377ACA0064C105 /* Assets.xcassets in Resources */,
 				9F2599621D377ACA0064C105 /* Main.storyboard in Resources */,
+				9F2599701D377DAE0064C105 /* loginView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,6 +161,14 @@
 				9F2599661D377ACA0064C105 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9F25996E1D377DAE0064C105 /* loginView.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9F25996F1D377DAE0064C105 /* Base */,
+			);
+			name = loginView.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
