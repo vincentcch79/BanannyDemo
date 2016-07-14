@@ -648,14 +648,14 @@
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWx-p9-8Y9" customClass="FSCalendar">
-                                <rect key="frame" x="0.0" y="398" width="600" height="194"/>
+                                <rect key="frame" x="8" y="398" width="584" height="194"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="d4H-uO-1aR" firstAttribute="leading" secondItem="oRn-mD-mla" secondAttribute="trailing" id="2HS-jy-3Fz"/>
-                            <constraint firstAttribute="trailing" secondItem="wWx-p9-8Y9" secondAttribute="trailing" id="3zh-kZ-cBI"/>
+                            <constraint firstAttribute="trailing" secondItem="wWx-p9-8Y9" secondAttribute="trailing" constant="8" id="3zh-kZ-cBI"/>
                             <constraint firstItem="d4H-uO-1aR" firstAttribute="top" secondItem="8qj-EW-JeG" secondAttribute="bottom" id="B1x-Qf-KYN"/>
                             <constraint firstItem="F3D-mI-RyO" firstAttribute="top" secondItem="8qj-EW-JeG" secondAttribute="bottom" id="DLd-3D-Sl8"/>
                             <constraint firstItem="nCx-eO-Ptb" firstAttribute="top" secondItem="wWx-p9-8Y9" secondAttribute="bottom" constant="8" id="Fy3-aw-5KX"/>
@@ -664,7 +664,7 @@
                             <constraint firstItem="wWx-p9-8Y9" firstAttribute="top" secondItem="d4H-uO-1aR" secondAttribute="bottom" constant="8" id="Vh1-Jl-VeU"/>
                             <constraint firstItem="oRn-mD-mla" firstAttribute="leading" secondItem="reE-Eh-g2j" secondAttribute="leading" id="Wqm-T7-I5S"/>
                             <constraint firstItem="8qj-EW-JeG" firstAttribute="top" secondItem="reE-Eh-g2j" secondAttribute="top" id="Ybj-p4-18N"/>
-                            <constraint firstItem="wWx-p9-8Y9" firstAttribute="leading" secondItem="reE-Eh-g2j" secondAttribute="leading" id="a6D-eo-zFR"/>
+                            <constraint firstItem="wWx-p9-8Y9" firstAttribute="leading" secondItem="reE-Eh-g2j" secondAttribute="leading" constant="8" id="a6D-eo-zFR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="F3D-mI-RyO" secondAttribute="trailing" id="bYD-A7-Etx"/>
                             <constraint firstItem="oRn-mD-mla" firstAttribute="width" secondItem="d4H-uO-1aR" secondAttribute="width" id="fbX-AM-6Gq"/>
                             <constraint firstItem="oRn-mD-mla" firstAttribute="leading" secondItem="reE-Eh-g2j" secondAttribute="leadingMargin" id="gUt-c0-KAV"/>
