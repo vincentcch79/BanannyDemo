@@ -8,18 +8,56 @@
 
 import UIKit
 
-class SearchResultViewController: UIViewController {
+class SearchResultViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var searchProfileImageView: UIImageView!
+    @IBOutlet weak var searchTableView: UITableView!
+    
+    let customCellIdentifier = "SearchResultTableViewCell"
+    
+    var searchResults:[searchResult] = [
+        searchResult(nameResult: "Anger", imageResult: "profile_1", starResult: 4, numResult: "(90)", detailIntro: ""),
+        searchResult(nameResult: "Miss Disgust", imageResult: "profile_2", starResult: 4.5, numResult: "(50)", detailIntro: ""),
+        searchResult(nameResult: "Sadness", imageResult: "profile_3", starResult: 5, numResult: "(40)", detailIntro: "")
+    ]
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // searchTableView and customCell
+        searchTableView.delegate = self
+        searchTableView.dataSource = self
+        searchTableView.estimatedRowHeight = 200
+        searchTableView.rowHeight = UITableViewAutomaticDimension
+        searchTableView.registerNib(UINib(nibName: "SearchResultTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return searchResults.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("SearchResultTableViewCell", forIndexPath: indexPath) as! SearchResultTableViewCell
+        
+        cell.ResultNameLabel.text = searchResults[indexPath.row].nameResult
+        cell.ResultCellImageView.image = UIImage(named: searchResults[indexPath.row].imageResult)
+        cell.ResultStarRating.rating = searchResults[indexPath.row].starResult
+        
+        
+        return cell
+    }
+
     
 
     /*
@@ -31,5 +69,11 @@ class SearchResultViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func backToDashButton(sender: AnyObject) {
+        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let ParentDashboardViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("parentDashView")
+        self.presentViewController(ParentDashboardViewController, animated: true, completion: nil)
+
+    }
 
 }

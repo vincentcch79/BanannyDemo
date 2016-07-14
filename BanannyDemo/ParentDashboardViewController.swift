@@ -7,19 +7,171 @@
 //
 
 import UIKit
+import Cosmos
 
-class ParentDashboardViewController: UIViewController {
+class ParentDashboardViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
+    
+    @IBOutlet weak var parentDashImageView: UIImageView!
+    @IBOutlet weak var parentDashNameLabel: UILabel!
+    @IBOutlet weak var parentDashStarRating: CosmosView!
+    @IBOutlet weak var parentDateDashTextField: UITextField!
+    @IBOutlet weak var parentStartTimeTextField: UITextField!
+    @IBOutlet weak var parentFinishedTimeTextField: UITextField!
+    @IBOutlet weak var parentLocationTextField: UITextField!
+    
+    // monitor textfield
+    var activeTextField:UITextField?
+    
+    // pickerview data
+    
+    let cityLocation = ["中正區", "大同區", "中山區", "松山區", "大安區", "萬華區", "信義區", "士林區", "北投區", "內湖區", "南港區", "文山區"]
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // Textfield Delegate
+        parentDateDashTextField.delegate = self
+        parentStartTimeTextField.delegate = self
+        parentFinishedTimeTextField.delegate = self
+        parentLocationTextField.delegate = self
+        
+        // Toolbar
+        
+        let DashboardToolBar = UIToolbar()
+        DashboardToolBar.barStyle = UIBarStyle.Default
+        DashboardToolBar.translucent = true
+        DashboardToolBar.tintColor = UIColor.blackColor()
+        let doneButton = UIBarButtonItem(title: "完成", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(ParentDashboardViewController.donePressed))
+        DashboardToolBar.setItems([doneButton], animated: false)
+        DashboardToolBar.userInteractionEnabled = true
+        DashboardToolBar.sizeToFit()
+        
+        // datepicker for parentDateDashTextField
+        let parentDatePicker: UIDatePicker = UIDatePicker()
+        parentDatePicker.addTarget(self, action: #selector(ParentDashboardViewController.onDidChangeDate(_:)), forControlEvents: .ValueChanged)
+        parentDateDashTextField.inputView = parentDatePicker
+        parentDateDashTextField.inputAccessoryView = DashboardToolBar
+        parentDatePicker.datePickerMode = UIDatePickerMode.Date
+        parentDatePicker.locale = NSLocale(localeIdentifier: "zh_Hant_TW")
+        parentDatePicker.backgroundColor = UIColor.whiteColor()
+        
+        // datepicker for parentStartTimeTextField
+        let startDatePicker: UIDatePicker = UIDatePicker()
+        startDatePicker.addTarget(self, action: #selector(ParentDashboardViewController.onDidChangeStartTime(_:)), forControlEvents: .ValueChanged)
+        parentStartTimeTextField.inputView = startDatePicker
+        parentStartTimeTextField.inputAccessoryView = DashboardToolBar
+        startDatePicker.datePickerMode = UIDatePickerMode.Time
+        startDatePicker.locale = NSLocale(localeIdentifier: "zh_Hant_TW")
+        startDatePicker.backgroundColor = UIColor.whiteColor()
+        startDatePicker.minuteInterval = 30
+        
+        // datepicker for parentFinishedTimeTextField
+        let endDatePicker: UIDatePicker = UIDatePicker()
+        endDatePicker.addTarget(self, action: #selector(ParentDashboardViewController.onDidChangeEndTime(_:)), forControlEvents: .ValueChanged)
+        parentFinishedTimeTextField.inputView = endDatePicker
+        parentFinishedTimeTextField.inputAccessoryView = DashboardToolBar
+        endDatePicker.datePickerMode = UIDatePickerMode.Time
+        endDatePicker.locale = NSLocale(localeIdentifier: "zh_Hant_TW")
+        endDatePicker.backgroundColor = UIColor.whiteColor()
+        endDatePicker.minuteInterval = 30
+        
+        // pickerview for parentLocationTextField
+        let locationPicker: UIPickerView = UIPickerView()
+        locationPicker.delegate = self
+        locationPicker.dataSource = self
+        parentLocationTextField.inputView = locationPicker
+        parentLocationTextField.inputAccessoryView = DashboardToolBar
+        locationPicker.backgroundColor = UIColor.whiteColor()
 
-        // Do any additional setup after loading the view.
+
+
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - DatePickerViewFunc
+    @IBAction func onDidChangeDateByOnStoryboard(sender: UIDatePicker) {
+        self.onDidChangeDate(sender)
+    }
+    
+    internal func onDidChangeDate(sender: UIDatePicker){
+        
+        // date format
+        let parentDateFormatter: NSDateFormatter = NSDateFormatter()
+        parentDateFormatter.dateFormat = "MM/dd/yyyy"
+        
+        // get the date string applied date format
+        let parentSelectedDate: NSString = parentDateFormatter.stringFromDate(sender.date)
+        parentDateDashTextField.text = parentSelectedDate as String
+        
+    }
+    
+    // MARK: - startTime DatePickerFunc
+    @IBAction func onDidChangeStartTimeByOnStoryboard(sender: UIDatePicker) {
+        self.onDidChangeStartTime(sender)
+    }
+    
+    internal func onDidChangeStartTime(sender: UIDatePicker){
+        
+        // date format
+        let startTimeFormatter: NSDateFormatter = NSDateFormatter()
+        startTimeFormatter.dateFormat = "hh:mm a"
+        
+        // get the date string applied date format
+        let selectedStartTime: NSString = startTimeFormatter.stringFromDate(sender.date)
+        parentStartTimeTextField.text = selectedStartTime as String
+        
+    }
+    // MARK: - endTime DatePickerFunc
+    @IBAction func onDidChangeEndTimeByOnStoryboard(sender: UIDatePicker) {
+        self.onDidChangeEndTime(sender)
+    }
+    
+    internal func onDidChangeEndTime(sender: UIDatePicker){
+        
+        // date format
+        let endTimeFormatter: NSDateFormatter = NSDateFormatter()
+        endTimeFormatter.dateFormat = "hh:mm a"
+        
+        // get the date string applied date format
+        let selectedEndTime: NSString = endTimeFormatter.stringFromDate(sender.date)
+        parentFinishedTimeTextField.text = selectedEndTime as String
+        
+    }
+    // MARK: - textfield Delegate
+    func textFieldDidBeginEditing(textField: UITextField) {
+        activeTextField = textField
+    }
+    
+    func donePressed() {
+        activeTextField?.resignFirstResponder()
+    }
+    
+    // MARK: - pickerview func
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return cityLocation.count
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return cityLocation[row]
+    }
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        parentLocationTextField.text = cityLocation[row]
+    }
+
+
+
+    
+
     
 
     /*
@@ -31,5 +183,14 @@ class ParentDashboardViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func parentMesgDashButton(sender: AnyObject) {
+    }
+    @IBAction func parentNotifDashButton(sender: AnyObject) {
+    }
+    @IBAction func parentSettingDashButton(sender: AnyObject) {
+    }
+    
+    @IBAction func parentSearchDashButton(sender: AnyObject) {
+    }
 
 }
