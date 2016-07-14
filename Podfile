@@ -9,6 +9,12 @@ target 'BanannyDemo' do
   pod 'FSCalendar'
   pod 'NoChat'
   pod 'NoChatTG'
+  pod 'SwiftyJSON'
+  pod 'Firebase'
+  pod 'Firebase/Database'
+  pod 'Firebase/Auth'
+  pod 'FBSDKLoginKit'
+  pod 'SDWebImage'
   # Pods for BanannyDemo
 
 end
