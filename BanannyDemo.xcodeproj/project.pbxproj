@@ -15,6 +15,10 @@
 		9F2599701D377DAE0064C105 /* loginView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F25996E1D377DAE0064C105 /* loginView.storyboard */; };
 		9F2599751D3783920064C105 /* ParentFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2599741D3783910064C105 /* ParentFirstViewController.swift */; };
 		9F2599771D3783D10064C105 /* BabysitterFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2599761D3783D10064C105 /* BabysitterFirstViewController.swift */; };
+		9FB801361D378A0C00DE3142 /* ParentSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB801351D378A0C00DE3142 /* ParentSecondViewController.swift */; };
+		9FB801381D378A2500DE3142 /* BabysitterSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB801371D378A2500DE3142 /* BabysitterSecondViewController.swift */; };
+		9FB8013A1D378A4000DE3142 /* ParentDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB801391D378A4000DE3142 /* ParentDashboardViewController.swift */; };
+		9FB8013C1D378A5E00DE3142 /* BabysitterDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8013B1D378A5E00DE3142 /* BabysitterDashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,10 @@
 		9F25996F1D377DAE0064C105 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/loginView.storyboard; sourceTree = "<group>"; };
 		9F2599741D3783910064C105 /* ParentFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentFirstViewController.swift; sourceTree = "<group>"; };
 		9F2599761D3783D10064C105 /* BabysitterFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabysitterFirstViewController.swift; sourceTree = "<group>"; };
+		9FB801351D378A0C00DE3142 /* ParentSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentSecondViewController.swift; sourceTree = "<group>"; };
+		9FB801371D378A2500DE3142 /* BabysitterSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabysitterSecondViewController.swift; sourceTree = "<group>"; };
+		9FB801391D378A4000DE3142 /* ParentDashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentDashboardViewController.swift; sourceTree = "<group>"; };
+		9FB8013B1D378A5E00DE3142 /* BabysitterDashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabysitterDashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +101,10 @@
 				9F25995E1D377ACA0064C105 /* ViewController.swift */,
 				9F2599741D3783910064C105 /* ParentFirstViewController.swift */,
 				9F2599761D3783D10064C105 /* BabysitterFirstViewController.swift */,
+				9FB801351D378A0C00DE3142 /* ParentSecondViewController.swift */,
+				9FB801371D378A2500DE3142 /* BabysitterSecondViewController.swift */,
+				9FB801391D378A4000DE3142 /* ParentDashboardViewController.swift */,
+				9FB8013B1D378A5E00DE3142 /* BabysitterDashboardViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -170,7 +182,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F2599751D3783920064C105 /* ParentFirstViewController.swift in Sources */,
+				9FB8013A1D378A4000DE3142 /* ParentDashboardViewController.swift in Sources */,
+				9FB8013C1D378A5E00DE3142 /* BabysitterDashboardViewController.swift in Sources */,
 				9F25995F1D377ACA0064C105 /* ViewController.swift in Sources */,
+				9FB801361D378A0C00DE3142 /* ParentSecondViewController.swift in Sources */,
+				9FB801381D378A2500DE3142 /* BabysitterSecondViewController.swift in Sources */,
 				9F2599771D3783D10064C105 /* BabysitterFirstViewController.swift in Sources */,
 				9F25995D1D377ACA0064C105 /* AppDelegate.swift in Sources */,
 			);
@@ -330,6 +346,7 @@
 				9F25996D1D377ACA0064C105 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

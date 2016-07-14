@@ -169,10 +169,10 @@
             </objects>
             <point key="canvasLocation" x="1269" y="-36"/>
         </scene>
-        <!--View Controller-->
+        <!--Parent Second View Controller-->
         <scene sceneID="hJ0-iR-wyh">
             <objects>
-                <viewController id="T7j-rV-hHJ" sceneMemberID="viewController">
+                <viewController id="T7j-rV-hHJ" customClass="ParentSecondViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3aR-ru-taP"/>
                         <viewControllerLayoutGuide type="bottom" id="Hef-1g-gLC"/>
@@ -232,10 +232,10 @@
             </objects>
             <point key="canvasLocation" x="2728" y="-36"/>
         </scene>
-        <!--View Controller-->
+        <!--Babysitter Second View Controller-->
         <scene sceneID="XqQ-Ym-bto">
             <objects>
-                <viewController id="L7T-Ww-Aw3" sceneMemberID="viewController">
+                <viewController id="L7T-Ww-Aw3" customClass="BabysitterSecondViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kl3-aj-uFx"/>
                         <viewControllerLayoutGuide type="bottom" id="hSM-x7-VXW"/>
@@ -294,6 +294,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJ8-hR-2Qj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2728" y="699"/>
+        </scene>
+        <!--Parent Dashboard View Controller-->
+        <scene sceneID="Cve-6T-Xz2">
+            <objects>
+                <viewController id="Bsk-De-nVa" customClass="ParentDashboardViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Avz-Mk-Nuj"/>
+                        <viewControllerLayoutGuide type="bottom" id="TnA-I1-Y0j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="74A-Di-g0O">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="liM-Jc-vYy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3418" y="-36"/>
+        </scene>
+        <!--Babysitter Dashboard View Controller-->
+        <scene sceneID="akT-oh-abq">
+            <objects>
+                <viewController id="uJg-DH-ulb" customClass="BabysitterDashboardViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hQL-lI-oU9"/>
+                        <viewControllerLayoutGuide type="bottom" id="nCx-eO-Ptb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="reE-Eh-g2j">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jsa-Zp-gdF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3418" y="711"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W74-yq-fMo">
