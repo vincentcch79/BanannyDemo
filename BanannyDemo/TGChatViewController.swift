@@ -19,9 +19,14 @@ class TGChatViewController: ChatViewController {
         return view
     }()
     
-    lazy var avatarButton: AvatarButton! = {
-        let button = AvatarButton()
+    lazy var reserveButton: ReserveButton! = {
+        let button = ReserveButton()
         return button
+    }()
+    
+    lazy var cancelButton: CancelButton! = {
+        let leftButton = CancelButton()
+        return leftButton
     }()
     
     override var title: String? {
@@ -46,9 +51,17 @@ class TGChatViewController: ChatViewController {
         let spacer = UIBarButtonItem(barButtonSystemItem: .FixedSpace, target: nil, action: nil)
         spacer.width = -12
         
-        let right = UIBarButtonItem(customView: avatarButton)
-        
+        let right = UIBarButtonItem(customView: reserveButton)
+        let left = UIBarButtonItem(customView: cancelButton)
         navigationItem.rightBarButtonItems = [spacer, right]
+        navigationItem.leftBarButtonItems = [spacer, left]
+        
+        reserveButton.addTarget(self, action: #selector(TGChatViewController.tapReseveButton(_:)), forControlEvents: .TouchUpInside)
+        cancelButton.addTarget(self, action: #selector(TGChatViewController.tapCancelButton(_:)), forControlEvents: .TouchUpInside)
+        
+        // titleLabel
+        titleView.titleLabel.text = "Miss Disgust"
+        
     }
     
     
@@ -82,6 +95,35 @@ class TGChatViewController: ChatViewController {
         return inputController
     }
     
+    // tapReseveButton
+    func tapReseveButton(sender: AnyObject) {
+        
+        let alert = UIAlertController(title: "預約保姆", message: "確定要預約這位保姆?", preferredStyle: UIAlertControllerStyle.Alert)
+        
+        alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default) {
+            action -> Void in
+            let nextAlert = UIAlertController(title: "謝謝你！", message: " 已通知，保姆將會以訊息與你確認細節", preferredStyle: UIAlertControllerStyle.Alert)
+            
+            nextAlert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default, handler: nil))
+            self.presentViewController(nextAlert, animated: true, completion: nil)
+            })
+        alert.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    // tapCancelButton
+    func tapCancelButton(sender: AnyObject) {
+        
+        let cancelAlert = UIAlertController(title: "取消預約", message: "將會取消跟這位保姆的預約，回到保姆介紹頁面", preferredStyle: UIAlertControllerStyle.Alert)
+        cancelAlert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default) {
+            action -> Void in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        })
+        cancelAlert.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil))
+        self.presentViewController(cancelAlert, animated: true, completion: nil)
+        
+    }
+
     
     
 }
@@ -93,10 +135,13 @@ extension TGChatViewController {
         
         if size.width > size.height {
             titleView.horizontalLayout()
-            avatarButton.horizontalLayout()
+            reserveButton.horizontalLayout()
+            cancelButton.horizontalLayout()
+            
         } else {
             titleView.verticalLayout()
-            avatarButton.verticalLayout()
+            reserveButton.verticalLayout()
+            cancelButton.verticalLayout()
         }
         
         super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
@@ -133,17 +178,19 @@ class TitleView: UIView {
         super.init(frame: frame)
         
         let titleFont: UIFont
-        if #available(iOS 8.2, *) {
+//        if #available(iOS 8.2, *) {
             titleFont = UIFont.systemFontOfSize(16, weight: UIFontWeightMedium)
-        } else {
-            titleFont = UIFont(name: "HelveticaNeue-Medium", size: 16)!
-        }
+//        } else {
+//            titleFont = UIFont(name: "HelveticaNeue-Medium", size: 16)!
+//        }
         
         titleLabel = UILabel()
         titleLabel.font = titleFont
         titleLabel.textColor = UIColor.blackColor()
         titleLabel.textAlignment = .Center
         addSubview(titleLabel)
+        
+        
         
         detailLabel = UILabel()
         detailLabel.font = UIFont.systemFontOfSize(12)
@@ -186,12 +233,39 @@ class TitleView: UIView {
     
 }
 
-class AvatarButton: UIButton {
+class ReserveButton: UIButton {
+    
+    var searchDetail: searchResult!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        setImage(UIImage(named: "profile_3")!, forState: .Normal)
+        setImage(UIImage(named: "calendar")!, forState: .Normal)
+        
+        verticalLayout()
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func verticalLayout() {
+        frame = CGRect(x: 0, y: 0, width: 37, height: 37)
+    }
+    
+    func horizontalLayout() {
+        frame = CGRect(x: 0, y: 0, width: 28, height: 28)
+    }
+    
+}
+
+class CancelButton: UIButton {
+    
+    override init (frame: CGRect) {
+        super.init(frame: frame)
+        
+        setImage(UIImage(named: "back_1")!,  forState: .Normal)
         
         verticalLayout()
     }
@@ -207,7 +281,13 @@ class AvatarButton: UIButton {
     func horizontalLayout() {
         frame = CGRect(x: 0, y: 0, width: 28, height: 28)
     }
+
+    
 }
+
+
+
+
 
 
 class TGTextMessageViewModel: TextMessageViewModel {
