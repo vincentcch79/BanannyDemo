@@ -62,9 +62,10 @@ class SearchDetailViewController: UIViewController {
         let chatVC = TGChatViewController()
         chatVC.chatItemsDecorator = chatItemsDecorator
         chatVC.chatDataSource = demoDataSource
-        
         chatVC.title = title
-        self.presentViewController(chatVC, animated: true, completion: nil)
+        
+        let navController = UINavigationController(rootViewController: chatVC)
+        self.presentViewController(navController, animated: true, completion: nil)
 
     }
 
