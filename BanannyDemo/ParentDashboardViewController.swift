@@ -191,6 +191,9 @@ class ParentDashboardViewController: UIViewController, UIPickerViewDelegate, UIP
     }
     
     @IBAction func parentSearchDashButton(sender: AnyObject) {
+        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let searchResultViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("searchView")
+        self.presentViewController(searchResultViewController, animated: true, completion: nil)
     }
 
 }

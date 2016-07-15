@@ -544,10 +544,10 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="raW-Zw-RWi"/>
                                 <exclude reference="7Pu-Nk-mWz"/>
                                 <exclude reference="AUw-bk-UYE"/>
                                 <exclude reference="StH-4V-x6Z"/>
+                                <exclude reference="raW-Zw-RWi"/>
                             </mask>
                         </variation>
                     </view>
@@ -568,7 +568,7 @@
         <!--Search Result View Controller-->
         <scene sceneID="S2z-uX-xNs">
             <objects>
-                <viewController id="1Fb-m2-zml" customClass="SearchResultViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="1Fb-m2-zml" customClass="SearchResultViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lQG-0T-utB"/>
                         <viewControllerLayoutGuide type="bottom" id="QZP-m3-oiK"/>
