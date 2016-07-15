@@ -17,6 +17,10 @@
 		9F2599751D3783920064C105 /* ParentFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2599741D3783910064C105 /* ParentFirstViewController.swift */; };
 		9F2599771D3783D10064C105 /* BabysitterFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2599761D3783D10064C105 /* BabysitterFirstViewController.swift */; };
 		9F2EE1C31D3875CE00F05354 /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1C21D3875CE00F05354 /* SearchDetailViewController.swift */; };
+		9F2EE1C61D38855900F05354 /* DemoChatIemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1C51D38855900F05354 /* DemoChatIemFactory.swift */; };
+		9F2EE1C81D38857B00F05354 /* DemoChatItemsDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1C71D38857B00F05354 /* DemoChatItemsDecorator.swift */; };
+		9F2EE1CA1D38859500F05354 /* DemoChatDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1C91D38859500F05354 /* DemoChatDataSource.swift */; };
+		9F2EE1CC1D3885AE00F05354 /* TGChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1CB1D3885AE00F05354 /* TGChatViewController.swift */; };
 		9F76F9B41D37A7C0003ABE22 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76F9B31D37A7C0003ABE22 /* SearchResultViewController.swift */; };
 		9F76F9B71D37D980003ABE22 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76F9B51D37D980003ABE22 /* SearchResultTableViewCell.swift */; };
 		9F76F9B81D37D980003ABE22 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F76F9B61D37D980003ABE22 /* SearchResultTableViewCell.xib */; };
@@ -41,6 +45,10 @@
 		9F2599741D3783910064C105 /* ParentFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentFirstViewController.swift; sourceTree = "<group>"; };
 		9F2599761D3783D10064C105 /* BabysitterFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabysitterFirstViewController.swift; sourceTree = "<group>"; };
 		9F2EE1C21D3875CE00F05354 /* SearchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
+		9F2EE1C51D38855900F05354 /* DemoChatIemFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoChatIemFactory.swift; sourceTree = "<group>"; };
+		9F2EE1C71D38857B00F05354 /* DemoChatItemsDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoChatItemsDecorator.swift; sourceTree = "<group>"; };
+		9F2EE1C91D38859500F05354 /* DemoChatDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoChatDataSource.swift; sourceTree = "<group>"; };
+		9F2EE1CB1D3885AE00F05354 /* TGChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGChatViewController.swift; sourceTree = "<group>"; };
 		9F76F9B31D37A7C0003ABE22 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		9F76F9B51D37D980003ABE22 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
 		9F76F9B61D37D980003ABE22 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
@@ -93,6 +101,7 @@
 		9F25995B1D377ACA0064C105 /* BanannyDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9F2EE1C41D3884FE00F05354 /* ChatVC */,
 				9F2599731D37820D0064C105 /* Controller */,
 				9F2599721D3782070064C105 /* View */,
 				9F2599711D3781F90064C105 /* Model */,
@@ -137,6 +146,17 @@
 				9F2EE1C21D3875CE00F05354 /* SearchDetailViewController.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		9F2EE1C41D3884FE00F05354 /* ChatVC */ = {
+			isa = PBXGroup;
+			children = (
+				9F2EE1C51D38855900F05354 /* DemoChatIemFactory.swift */,
+				9F2EE1C71D38857B00F05354 /* DemoChatItemsDecorator.swift */,
+				9F2EE1C91D38859500F05354 /* DemoChatDataSource.swift */,
+				9F2EE1CB1D3885AE00F05354 /* TGChatViewController.swift */,
+			);
+			name = ChatVC;
 			sourceTree = "<group>";
 		};
 		E85C9F213A556057D5262F49 /* Pods */ = {
@@ -275,15 +295,19 @@
 				9F2599751D3783920064C105 /* ParentFirstViewController.swift in Sources */,
 				9F76F9B41D37A7C0003ABE22 /* SearchResultViewController.swift in Sources */,
 				9FB8013A1D378A4000DE3142 /* ParentDashboardViewController.swift in Sources */,
+				9F2EE1C61D38855900F05354 /* DemoChatIemFactory.swift in Sources */,
 				9FB8013C1D378A5E00DE3142 /* BabysitterDashboardViewController.swift in Sources */,
+				9F2EE1CA1D38859500F05354 /* DemoChatDataSource.swift in Sources */,
 				9F25995F1D377ACA0064C105 /* ViewController.swift in Sources */,
 				9FB801361D378A0C00DE3142 /* ParentSecondViewController.swift in Sources */,
 				9F76F9B71D37D980003ABE22 /* SearchResultTableViewCell.swift in Sources */,
 				9FB801381D378A2500DE3142 /* BabysitterSecondViewController.swift in Sources */,
 				9F2599771D3783D10064C105 /* BabysitterFirstViewController.swift in Sources */,
 				9F25995D1D377ACA0064C105 /* AppDelegate.swift in Sources */,
+				9F2EE1C81D38857B00F05354 /* DemoChatItemsDecorator.swift in Sources */,
 				9F2EE1C31D3875CE00F05354 /* SearchDetailViewController.swift in Sources */,
 				9F76F9BA1D37D99C003ABE22 /* SearchResultClass.swift in Sources */,
+				9F2EE1CC1D3885AE00F05354 /* TGChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

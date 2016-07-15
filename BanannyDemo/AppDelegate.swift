@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import NoChat
+import NoChatTG
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

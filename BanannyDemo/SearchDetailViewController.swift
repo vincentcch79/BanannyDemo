@@ -8,6 +8,7 @@
 
 import UIKit
 import Cosmos
+import NoChat
 
 class SearchDetailViewController: UIViewController {
 
@@ -26,6 +27,8 @@ class SearchDetailViewController: UIViewController {
         detailStarRating.rating = searchDetail.starResult
         detailIntroLabel.text = searchDetail.detailIntro
         
+        
+
         // Do any additional setup after loading the view.
     }
 
@@ -51,6 +54,18 @@ class SearchDetailViewController: UIViewController {
 
     }
     @IBAction func ChatViewButton(sender: AnyObject) {
+        
+        let chatItemsDecorator = TGChatItemsDecorator()
+        let demoDataSource = TGChatDataSource()
+        demoDataSource.chatItems = DemoChatItemFactory.createChatItemsTG()
+        
+        let chatVC = TGChatViewController()
+        chatVC.chatItemsDecorator = chatItemsDecorator
+        chatVC.chatDataSource = demoDataSource
+        
+        chatVC.title = title
+        self.presentViewController(chatVC, animated: true, completion: nil)
+
     }
 
 }

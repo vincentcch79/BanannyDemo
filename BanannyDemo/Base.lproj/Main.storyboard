@@ -657,7 +657,7 @@
                     <connections>
                         <outlet property="searchProfileImageView" destination="NG3-Vd-AMo" id="9jL-hs-OUV"/>
                         <outlet property="searchTableView" destination="At9-4Z-vSU" id="Hlw-cF-fYG"/>
-                        <segue destination="p6K-AM-bRH" kind="show" identifier="detailResultSegue" id="qml-6o-Auo"/>
+                        <segue destination="p6K-AM-bRH" kind="show" identifier="detailResultSegue" id="LT9-gc-eKt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pP9-iX-dZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -828,6 +828,7 @@
                             <constraint firstItem="M3A-rk-EpC" firstAttribute="leading" secondItem="9NF-ER-aaK" secondAttribute="leading" constant="8" id="xgL-uB-Fmg"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="pQM-pi-lFh"/>
                     <connections>
                         <outlet property="detailImageView" destination="B0d-Bg-biJ" id="aOX-Iz-1GZ"/>
                         <outlet property="detailIntroLabel" destination="a9b-DI-UIH" id="XAA-Xk-HlT"/>
@@ -837,7 +838,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gms-Pc-18y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4769" y="-36"/>
+            <point key="canvasLocation" x="4860" y="-36"/>
         </scene>
         <!--Babysitter Dashboard View Controller-->
         <scene sceneID="akT-oh-abq">
