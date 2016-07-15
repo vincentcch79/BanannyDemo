@@ -28,7 +28,7 @@ class SearchResultViewController: UIViewController, UITableViewDelegate, UITable
         // searchTableView and customCell
         searchTableView.delegate = self
         searchTableView.dataSource = self
-        searchTableView.estimatedRowHeight = 200
+        searchTableView.estimatedRowHeight = 180
         searchTableView.rowHeight = UITableViewAutomaticDimension
         searchTableView.registerNib(UINib(nibName: "SearchResultTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
         
@@ -58,7 +58,24 @@ class SearchResultViewController: UIViewController, UITableViewDelegate, UITable
         return cell
     }
 
+    // MARK: - perform Segue
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier == "detailResultSegue"{
+            
+            if let indexPath = searchTableView.indexPathForSelectedRow{
+                let destinationViewController = segue.destinationViewController as! SearchDetailViewController
+                destinationViewController.searchDetail = searchResults[indexPath.row]
+            }
+        }
+    }
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        self.performSegueWithIdentifier("detailResultSegue", sender: searchResults[indexPath.row])
+        
+    }
+
 
     /*
     // MARK: - Navigation

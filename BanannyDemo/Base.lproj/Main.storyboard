@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="p6K-AM-bRH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -581,15 +581,16 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="At9-4Z-vSU">
-                                        <rect key="frame" x="40" y="120" width="520" height="440"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="16" y="120" width="568" height="440"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="tOD-7v-Zwk">
-                                                <rect key="frame" x="0.0" y="28" width="520" height="44"/>
+                                                <rect key="frame" x="0.0" y="28" width="568" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tOD-7v-Zwk" id="xDG-We-Xtz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="520" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="568" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
                                         </prototypes>
@@ -621,7 +622,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.92702047409999999" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="NG3-Vd-AMo" firstAttribute="top" secondItem="mTS-9P-sLE" secondAttribute="top" constant="30" id="CkG-5R-qjU"/>
                                             <constraint firstAttribute="width" constant="600" id="EF1-zf-nNo"/>
@@ -632,12 +633,12 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="At9-4Z-vSU" firstAttribute="top" secondItem="2GU-to-Wnh" secondAttribute="top" constant="120" id="0iy-ys-aNk"/>
                                     <constraint firstItem="mTS-9P-sLE" firstAttribute="top" secondItem="2GU-to-Wnh" secondAttribute="top" id="1dU-bW-Ogb"/>
-                                    <constraint firstAttribute="trailing" secondItem="At9-4Z-vSU" secondAttribute="trailing" constant="40" id="Ef9-fD-Wcy"/>
-                                    <constraint firstItem="At9-4Z-vSU" firstAttribute="leading" secondItem="2GU-to-Wnh" secondAttribute="leading" constant="40" id="G4c-Iu-ULl"/>
+                                    <constraint firstAttribute="trailing" secondItem="At9-4Z-vSU" secondAttribute="trailing" constant="16" id="Ef9-fD-Wcy"/>
+                                    <constraint firstItem="At9-4Z-vSU" firstAttribute="leading" secondItem="2GU-to-Wnh" secondAttribute="leading" constant="16" id="G4c-Iu-ULl"/>
                                     <constraint firstAttribute="trailing" secondItem="mTS-9P-sLE" secondAttribute="trailing" id="cnV-9E-i7E"/>
                                     <constraint firstItem="mTS-9P-sLE" firstAttribute="leading" secondItem="2GU-to-Wnh" secondAttribute="leading" id="qia-vG-bOE"/>
                                     <constraint firstAttribute="bottom" secondItem="At9-4Z-vSU" secondAttribute="bottom" constant="40" id="sTU-x6-Ant"/>
@@ -656,6 +657,7 @@
                     <connections>
                         <outlet property="searchProfileImageView" destination="NG3-Vd-AMo" id="9jL-hs-OUV"/>
                         <outlet property="searchTableView" destination="At9-4Z-vSU" id="Hlw-cF-fYG"/>
+                        <segue destination="p6K-AM-bRH" kind="show" identifier="detailResultSegue" id="qml-6o-Auo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pP9-iX-dZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -680,7 +682,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YGR-zd-e7U">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="520"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B0d-Bg-biJ">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B0d-Bg-biJ">
                                                 <rect key="frame" x="8" y="8" width="100" height="100"/>
                                                 <color key="backgroundColor" red="1" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -790,6 +792,9 @@
                                     <constraint firstAttribute="height" constant="40" id="CO0-eJ-77n"/>
                                 </constraints>
                                 <state key="normal" image="back_2"/>
+                                <connections>
+                                    <action selector="backToSearchButton:" destination="p6K-AM-bRH" eventType="touchUpInside" id="akJ-wJ-GDg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzO-fQ-IIi">
                                 <rect key="frame" x="200" y="550" width="200" height="30"/>
@@ -806,6 +811,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="ChatViewButton:" destination="p6K-AM-bRH" eventType="touchUpInside" id="iE6-yi-rBj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -820,6 +828,12 @@
                             <constraint firstItem="M3A-rk-EpC" firstAttribute="leading" secondItem="9NF-ER-aaK" secondAttribute="leading" constant="8" id="xgL-uB-Fmg"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="detailImageView" destination="B0d-Bg-biJ" id="aOX-Iz-1GZ"/>
+                        <outlet property="detailIntroLabel" destination="a9b-DI-UIH" id="XAA-Xk-HlT"/>
+                        <outlet property="detailNameLabel" destination="Ioa-XP-9Po" id="pWV-T3-6fP"/>
+                        <outlet property="detailStarRating" destination="3CU-jC-5Ei" id="PeG-SY-QlW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gms-Pc-18y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

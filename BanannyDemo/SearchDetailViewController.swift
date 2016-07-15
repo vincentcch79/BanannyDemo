@@ -7,12 +7,25 @@
 //
 
 import UIKit
+import Cosmos
 
 class SearchDetailViewController: UIViewController {
 
+    @IBOutlet weak var detailImageView: UIImageView!
+    @IBOutlet weak var detailNameLabel: UILabel!
+    @IBOutlet weak var detailStarRating: CosmosView!
+    @IBOutlet weak var detailIntroLabel: UILabel!
+    
+    var searchDetail: searchResult!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        detailImageView.image = UIImage(named: searchDetail.imageResult)
+        detailNameLabel.text = searchDetail.nameResult
+        detailStarRating.rating = searchDetail.starResult
+        detailIntroLabel.text = searchDetail.detailIntro
+        
         // Do any additional setup after loading the view.
     }
 
@@ -31,5 +44,13 @@ class SearchDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func backToSearchButton(sender: AnyObject) {
+        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let searchResultViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("searchView")
+        self.presentViewController(searchResultViewController, animated: true, completion: nil)
+
+    }
+    @IBAction func ChatViewButton(sender: AnyObject) {
+    }
 
 }
