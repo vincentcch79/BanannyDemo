@@ -610,11 +610,11 @@
                                                     <constraint firstAttribute="width" constant="100" id="bv8-gS-AUH"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                                <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="1oC-Pd-eCF" firstAttribute="leading" secondItem="BsJ-5b-90Z" secondAttribute="leading" constant="8" id="8pW-Dv-R9i"/>
                                             <constraint firstItem="q1I-Yb-T8C" firstAttribute="top" secondItem="BsJ-5b-90Z" secondAttribute="top" constant="30" id="BCF-70-QHd"/>
@@ -724,7 +724,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.20000000000000001" green="0.40000000000000002" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstItem="NG3-Vd-AMo" firstAttribute="top" secondItem="mTS-9P-sLE" secondAttribute="top" constant="30" id="CkG-5R-qjU"/>
                                             <constraint firstAttribute="width" constant="600" id="EF1-zf-nNo"/>
@@ -978,7 +978,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7e-64-NNh" customClass="CosmosView" customModule="Cosmos">
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7e-64-NNh" customClass="CosmosView" customModule="Cosmos">
                                         <rect key="frame" x="225" y="167" width="150" height="25"/>
                                         <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>

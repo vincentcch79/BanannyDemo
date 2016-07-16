@@ -63,6 +63,7 @@ class SearchDetailViewController: UIViewController {
         chatVC.chatItemsDecorator = chatItemsDecorator
         chatVC.chatDataSource = demoDataSource
         chatVC.title = title
+        
         // pass search data to chatVC
         chatVC.searchChatDetail = self.searchDetail
         
