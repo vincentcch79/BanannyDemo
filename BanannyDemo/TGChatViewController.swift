@@ -12,7 +12,7 @@ import NoChatTG
 
 class TGChatViewController: ChatViewController {
     
-    var searchDetail: searchResult!
+    var searchChatDetail: searchResult!
     
     lazy var titleView: TitleView! = {
         let view = TitleView()
@@ -56,11 +56,12 @@ class TGChatViewController: ChatViewController {
         navigationItem.rightBarButtonItems = [spacer, right]
         navigationItem.leftBarButtonItems = [spacer, left]
         
+        // addTarget reserveButton
         reserveButton.addTarget(self, action: #selector(TGChatViewController.tapReseveButton(_:)), forControlEvents: .TouchUpInside)
         cancelButton.addTarget(self, action: #selector(TGChatViewController.tapCancelButton(_:)), forControlEvents: .TouchUpInside)
         
         // titleLabel
-        titleView.titleLabel.text = "Miss Disgust"
+        titleView.titleLabel.text = "\(searchChatDetail.nameResult)"
         
     }
     

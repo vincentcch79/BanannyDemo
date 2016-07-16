@@ -16,9 +16,9 @@ class SearchResultViewController: UIViewController, UITableViewDelegate, UITable
     let customCellIdentifier = "SearchResultTableViewCell"
     
     var searchResults:[searchResult] = [
-        searchResult(nameResult: "Anger", imageResult: "profile_1", starResult: 4, numResult: "(90)", detailIntro: ""),
+        searchResult(nameResult: "Sadness", imageResult: "profile_1", starResult: 4, numResult: "(90)", detailIntro: ""),
         searchResult(nameResult: "Miss Disgust", imageResult: "profile_2", starResult: 4.5, numResult: "(50)", detailIntro: ""),
-        searchResult(nameResult: "Sadness", imageResult: "profile_3", starResult: 5, numResult: "(40)", detailIntro: "")
+        searchResult(nameResult: "Anger", imageResult: "profile_3", starResult: 5, numResult: "(40)", detailIntro: "")
     ]
 
     

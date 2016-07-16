@@ -11,20 +11,23 @@ import Foundation
 
 class searchResult {
     
+
+    
     var nameResult = ""
     var imageResult = ""
     var starResult = 0.0
     var numResult = ""
     var detailIntro = ""
     
-    init(nameResult:String, imageResult:String, starResult: Double, numResult: String, detailIntro: String){
+   init(nameResult:String, imageResult:String, starResult: Double, numResult: String, detailIntro: String){
         self.nameResult = nameResult
         self.imageResult = imageResult
         self.starResult = starResult
         self.numResult = numResult
         self.detailIntro = detailIntro
     }
-
+    
+  
     
 }
 
