@@ -186,6 +186,9 @@ class ParentDashboardViewController: UIViewController, UIPickerViewDelegate, UIP
     @IBAction func parentMesgDashButton(sender: AnyObject) {
     }
     @IBAction func parentNotifDashButton(sender: AnyObject) {
+        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let notifViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("notifView")
+        self.presentViewController(notifViewController, animated: true, completion: nil)
     }
     @IBAction func parentSettingDashButton(sender: AnyObject) {
     }

@@ -568,7 +568,7 @@
         <!--Notif View Controller-->
         <scene sceneID="tcP-iv-8Cr">
             <objects>
-                <viewController id="yq5-8g-huS" customClass="NotifViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="notifView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yq5-8g-huS" customClass="NotifViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NEg-HM-JPK"/>
                         <viewControllerLayoutGuide type="bottom" id="aKT-RV-bGe"/>
@@ -590,6 +590,9 @@
                                                     <constraint firstAttribute="height" constant="40" id="lMq-32-fh8"/>
                                                 </constraints>
                                                 <state key="normal" image="back"/>
+                                                <connections>
+                                                    <action selector="backDashButton:" destination="yq5-8g-huS" eventType="touchUpInside" id="5Hs-qR-COD"/>
+                                                </connections>
                                             </button>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic" translatesAutoresizingMaskIntoConstraints="NO" id="q1I-Yb-T8C">
                                                 <rect key="frame" x="552" y="30" width="40" height="40"/>
@@ -625,7 +628,7 @@
                                             <constraint firstItem="8qn-JQ-140" firstAttribute="top" secondItem="BsJ-5b-90Z" secondAttribute="top" constant="22" id="xwW-ec-k8X"/>
                                         </constraints>
                                     </view>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gyn-eY-U3F">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gyn-eY-U3F">
                                         <rect key="frame" x="0.0" y="120" width="600" height="480"/>
                                         <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
@@ -633,7 +636,7 @@
                                                 <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lEj-k0-An6" id="I31-rC-eKr">
-                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </tableViewCellContentView>
@@ -641,7 +644,7 @@
                                         </prototypes>
                                     </tableView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="BsJ-5b-90Z" secondAttribute="trailing" id="8z0-cx-qG0"/>
                                     <constraint firstItem="BsJ-5b-90Z" firstAttribute="leading" secondItem="lUM-7v-oaL" secondAttribute="leading" id="fSj-nu-JeE"/>
@@ -661,10 +664,31 @@
                             <constraint firstItem="lUM-7v-oaL" firstAttribute="top" secondItem="zCX-6k-7ce" secondAttribute="top" id="gHg-v4-ThD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="notifTableView" destination="Gyn-eY-U3F" id="pbO-HZ-Nfs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yXg-nc-RpF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4102" y="-699"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="a8L-gc-TyZ">
+            <objects>
+                <viewController id="XES-5q-tEL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qk2-Jl-tTc"/>
+                        <viewControllerLayoutGuide type="bottom" id="isG-Jx-KRZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tFi-pu-dHT">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Me-ZF-b2o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4860" y="-699"/>
         </scene>
         <!--Search Result View Controller-->
         <scene sceneID="S2z-uX-xNs">
@@ -978,7 +1002,7 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a7e-64-NNh" customClass="CosmosView" customModule="Cosmos">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a7e-64-NNh" customClass="CosmosView" customModule="Cosmos">
                                         <rect key="frame" x="225" y="167" width="150" height="25"/>
                                         <color key="backgroundColor" red="1" green="0.20000000000000001" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>

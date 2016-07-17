@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="127" id="KGk-i7-Jjw" customClass="NotifCustomTableViewCell" customModule="BanannyDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="127"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="126.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAz-Xv-jRs">
+                        <rect key="frame" x="8" y="91" width="200" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="JGA-iZ-EZC"/>
+                            <constraint firstAttribute="width" constant="200" id="gUm-xI-UYl"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="td3-R2-nlX">
+                        <rect key="frame" x="8" y="39" width="304" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Uy5-PM-w2o"/>
+                            <constraint firstAttribute="width" constant="304" id="c6G-ve-OWa"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="27"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="td3-R2-nlX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="39" id="3Mm-qZ-7aL"/>
+                    <constraint firstItem="td3-R2-nlX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="Geq-71-kx5"/>
+                    <constraint firstItem="PAz-Xv-jRs" firstAttribute="top" secondItem="td3-R2-nlX" secondAttribute="bottom" constant="2" id="ZQz-0P-9zE"/>
+                    <constraint firstAttribute="bottom" secondItem="PAz-Xv-jRs" secondAttribute="bottom" constant="15.5" id="bpo-h3-1Jm"/>
+                    <constraint firstItem="PAz-Xv-jRs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="hou-Hn-49u"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="notifDateLabel" destination="PAz-Xv-jRs" id="z0T-Tz-kTc"/>
+                <outlet property="notifLabel" destination="td3-R2-nlX" id="mjp-Qc-SXi"/>
+            </connections>
+            <point key="canvasLocation" x="200" y="299.5"/>
+        </tableViewCell>
+    </objects>
+</document>
