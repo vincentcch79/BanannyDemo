@@ -13,9 +13,9 @@ import NoChat
 class SearchDetailViewController: UIViewController {
 
     @IBOutlet weak var detailImageView: UIImageView!
-    @IBOutlet weak var detailNameLabel: UILabel!
+
     @IBOutlet weak var detailStarRating: CosmosView!
-    @IBOutlet weak var detailIntroLabel: UILabel!
+
     
     var searchDetail: searchResult!
     
@@ -23,9 +23,9 @@ class SearchDetailViewController: UIViewController {
         super.viewDidLoad()
         
         detailImageView.image = UIImage(named: searchDetail.imageResult)
-        detailNameLabel.text = searchDetail.nameResult
+        self.title = searchDetail.nameResult
         detailStarRating.rating = searchDetail.starResult
-        detailIntroLabel.text = searchDetail.detailIntro
+
         
         
 
