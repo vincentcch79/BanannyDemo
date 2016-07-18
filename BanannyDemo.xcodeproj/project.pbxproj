@@ -21,6 +21,9 @@
 		9F2EE1C81D38857B00F05354 /* DemoChatItemsDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1C71D38857B00F05354 /* DemoChatItemsDecorator.swift */; };
 		9F2EE1CA1D38859500F05354 /* DemoChatDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1C91D38859500F05354 /* DemoChatDataSource.swift */; };
 		9F2EE1CC1D3885AE00F05354 /* TGChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1CB1D3885AE00F05354 /* TGChatViewController.swift */; };
+		9F3CA6831D3C85AC003555F7 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA6821D3C85AC003555F7 /* RatingViewController.swift */; };
+		9F3CA6861D3C8808003555F7 /* RatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA6841D3C8808003555F7 /* RatingTableViewCell.swift */; };
+		9F3CA6871D3C8808003555F7 /* RatingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F3CA6851D3C8808003555F7 /* RatingTableViewCell.xib */; };
 		9F76F9B41D37A7C0003ABE22 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76F9B31D37A7C0003ABE22 /* SearchResultViewController.swift */; };
 		9F76F9B71D37D980003ABE22 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76F9B51D37D980003ABE22 /* SearchResultTableViewCell.swift */; };
 		9F76F9B81D37D980003ABE22 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F76F9B61D37D980003ABE22 /* SearchResultTableViewCell.xib */; };
@@ -32,6 +35,7 @@
 		9FF0A6851D3BAE3E00CA8933 /* NotifCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0A6831D3BAE3E00CA8933 /* NotifCustomTableViewCell.swift */; };
 		9FF0A6861D3BAE3E00CA8933 /* NotifCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF0A6841D3BAE3E00CA8933 /* NotifCustomTableViewCell.xib */; };
 		9FF0A6881D3BB1D200CA8933 /* notifClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0A6871D3BB1D200CA8933 /* notifClass.swift */; };
+		9FF0A68A1D3BC3BE00CA8933 /* ParentRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0A6891D3BC3BE00CA8933 /* ParentRatingViewController.swift */; };
 		9FF447171D3A342E00BF0754 /* NotifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF447161D3A342E00BF0754 /* NotifViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +57,9 @@
 		9F2EE1C71D38857B00F05354 /* DemoChatItemsDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoChatItemsDecorator.swift; sourceTree = "<group>"; };
 		9F2EE1C91D38859500F05354 /* DemoChatDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoChatDataSource.swift; sourceTree = "<group>"; };
 		9F2EE1CB1D3885AE00F05354 /* TGChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGChatViewController.swift; sourceTree = "<group>"; };
+		9F3CA6821D3C85AC003555F7 /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
+		9F3CA6841D3C8808003555F7 /* RatingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTableViewCell.swift; sourceTree = "<group>"; };
+		9F3CA6851D3C8808003555F7 /* RatingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingTableViewCell.xib; sourceTree = "<group>"; };
 		9F76F9B31D37A7C0003ABE22 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		9F76F9B51D37D980003ABE22 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
 		9F76F9B61D37D980003ABE22 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
@@ -64,6 +71,7 @@
 		9FF0A6831D3BAE3E00CA8933 /* NotifCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifCustomTableViewCell.swift; sourceTree = "<group>"; };
 		9FF0A6841D3BAE3E00CA8933 /* NotifCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotifCustomTableViewCell.xib; sourceTree = "<group>"; };
 		9FF0A6871D3BB1D200CA8933 /* notifClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notifClass.swift; sourceTree = "<group>"; };
+		9FF0A6891D3BC3BE00CA8933 /* ParentRatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentRatingViewController.swift; sourceTree = "<group>"; };
 		9FF447161D3A342E00BF0754 /* NotifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifViewController.swift; sourceTree = "<group>"; };
 		C70AAAD8809448AD5A7B9DA6 /* Pods_BanannyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BanannyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -139,6 +147,8 @@
 				9F76F9B61D37D980003ABE22 /* SearchResultTableViewCell.xib */,
 				9FF0A6831D3BAE3E00CA8933 /* NotifCustomTableViewCell.swift */,
 				9FF0A6841D3BAE3E00CA8933 /* NotifCustomTableViewCell.xib */,
+				9F3CA6841D3C8808003555F7 /* RatingTableViewCell.swift */,
+				9F3CA6851D3C8808003555F7 /* RatingTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -156,6 +166,8 @@
 				9F76F9B31D37A7C0003ABE22 /* SearchResultViewController.swift */,
 				9F2EE1C21D3875CE00F05354 /* SearchDetailViewController.swift */,
 				9FF447161D3A342E00BF0754 /* NotifViewController.swift */,
+				9FF0A6891D3BC3BE00CA8933 /* ParentRatingViewController.swift */,
+				9F3CA6821D3C85AC003555F7 /* RatingViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -242,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F2599671D377ACA0064C105 /* LaunchScreen.storyboard in Resources */,
+				9F3CA6871D3C8808003555F7 /* RatingTableViewCell.xib in Resources */,
 				9F76F9B81D37D980003ABE22 /* SearchResultTableViewCell.xib in Resources */,
 				9F2599641D377ACA0064C105 /* Assets.xcassets in Resources */,
 				9F2599621D377ACA0064C105 /* Main.storyboard in Resources */,
@@ -311,6 +324,8 @@
 				9F2EE1C61D38855900F05354 /* DemoChatIemFactory.swift in Sources */,
 				9FB8013C1D378A5E00DE3142 /* BabysitterDashboardViewController.swift in Sources */,
 				9F2EE1CA1D38859500F05354 /* DemoChatDataSource.swift in Sources */,
+				9F3CA6831D3C85AC003555F7 /* RatingViewController.swift in Sources */,
+				9FF0A68A1D3BC3BE00CA8933 /* ParentRatingViewController.swift in Sources */,
 				9FF0A6881D3BB1D200CA8933 /* notifClass.swift in Sources */,
 				9F25995F1D377ACA0064C105 /* ViewController.swift in Sources */,
 				9FB801361D378A0C00DE3142 /* ParentSecondViewController.swift in Sources */,
@@ -323,6 +338,7 @@
 				9F2EE1C31D3875CE00F05354 /* SearchDetailViewController.swift in Sources */,
 				9F76F9BA1D37D99C003ABE22 /* SearchResultClass.swift in Sources */,
 				9F2EE1CC1D3885AE00F05354 /* TGChatViewController.swift in Sources */,
+				9F3CA6861D3C8808003555F7 /* RatingTableViewCell.swift in Sources */,
 				9FF0A6851D3BAE3E00CA8933 /* NotifCustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
