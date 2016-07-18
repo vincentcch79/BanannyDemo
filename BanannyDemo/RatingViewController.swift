@@ -8,11 +8,29 @@
 
 import UIKit
 
-class RatingViewController: UIViewController {
+class RatingViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var ratingTableView: UITableView!
+    
+    let customCellIdentifier = "RatingTableViewCell"
+    
+    var ratingMembers: [RatingMember] = [
+    RatingMember(ratingNannyImage: "profile_1", ratingNannyLabel: "尚未評價Sadness"),
+    RatingMember(ratingNannyImage: "profile_2", ratingNannyLabel: "尚未評價Miss Disgust"),
+    RatingMember(ratingNannyImage: "profile_3", ratingNannyLabel: "尚未評價Anger")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
+        //ratingTableViewCell
+        ratingTableView.delegate = self
+        ratingTableView.dataSource = self
+        ratingTableView.estimatedRowHeight = 90
+        ratingTableView.rowHeight = UITableViewAutomaticDimension
+        ratingTableView.registerNib(UINib(nibName: "RatingTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,6 +39,23 @@ class RatingViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return ratingMembers.count
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("RatingTableViewCell", forIndexPath: indexPath) as! RatingTableViewCell
+        cell.ratingCellImageView.image = UIImage(named: ratingMembers[indexPath.row].ratingNannyImage)
+        cell.ratingCellLabel.text = ratingMembers[indexPath.row].ratingNannyLabel
+        
+        return cell
+    }
+    
+
 
     /*
     // MARK: - Navigation
@@ -31,5 +66,11 @@ class RatingViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func backToNotifButton(sender: AnyObject) {
+            let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let RatingViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("notifView")
+            self.presentViewController(RatingViewController, animated: true, completion: nil)
+    }
+    
+    
 }

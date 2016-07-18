@@ -694,6 +694,9 @@
                                             <constraint firstAttribute="width" constant="40" id="lfl-Cp-lhJ"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backToNotifButton:" destination="sVW-vF-b86" eventType="touchUpInside" id="0DS-jf-lxF"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilePic" translatesAutoresizingMaskIntoConstraints="NO" id="Qib-B9-JyH">
                                         <rect key="frame" x="552" y="30" width="40" height="40"/>
@@ -756,6 +759,9 @@
                             <constraint firstItem="4PM-0N-pJw" firstAttribute="top" secondItem="UWT-fz-adU" secondAttribute="bottom" constant="8" id="c4h-m3-ltd"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ratingTableView" destination="4PM-0N-pJw" id="SCK-u3-Kf8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wXY-cl-sg8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
