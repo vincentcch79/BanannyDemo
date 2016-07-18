@@ -1,17 +1,15 @@
 //
-//  ParentSecondViewController.swift
+//  DashTabBarViewController.swift
 //  BanannyDemo
 //
-//  Created by 張智涵 on 2016/7/14.
+//  Created by 張智涵 on 2016/7/18.
 //  Copyright © 2016年 張智涵 Vincent Chang. All rights reserved.
 //
 
 import UIKit
 
-class ParentSecondViewController: UIViewController {
-    @IBOutlet weak var parentEmailTextField: UITextField!
+class DashTabBarViewController: UITabBarController {
 
-    @IBOutlet weak var parentPWTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,10 +31,5 @@ class ParentSecondViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func parentLoginButton(sender: AnyObject) {
-        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let DashTabBarViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("DashTabBar")
-        self.presentViewController(DashTabBarViewController, animated: true, completion: nil)
-    }
 
 }

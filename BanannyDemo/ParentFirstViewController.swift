@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
+
 
 class ParentFirstViewController: UIViewController {
 
@@ -35,5 +38,8 @@ class ParentFirstViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBAction func parentNormalLoginButton(sender: AnyObject) {
+    }
+    @IBAction func parentFBLoginButton(sender: AnyObject) {
+    }
 }

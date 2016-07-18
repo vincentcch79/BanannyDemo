@@ -25,6 +25,7 @@
 		9F3CA6861D3C8808003555F7 /* RatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA6841D3C8808003555F7 /* RatingTableViewCell.swift */; };
 		9F3CA6871D3C8808003555F7 /* RatingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F3CA6851D3C8808003555F7 /* RatingTableViewCell.xib */; };
 		9F3CA6891D3C8C51003555F7 /* RatingMemeberClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA6881D3C8C51003555F7 /* RatingMemeberClass.swift */; };
+		9F3CA68B1D3CCB6E003555F7 /* DashTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA68A1D3CCB6E003555F7 /* DashTabBarViewController.swift */; };
 		9F76F9B41D37A7C0003ABE22 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76F9B31D37A7C0003ABE22 /* SearchResultViewController.swift */; };
 		9F76F9B71D37D980003ABE22 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76F9B51D37D980003ABE22 /* SearchResultTableViewCell.swift */; };
 		9F76F9B81D37D980003ABE22 /* SearchResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F76F9B61D37D980003ABE22 /* SearchResultTableViewCell.xib */; };
@@ -62,6 +63,7 @@
 		9F3CA6841D3C8808003555F7 /* RatingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTableViewCell.swift; sourceTree = "<group>"; };
 		9F3CA6851D3C8808003555F7 /* RatingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingTableViewCell.xib; sourceTree = "<group>"; };
 		9F3CA6881D3C8C51003555F7 /* RatingMemeberClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingMemeberClass.swift; sourceTree = "<group>"; };
+		9F3CA68A1D3CCB6E003555F7 /* DashTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashTabBarViewController.swift; sourceTree = "<group>"; };
 		9F76F9B31D37A7C0003ABE22 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		9F76F9B51D37D980003ABE22 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
 		9F76F9B61D37D980003ABE22 /* SearchResultTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultTableViewCell.xib; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				9FF447161D3A342E00BF0754 /* NotifViewController.swift */,
 				9FF0A6891D3BC3BE00CA8933 /* ParentRatingViewController.swift */,
 				9F3CA6821D3C85AC003555F7 /* RatingViewController.swift */,
+				9F3CA68A1D3CCB6E003555F7 /* DashTabBarViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 				9F76F9B41D37A7C0003ABE22 /* SearchResultViewController.swift in Sources */,
 				9FB8013A1D378A4000DE3142 /* ParentDashboardViewController.swift in Sources */,
 				9F2EE1C61D38855900F05354 /* DemoChatIemFactory.swift in Sources */,
+				9F3CA68B1D3CCB6E003555F7 /* DashTabBarViewController.swift in Sources */,
 				9FB8013C1D378A5E00DE3142 /* BabysitterDashboardViewController.swift in Sources */,
 				9F2EE1CA1D38859500F05354 /* DemoChatDataSource.swift in Sources */,
 				9F3CA6831D3C85AC003555F7 /* RatingViewController.swift in Sources */,

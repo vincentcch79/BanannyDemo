@@ -30,6 +30,11 @@ class ParentDashboardViewController: UIViewController, UIPickerViewDelegate, UIP
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // trasparent navigation bar
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.translucent = true
+        
         // Textfield Delegate
         parentDateDashTextField.delegate = self
         parentStartTimeTextField.delegate = self
@@ -194,9 +199,9 @@ class ParentDashboardViewController: UIViewController, UIPickerViewDelegate, UIP
     }
     
     @IBAction func parentSearchDashButton(sender: AnyObject) {
-        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let searchResultViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("searchView")
-        self.presentViewController(searchResultViewController, animated: true, completion: nil)
+//        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        let searchResultViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("searchView")
+//        self.presentViewController(searchResultViewController, animated: true, completion: nil)
     }
 
 }

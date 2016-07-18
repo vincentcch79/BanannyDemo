@@ -25,12 +25,25 @@ class SearchResultViewController: UIViewController, UITableViewDelegate, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
+        self.navigationController?.navigationBar.translucent = false
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 255/255, green: 250/255, blue: 205/255, alpha: 1)
+        self.navigationController?.navigationBar.tintColor = UIColor.grayColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.grayColor()]
+        
+        self.title = "搜尋"
+
+        
         // searchTableView and customCell
         searchTableView.delegate = self
         searchTableView.dataSource = self
         searchTableView.estimatedRowHeight = 180
         searchTableView.rowHeight = UITableViewAutomaticDimension
         searchTableView.registerNib(UINib(nibName: "SearchResultTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
+        
+
+        
         
     }
 
@@ -53,7 +66,10 @@ class SearchResultViewController: UIViewController, UITableViewDelegate, UITable
         cell.ResultNameLabel.text = searchResults[indexPath.row].nameResult
         cell.ResultCellImageView.image = UIImage(named: searchResults[indexPath.row].imageResult)
         cell.ResultStarRating.rating = searchResults[indexPath.row].starResult
+        cell.layer.cornerRadius = 15
+        cell.contentView.layer.masksToBounds = true
         
+
         
         return cell
     }
@@ -86,11 +102,5 @@ class SearchResultViewController: UIViewController, UITableViewDelegate, UITable
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func backToDashButton(sender: AnyObject) {
-        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let ParentDashboardViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("parentDashView")
-        self.presentViewController(ParentDashboardViewController, animated: true, completion: nil)
-
-    }
-
+ 
 }

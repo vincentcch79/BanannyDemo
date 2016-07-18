@@ -47,12 +47,7 @@ class SearchDetailViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func backToSearchButton(sender: AnyObject) {
-        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let searchResultViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("searchView")
-        self.presentViewController(searchResultViewController, animated: true, completion: nil)
 
-    }
     @IBAction func ChatViewButton(sender: AnyObject) {
         
         let chatItemsDecorator = TGChatItemsDecorator()
