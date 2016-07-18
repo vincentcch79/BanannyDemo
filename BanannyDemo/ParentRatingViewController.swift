@@ -31,5 +31,10 @@ class ParentRatingViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    @IBAction func backToRatingButton(sender: AnyObject) {
+        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let RatingViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("ratingView")
+        self.presentViewController(RatingViewController, animated: true, completion: nil)
+    }
 
 }

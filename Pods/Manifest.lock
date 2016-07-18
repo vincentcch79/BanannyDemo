@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (3.4.1)
+  - BetterSegmentedControl (0.4)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -10,6 +11,8 @@ PODS:
   - FBSDKCoreKit (4.14.0):
     - Bolts (~> 1.7)
   - FBSDKLoginKit (4.14.0):
+    - FBSDKCoreKit
+  - FBSDKShareKit (4.14.0):
     - FBSDKCoreKit
   - Firebase (3.3.0):
     - Firebase/Core (= 3.3.0)
@@ -57,8 +60,11 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - BetterSegmentedControl
   - Cosmos (~> 1.2)
+  - FBSDKCoreKit
   - FBSDKLoginKit
+  - FBSDKShareKit
   - Firebase
   - Firebase/Auth
   - Firebase/Database
@@ -70,10 +76,12 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  BetterSegmentedControl: 982368e9cae749f28b7a2e969a37dcb73c375400
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   Cosmos: efddd01b729956ad6335bc58bc92e5735a1d12a3
   FBSDKCoreKit: 6e020b5db0b5bd1e01f5fb0902131befd129a502
   FBSDKLoginKit: da563567a108050ef83739c8c8c001ee9e25fa13
+  FBSDKShareKit: e8e5d4ccef69b41132fe33acda26db1e33143e33
   Firebase: 6250071f0e2440a5c4c67b8cb6b868f868237ac3
   FirebaseAnalytics: 0fd6532cb2c3d03cd5cf26ad295ccb091efd3104
   FirebaseAuth: 5efddc3fae47042b73585f083f956462be4f5b8e
@@ -90,6 +98,6 @@ SPEC CHECKSUMS:
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: e221b663ebf89c14dff8135496863fed754a1faf
+PODFILE CHECKSUM: 08c0612d82b7fa23cbe1adf436e73cac3ebe7833
 
 COCOAPODS: 1.0.1

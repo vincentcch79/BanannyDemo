@@ -14,7 +14,10 @@ target 'BanannyDemo' do
   pod 'Firebase/Database'
   pod 'Firebase/Auth'
   pod 'FBSDKLoginKit'
+  pod 'FBSDKShareKit'
+  pod 'FBSDKCoreKit'
   pod 'SDWebImage'
+  pod 'BetterSegmentedControl'
   # Pods for BanannyDemo
 
 end

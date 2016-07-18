@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>BetterSegmentedControl.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -25,6 +30,11 @@
 			<false/>
 		</dict>
 		<key>FBSDKLoginKit.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>FBSDKShareKit.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -62,6 +72,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>0B3131D27986BA8C7736484E9CA43B73</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>0EB19C1377A747F81110D44E2D5FCF78</key>
 		<dict>
 			<key>primary</key>
@@ -72,12 +87,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>37A83DE200F6E2BC87BEBF3CC02B6476</key>
+		<key>30D7FCF8072F5D59AE1C98D94F9A6EC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>571477233166CDFC56C7E8A449E84A37</key>
+		<key>3C068A58B0DECF71FC3B64A1C1B68BBC</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -88,6 +103,11 @@
 			<true/>
 		</dict>
 		<key>6EDC37F3FA92533C6AC3562458AA91F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>790E814420D55631320C651ED35D1B6E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -107,7 +127,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A6EDBB1CD25591969505594BE57DD017</key>
+		<key>AFC8A3A31D035AC15884D0A83FEC746F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

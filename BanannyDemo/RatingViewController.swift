@@ -55,6 +55,15 @@ class RatingViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
+        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let ParentRatingViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("ratingPageView")
+        self.presentViewController(ParentRatingViewController, animated: true, completion: nil)
+
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    }
+    
 
 
     /*
@@ -68,8 +77,8 @@ class RatingViewController: UIViewController, UITableViewDelegate, UITableViewDa
     */
     @IBAction func backToNotifButton(sender: AnyObject) {
             let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let RatingViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("notifView")
-            self.presentViewController(RatingViewController, animated: true, completion: nil)
+            let NotifViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("notifView")
+            self.presentViewController(NotifViewController, animated: true, completion: nil)
     }
     
     
