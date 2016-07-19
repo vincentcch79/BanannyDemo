@@ -17,18 +17,24 @@ class searchResult {
     var imageResult = ""
     var starResult = 0.0
     var numResult = ""
-    var detailIntro = ""
+//    var introClasses:[introClass] = []
+
     
-   init(nameResult:String, imageResult:String, starResult: Double, numResult: String, detailIntro: String){
+    
+    init(nameResult:String, imageResult:String, starResult: Double, numResult: String){
         self.nameResult = nameResult
         self.imageResult = imageResult
         self.starResult = starResult
         self.numResult = numResult
-        self.detailIntro = detailIntro
+//        self.introClasses = introClasses
     }
     
-  
     
 }
 
-
+//struct introClass {
+//    
+//    var introClassTitle = ""
+//    var introClassContent = ""
+//    
+//}

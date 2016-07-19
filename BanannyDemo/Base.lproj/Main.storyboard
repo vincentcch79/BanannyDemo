@@ -717,6 +717,9 @@
                                 <state key="normal" title="預約">
                                     <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="IiK-Zv-neX" kind="show" id="yjg-In-1AP"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zNR-WH-KQq">
                                 <rect key="frame" x="304" y="287" width="268" height="40"/>
@@ -732,7 +735,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DGi-zp-zM1">
-                                <rect key="frame" x="0.0" y="367" width="600" height="584"/>
+                                <rect key="frame" x="0.0" y="347" width="600" height="604"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="NIK-0e-6sO">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
@@ -925,7 +928,7 @@
                             <constraint firstItem="B0d-Bg-biJ" firstAttribute="top" secondItem="ENS-7J-rR7" secondAttribute="bottom" constant="39" id="F94-OO-0KF"/>
                             <constraint firstItem="dc2-3L-TM9" firstAttribute="top" secondItem="ENS-7J-rR7" secondAttribute="bottom" id="MJz-HF-swA"/>
                             <constraint firstAttribute="trailing" secondItem="DGi-zp-zM1" secondAttribute="trailing" id="WYu-D1-vxP"/>
-                            <constraint firstItem="DGi-zp-zM1" firstAttribute="top" secondItem="zNR-WH-KQq" secondAttribute="bottom" constant="40" id="Xbs-4U-7VI"/>
+                            <constraint firstItem="DGi-zp-zM1" firstAttribute="top" secondItem="zNR-WH-KQq" secondAttribute="bottom" constant="20" id="Xbs-4U-7VI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zNR-WH-KQq" secondAttribute="trailing" constant="8" id="YFj-DM-770"/>
                             <constraint firstItem="3CU-jC-5Ei" firstAttribute="centerX" secondItem="B0d-Bg-biJ" secondAttribute="centerX" constant="-17" id="has-HL-yL2"/>
                             <constraint firstItem="Jw5-nd-adF" firstAttribute="top" secondItem="B0d-Bg-biJ" secondAttribute="bottom" constant="84" id="jok-0h-E8K"/>
@@ -939,7 +942,9 @@
                             <constraint firstItem="zNR-WH-KQq" firstAttribute="leading" secondItem="Jw5-nd-adF" secondAttribute="trailing" constant="8" id="xqQ-Nd-yPh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="pQM-pi-lFh"/>
+                    <navigationItem key="navigationItem" id="pQM-pi-lFh">
+                        <barButtonItem key="backBarButtonItem" title=" " id="wCo-W7-1JM"/>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
@@ -951,6 +956,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gms-Pc-18y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6732" y="-1248"/>
+        </scene>
+        <!--Book Confirm View Controller-->
+        <scene sceneID="jja-Xs-SlT">
+            <objects>
+                <viewController id="IiK-Zv-neX" customClass="BookConfirmViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6qg-e0-N6E"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qct-3c-XxZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PC7-Xs-QWM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m7l-jf-CEg">
+                                <rect key="frame" x="0.0" y="64" width="600" height="807"/>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwI-by-v7N">
+                                <rect key="frame" x="200" y="881" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="TD9-X7-ElN"/>
+                                    <constraint firstAttribute="height" constant="50" id="dBg-lw-5Iz"/>
+                                </constraints>
+                                <state key="normal" title="確認預約">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="bookButton:" destination="IiK-Zv-neX" eventType="touchUpInside" id="QTi-8U-iEr"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" alpha="0.59999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vPV-M3-RpV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Qct-3c-XxZ" firstAttribute="top" secondItem="m7l-jf-CEg" secondAttribute="bottom" constant="80" id="DWC-Wt-eBI"/>
+                            <constraint firstAttribute="trailing" secondItem="m7l-jf-CEg" secondAttribute="trailing" id="Dg1-Nk-EFt"/>
+                            <constraint firstItem="m7l-jf-CEg" firstAttribute="top" secondItem="6qg-e0-N6E" secondAttribute="bottom" id="Lii-JH-G1e"/>
+                            <constraint firstItem="vPV-M3-RpV" firstAttribute="leading" secondItem="PC7-Xs-QWM" secondAttribute="leading" id="SUI-z8-cuS"/>
+                            <constraint firstAttribute="trailing" secondItem="vPV-M3-RpV" secondAttribute="trailing" id="XAA-kb-UgE"/>
+                            <constraint firstItem="m7l-jf-CEg" firstAttribute="leading" secondItem="PC7-Xs-QWM" secondAttribute="leading" id="cZf-75-KQq"/>
+                            <constraint firstItem="HwI-by-v7N" firstAttribute="centerX" secondItem="PC7-Xs-QWM" secondAttribute="centerX" id="hv0-jn-MRU"/>
+                            <constraint firstItem="vPV-M3-RpV" firstAttribute="top" secondItem="PC7-Xs-QWM" secondAttribute="top" id="oiu-Ts-eXt"/>
+                            <constraint firstItem="Qct-3c-XxZ" firstAttribute="top" secondItem="HwI-by-v7N" secondAttribute="bottom" constant="20" id="uHC-tJ-xk6"/>
+                            <constraint firstItem="Qct-3c-XxZ" firstAttribute="top" secondItem="vPV-M3-RpV" secondAttribute="bottom" constant="-49" id="zNR-mN-SiS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blurView" destination="vPV-M3-RpV" id="fmb-iw-rlA"/>
+                        <outlet property="confirmTableView" destination="m7l-jf-CEg" id="gIH-jp-fjL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Io-0a-Wf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7467" y="-1248"/>
         </scene>
         <!--Babysitter Dashboard View Controller-->
         <scene sceneID="akT-oh-abq">
