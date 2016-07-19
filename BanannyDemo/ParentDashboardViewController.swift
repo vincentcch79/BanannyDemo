@@ -41,6 +41,27 @@ class ParentDashboardViewController: UIViewController, UIPickerViewDelegate, UIP
         parentFinishedTimeTextField.delegate = self
         parentLocationTextField.delegate = self
         
+        //Textfield border
+        parentDateDashTextField.layer.cornerRadius = 2.0
+        parentDateDashTextField.layer.masksToBounds = true
+        parentDateDashTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        parentDateDashTextField.layer.borderWidth = 1.0
+        
+        parentStartTimeTextField.layer.cornerRadius = 2.0
+        parentStartTimeTextField.layer.masksToBounds = true
+        parentStartTimeTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        parentStartTimeTextField.layer.borderWidth = 1.0
+        
+        parentFinishedTimeTextField.layer.cornerRadius = 2.0
+        parentFinishedTimeTextField.layer.masksToBounds = true
+        parentFinishedTimeTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        parentFinishedTimeTextField.layer.borderWidth = 1.0
+        
+        parentLocationTextField.layer.cornerRadius = 2.0
+        parentLocationTextField.layer.masksToBounds = true
+        parentLocationTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        parentLocationTextField.layer.borderWidth = 1.0
+        
         // Toolbar
         
         let DashboardToolBar = UIToolbar()
@@ -91,6 +112,11 @@ class ParentDashboardViewController: UIViewController, UIPickerViewDelegate, UIP
 
 
 
+    }
+    override func viewWillAppear(animated: Bool) {
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.translucent = true
     }
 
     override func didReceiveMemoryWarning() {
