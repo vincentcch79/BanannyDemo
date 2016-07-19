@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		9D222F99D16F7180F1B57417 /* Pods_BanannyDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C70AAAD8809448AD5A7B9DA6 /* Pods_BanannyDemo.framework */; };
+		9F14D36D1D3DC40600530EF6 /* SearchDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14D36B1D3DC40600530EF6 /* SearchDetailTableViewCell.swift */; };
+		9F14D36E1D3DC40600530EF6 /* SearchDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F14D36C1D3DC40600530EF6 /* SearchDetailTableViewCell.xib */; };
+		9F14D3711D3DC9E300530EF6 /* SecondSearchDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14D36F1D3DC9E300530EF6 /* SecondSearchDetailTableViewCell.swift */; };
+		9F14D3721D3DC9E300530EF6 /* SecondSearchDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F14D3701D3DC9E300530EF6 /* SecondSearchDetailTableViewCell.xib */; };
+		9F14D3741D3DD43100530EF6 /* firstIntroDetailClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14D3731D3DD43100530EF6 /* firstIntroDetailClass.swift */; };
 		9F25995D1D377ACA0064C105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25995C1D377ACA0064C105 /* AppDelegate.swift */; };
 		9F25995F1D377ACA0064C105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25995E1D377ACA0064C105 /* ViewController.swift */; };
 		9F2599621D377ACA0064C105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2599601D377ACA0064C105 /* Main.storyboard */; };
@@ -21,10 +26,6 @@
 		9F2EE1C81D38857B00F05354 /* DemoChatItemsDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1C71D38857B00F05354 /* DemoChatItemsDecorator.swift */; };
 		9F2EE1CA1D38859500F05354 /* DemoChatDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1C91D38859500F05354 /* DemoChatDataSource.swift */; };
 		9F2EE1CC1D3885AE00F05354 /* TGChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1CB1D3885AE00F05354 /* TGChatViewController.swift */; };
-		9F3CA6831D3C85AC003555F7 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA6821D3C85AC003555F7 /* RatingViewController.swift */; };
-		9F3CA6861D3C8808003555F7 /* RatingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA6841D3C8808003555F7 /* RatingTableViewCell.swift */; };
-		9F3CA6871D3C8808003555F7 /* RatingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F3CA6851D3C8808003555F7 /* RatingTableViewCell.xib */; };
-		9F3CA6891D3C8C51003555F7 /* RatingMemeberClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA6881D3C8C51003555F7 /* RatingMemeberClass.swift */; };
 		9F3CA68B1D3CCB6E003555F7 /* DashTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA68A1D3CCB6E003555F7 /* DashTabBarViewController.swift */; };
 		9F76F9B41D37A7C0003ABE22 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76F9B31D37A7C0003ABE22 /* SearchResultViewController.swift */; };
 		9F76F9B71D37D980003ABE22 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76F9B51D37D980003ABE22 /* SearchResultTableViewCell.swift */; };
@@ -34,16 +35,17 @@
 		9FB801381D378A2500DE3142 /* BabysitterSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB801371D378A2500DE3142 /* BabysitterSecondViewController.swift */; };
 		9FB8013A1D378A4000DE3142 /* ParentDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB801391D378A4000DE3142 /* ParentDashboardViewController.swift */; };
 		9FB8013C1D378A5E00DE3142 /* BabysitterDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FB8013B1D378A5E00DE3142 /* BabysitterDashboardViewController.swift */; };
-		9FF0A6851D3BAE3E00CA8933 /* NotifCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0A6831D3BAE3E00CA8933 /* NotifCustomTableViewCell.swift */; };
-		9FF0A6861D3BAE3E00CA8933 /* NotifCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9FF0A6841D3BAE3E00CA8933 /* NotifCustomTableViewCell.xib */; };
-		9FF0A6881D3BB1D200CA8933 /* notifClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0A6871D3BB1D200CA8933 /* notifClass.swift */; };
-		9FF0A68A1D3BC3BE00CA8933 /* ParentRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF0A6891D3BC3BE00CA8933 /* ParentRatingViewController.swift */; };
 		9FF447171D3A342E00BF0754 /* NotifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF447161D3A342E00BF0754 /* NotifViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4E80D7C36B44B414D3C16661 /* Pods-BanannyDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanannyDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BanannyDemo/Pods-BanannyDemo.release.xcconfig"; sourceTree = "<group>"; };
 		6E4A7E05C9E3EE3FC0284AA8 /* Pods-BanannyDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BanannyDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BanannyDemo/Pods-BanannyDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		9F14D36B1D3DC40600530EF6 /* SearchDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDetailTableViewCell.swift; sourceTree = "<group>"; };
+		9F14D36C1D3DC40600530EF6 /* SearchDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchDetailTableViewCell.xib; sourceTree = "<group>"; };
+		9F14D36F1D3DC9E300530EF6 /* SecondSearchDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondSearchDetailTableViewCell.swift; sourceTree = "<group>"; };
+		9F14D3701D3DC9E300530EF6 /* SecondSearchDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SecondSearchDetailTableViewCell.xib; sourceTree = "<group>"; };
+		9F14D3731D3DD43100530EF6 /* firstIntroDetailClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = firstIntroDetailClass.swift; sourceTree = "<group>"; };
 		9F2599591D377ACA0064C105 /* BanannyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanannyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F25995C1D377ACA0064C105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F25995E1D377ACA0064C105 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,10 +61,6 @@
 		9F2EE1C71D38857B00F05354 /* DemoChatItemsDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoChatItemsDecorator.swift; sourceTree = "<group>"; };
 		9F2EE1C91D38859500F05354 /* DemoChatDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoChatDataSource.swift; sourceTree = "<group>"; };
 		9F2EE1CB1D3885AE00F05354 /* TGChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGChatViewController.swift; sourceTree = "<group>"; };
-		9F3CA6821D3C85AC003555F7 /* RatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
-		9F3CA6841D3C8808003555F7 /* RatingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingTableViewCell.swift; sourceTree = "<group>"; };
-		9F3CA6851D3C8808003555F7 /* RatingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RatingTableViewCell.xib; sourceTree = "<group>"; };
-		9F3CA6881D3C8C51003555F7 /* RatingMemeberClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingMemeberClass.swift; sourceTree = "<group>"; };
 		9F3CA68A1D3CCB6E003555F7 /* DashTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashTabBarViewController.swift; sourceTree = "<group>"; };
 		9F76F9B31D37A7C0003ABE22 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		9F76F9B51D37D980003ABE22 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
@@ -72,10 +70,6 @@
 		9FB801371D378A2500DE3142 /* BabysitterSecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabysitterSecondViewController.swift; sourceTree = "<group>"; };
 		9FB801391D378A4000DE3142 /* ParentDashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentDashboardViewController.swift; sourceTree = "<group>"; };
 		9FB8013B1D378A5E00DE3142 /* BabysitterDashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabysitterDashboardViewController.swift; sourceTree = "<group>"; };
-		9FF0A6831D3BAE3E00CA8933 /* NotifCustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifCustomTableViewCell.swift; sourceTree = "<group>"; };
-		9FF0A6841D3BAE3E00CA8933 /* NotifCustomTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotifCustomTableViewCell.xib; sourceTree = "<group>"; };
-		9FF0A6871D3BB1D200CA8933 /* notifClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = notifClass.swift; sourceTree = "<group>"; };
-		9FF0A6891D3BC3BE00CA8933 /* ParentRatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentRatingViewController.swift; sourceTree = "<group>"; };
 		9FF447161D3A342E00BF0754 /* NotifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifViewController.swift; sourceTree = "<group>"; };
 		C70AAAD8809448AD5A7B9DA6 /* Pods_BanannyDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BanannyDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -136,8 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				9F76F9B91D37D99C003ABE22 /* SearchResultClass.swift */,
-				9FF0A6871D3BB1D200CA8933 /* notifClass.swift */,
-				9F3CA6881D3C8C51003555F7 /* RatingMemeberClass.swift */,
+				9F14D3731D3DD43100530EF6 /* firstIntroDetailClass.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -150,10 +143,10 @@
 				9F25996E1D377DAE0064C105 /* loginView.storyboard */,
 				9F76F9B51D37D980003ABE22 /* SearchResultTableViewCell.swift */,
 				9F76F9B61D37D980003ABE22 /* SearchResultTableViewCell.xib */,
-				9FF0A6831D3BAE3E00CA8933 /* NotifCustomTableViewCell.swift */,
-				9FF0A6841D3BAE3E00CA8933 /* NotifCustomTableViewCell.xib */,
-				9F3CA6841D3C8808003555F7 /* RatingTableViewCell.swift */,
-				9F3CA6851D3C8808003555F7 /* RatingTableViewCell.xib */,
+				9F14D36B1D3DC40600530EF6 /* SearchDetailTableViewCell.swift */,
+				9F14D36C1D3DC40600530EF6 /* SearchDetailTableViewCell.xib */,
+				9F14D36F1D3DC9E300530EF6 /* SecondSearchDetailTableViewCell.swift */,
+				9F14D3701D3DC9E300530EF6 /* SecondSearchDetailTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -171,8 +164,6 @@
 				9F76F9B31D37A7C0003ABE22 /* SearchResultViewController.swift */,
 				9F2EE1C21D3875CE00F05354 /* SearchDetailViewController.swift */,
 				9FF447161D3A342E00BF0754 /* NotifViewController.swift */,
-				9FF0A6891D3BC3BE00CA8933 /* ParentRatingViewController.swift */,
-				9F3CA6821D3C85AC003555F7 /* RatingViewController.swift */,
 				9F3CA68A1D3CCB6E003555F7 /* DashTabBarViewController.swift */,
 			);
 			name = Controller;
@@ -260,12 +251,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F2599671D377ACA0064C105 /* LaunchScreen.storyboard in Resources */,
-				9F3CA6871D3C8808003555F7 /* RatingTableViewCell.xib in Resources */,
+				9F14D3721D3DC9E300530EF6 /* SecondSearchDetailTableViewCell.xib in Resources */,
+				9F14D36E1D3DC40600530EF6 /* SearchDetailTableViewCell.xib in Resources */,
 				9F76F9B81D37D980003ABE22 /* SearchResultTableViewCell.xib in Resources */,
 				9F2599641D377ACA0064C105 /* Assets.xcassets in Resources */,
 				9F2599621D377ACA0064C105 /* Main.storyboard in Resources */,
 				9F2599701D377DAE0064C105 /* loginView.storyboard in Resources */,
-				9FF0A6861D3BAE3E00CA8933 /* NotifCustomTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,23 +322,20 @@
 				9F3CA68B1D3CCB6E003555F7 /* DashTabBarViewController.swift in Sources */,
 				9FB8013C1D378A5E00DE3142 /* BabysitterDashboardViewController.swift in Sources */,
 				9F2EE1CA1D38859500F05354 /* DemoChatDataSource.swift in Sources */,
-				9F3CA6831D3C85AC003555F7 /* RatingViewController.swift in Sources */,
-				9FF0A68A1D3BC3BE00CA8933 /* ParentRatingViewController.swift in Sources */,
-				9FF0A6881D3BB1D200CA8933 /* notifClass.swift in Sources */,
+				9F14D36D1D3DC40600530EF6 /* SearchDetailTableViewCell.swift in Sources */,
 				9F25995F1D377ACA0064C105 /* ViewController.swift in Sources */,
 				9FB801361D378A0C00DE3142 /* ParentSecondViewController.swift in Sources */,
 				9F76F9B71D37D980003ABE22 /* SearchResultTableViewCell.swift in Sources */,
 				9FF447171D3A342E00BF0754 /* NotifViewController.swift in Sources */,
 				9FB801381D378A2500DE3142 /* BabysitterSecondViewController.swift in Sources */,
+				9F14D3711D3DC9E300530EF6 /* SecondSearchDetailTableViewCell.swift in Sources */,
 				9F2599771D3783D10064C105 /* BabysitterFirstViewController.swift in Sources */,
+				9F14D3741D3DD43100530EF6 /* firstIntroDetailClass.swift in Sources */,
 				9F25995D1D377ACA0064C105 /* AppDelegate.swift in Sources */,
 				9F2EE1C81D38857B00F05354 /* DemoChatItemsDecorator.swift in Sources */,
 				9F2EE1C31D3875CE00F05354 /* SearchDetailViewController.swift in Sources */,
 				9F76F9BA1D37D99C003ABE22 /* SearchResultClass.swift in Sources */,
 				9F2EE1CC1D3885AE00F05354 /* TGChatViewController.swift in Sources */,
-				9F3CA6861D3C8808003555F7 /* RatingTableViewCell.swift in Sources */,
-				9F3CA6891D3C8C51003555F7 /* RatingMemeberClass.swift in Sources */,
-				9FF0A6851D3BAE3E00CA8933 /* NotifCustomTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

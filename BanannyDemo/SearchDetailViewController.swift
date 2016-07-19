@@ -10,14 +10,29 @@ import UIKit
 import Cosmos
 import NoChat
 
-class SearchDetailViewController: UIViewController {
+class SearchDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var detailImageView: UIImageView!
-
     @IBOutlet weak var detailStarRating: CosmosView!
-
+    @IBOutlet weak var IntroDetailTableView: UITableView!
+    
+    let customCellIdentifier = "SearchDetailTableViewCell"
+    let secondCustomCellIdentifier = "SecondSearchDetailTableViewCell"
     
     var searchDetail: searchResult!
+    
+    //first detail cell class
+    var firstIntros:[FirstIntro] = [
+        FirstIntro(introTitle: "平日每小時收費", introContent: "500/hr"),
+        FirstIntro(introTitle: "六日及國定假日每小時收費", introContent: "500/hr"),
+        FirstIntro(introTitle: "特殊時段每小時加收費", introContent: "500/hr"),
+        FirstIntro(introTitle: "特殊時段備註", introContent: "24小時"),
+        FirstIntro(introTitle: "每趟最低時限", introContent: "6小時"),
+        FirstIntro(introTitle: "托育經驗起始日", introContent: "2016/08/03"),
+        FirstIntro(introTitle: "特殊托育經驗", introContent: "我有帶過自閉症兒童，過動兒"),
+        FirstIntro(introTitle: "自我介紹", introContent: "親愛的爸爸媽媽你們好，我有過十年的托育經驗。我自己非常愛小孩子，家中有四個小孩，最大的已經高中，希望有機會合作。")
+        
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +41,13 @@ class SearchDetailViewController: UIViewController {
         self.title = searchDetail.nameResult
         detailStarRating.rating = searchDetail.starResult
 
-        
+        //detailTableView
+        IntroDetailTableView.delegate = self
+        IntroDetailTableView.dataSource = self
+        IntroDetailTableView.estimatedRowHeight = 80
+        IntroDetailTableView.rowHeight = UITableViewAutomaticDimension
+        IntroDetailTableView.registerNib(UINib(nibName: "SearchDetailTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
+        IntroDetailTableView.registerNib(UINib(nibName: "SecondSearchDetailTableViewCell", bundle: nil), forCellReuseIdentifier: secondCustomCellIdentifier)
         
 
         // Do any additional setup after loading the view.
@@ -36,6 +57,40 @@ class SearchDetailViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    // MARK: - DetailTableView datasource
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 8
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        if indexPath.row == 6 || indexPath.row == 7 {
+        let cell = tableView.dequeueReusableCellWithIdentifier("SecondSearchDetailTableViewCell", forIndexPath: indexPath) as! SecondSearchDetailTableViewCell
+            
+            cell.secondIntroCellTitleLabel.text = firstIntros[indexPath.row].introTitle
+            cell.secondIntroCellContentLabel.text = firstIntros[indexPath.row].introContent
+            
+            return cell
+        } else {
+        let cell = tableView.dequeueReusableCellWithIdentifier("SearchDetailTableViewCell", forIndexPath: indexPath) as! SearchDetailTableViewCell
+            
+            cell.firstIntroCellTitleLabel.text = firstIntros[indexPath.row].introTitle
+            cell.firstIntroCellContentLabel.text = firstIntros[indexPath.row].introContent
+            
+            return cell
+        }
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.separatorInset = UIEdgeInsetsZero
+        cell.layoutMargins = UIEdgeInsetsZero
+    }
+
     
 
     /*

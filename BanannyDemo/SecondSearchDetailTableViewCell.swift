@@ -1,18 +1,17 @@
 //
-//  NotifCustomTableViewCell.swift
+//  SecondSearchDetailTableViewCell.swift
 //  BanannyDemo
 //
-//  Created by 張智涵 on 2016/7/17.
+//  Created by 張智涵 on 2016/7/19.
 //  Copyright © 2016年 張智涵 Vincent Chang. All rights reserved.
 //
 
 import UIKit
 
-class NotifCustomTableViewCell: UITableViewCell {
+class SecondSearchDetailTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var notifLabel: UILabel!
-    
-    @IBOutlet weak var notifDateLabel: UILabel!
+    @IBOutlet weak var secondIntroCellTitleLabel: UILabel!
+    @IBOutlet weak var secondIntroCellContentLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

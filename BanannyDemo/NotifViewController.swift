@@ -37,11 +37,6 @@ class NotifViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func backDashButton(sender: AnyObject) {
-        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let ParentDashboardViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("parentDashView")
-        self.presentViewController(ParentDashboardViewController, animated: true, completion: nil)
-    }
-
+ 
 
 }
