@@ -188,20 +188,10 @@ class ParentDashboardViewController: UIViewController, UIPickerViewDelegate, UIP
         // Pass the selected object to the new view controller.
     }
     */
-    @IBAction func parentMesgDashButton(sender: AnyObject) {
-    }
-    @IBAction func parentNotifDashButton(sender: AnyObject) {
-        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let notifViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("notifView")
-        self.presentViewController(notifViewController, animated: true, completion: nil)
-    }
-    @IBAction func parentSettingDashButton(sender: AnyObject) {
-    }
+
     
     @IBAction func parentSearchDashButton(sender: AnyObject) {
-//        let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//        let searchResultViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("searchView")
-//        self.presentViewController(searchResultViewController, animated: true, completion: nil)
+
     }
 
 }

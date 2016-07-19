@@ -8,14 +8,36 @@
 
 import UIKit
 
-class NotifViewController: UIViewController {
+class NotifViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var notifTableView: UITableView!
+    
+    var notifViewClasses: [NotifViewClass] = [
+        NotifViewClass(notifTitle: "Bananny官方通知", notifDate: "2016/08/03", notifContent: "親愛的用戶你好，歡迎使用Bananny。"),
+        NotifViewClass(notifTitle: "預約通知", notifDate: "2016/08/03", notifContent: "王保姆 已經接受了你的預約，預約細節如下："),
+        NotifViewClass(notifTitle: "評價通知", notifDate: "2016/08/02", notifContent: "張保姆 已經評價了你，請點選查看細節...")
+    ]
     
 
-
+    let customCellIdentifier = "NotifTableViewCell"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //navigationBar setting
+        self.navigationController?.navigationBar.translucent = false
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 255/255, green: 250/255, blue: 205/255, alpha: 1)
+        self.navigationController?.navigationBar.tintColor = UIColor.grayColor()
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.grayColor()]
+        self.title = "通知"
         
+        // tableview setting
+        notifTableView.delegate = self
+        notifTableView.dataSource = self
+        notifTableView.estimatedRowHeight = 150
+        notifTableView.rowHeight = UITableViewAutomaticDimension
+        notifTableView.registerNib(UINib(nibName: "NotifTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
+
 
         // Do any additional setup after loading the view.
     }
@@ -25,9 +47,47 @@ class NotifViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - tableview datasource
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
     
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
     
-
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("NotifTableViewCell", forIndexPath: indexPath) as! NotifTableViewCell
+        cell.notifCellTitleLabel.text = notifViewClasses[indexPath.row].notifTitle
+        cell.notifCellDateLabel.text = notifViewClasses[indexPath.row].notifDate
+        cell.notifCellContentLabel.text = notifViewClasses[indexPath.row].notifContent
+    
+        return cell
+    
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.separatorInset = UIEdgeInsetsZero
+        cell.layoutMargins = UIEdgeInsetsZero
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        switch indexPath.row {
+        case 0:
+            self.performSegueWithIdentifier("officialNotifSegue", sender: self)
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        case 1:
+            self.performSegueWithIdentifier("bookNotifSegue", sender: self)
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        case 2:
+            self.performSegueWithIdentifier("ratingNotifSegue", sender: self)
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        default:
+            break
+        }
+    }
+    
     /*
     // MARK: - Navigation
 

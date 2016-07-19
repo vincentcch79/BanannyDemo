@@ -20,6 +20,13 @@
 		9F14D38A1D3E26CD00530EF6 /* ConfirmAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14D3891D3E26CD00530EF6 /* ConfirmAlertView.swift */; };
 		9F14D38C1D3E2E7D00530EF6 /* ConfirmMsgView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F14D38B1D3E2E7D00530EF6 /* ConfirmMsgView.xib */; };
 		9F14D38E1D3E31E800530EF6 /* ConfirmMsgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14D38D1D3E31E800530EF6 /* ConfirmMsgView.swift */; };
+		9F14D3911D3E67F500530EF6 /* NotifTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14D38F1D3E67F500530EF6 /* NotifTableViewCell.swift */; };
+		9F14D3921D3E67F500530EF6 /* NotifTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9F14D3901D3E67F500530EF6 /* NotifTableViewCell.xib */; };
+		9F14D3941D3E6CE200530EF6 /* NotifClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14D3931D3E6CE200530EF6 /* NotifClass.swift */; };
+		9F14D3961D3E6F4200530EF6 /* OfficialNotifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14D3951D3E6F4200530EF6 /* OfficialNotifViewController.swift */; };
+		9F14D3981D3E710700530EF6 /* BookNotifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14D3971D3E710700530EF6 /* BookNotifViewController.swift */; };
+		9F14D39A1D3E715800530EF6 /* RatingNotifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14D3991D3E715800530EF6 /* RatingNotifViewController.swift */; };
+		9F14D39C1D3E766B00530EF6 /* OfficialWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F14D39B1D3E766B00530EF6 /* OfficialWelcomeViewController.swift */; };
 		9F25995D1D377ACA0064C105 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25995C1D377ACA0064C105 /* AppDelegate.swift */; };
 		9F25995F1D377ACA0064C105 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F25995E1D377ACA0064C105 /* ViewController.swift */; };
 		9F2599621D377ACA0064C105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F2599601D377ACA0064C105 /* Main.storyboard */; };
@@ -60,6 +67,13 @@
 		9F14D3891D3E26CD00530EF6 /* ConfirmAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmAlertView.swift; sourceTree = "<group>"; };
 		9F14D38B1D3E2E7D00530EF6 /* ConfirmMsgView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmMsgView.xib; sourceTree = "<group>"; };
 		9F14D38D1D3E31E800530EF6 /* ConfirmMsgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmMsgView.swift; sourceTree = "<group>"; };
+		9F14D38F1D3E67F500530EF6 /* NotifTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifTableViewCell.swift; sourceTree = "<group>"; };
+		9F14D3901D3E67F500530EF6 /* NotifTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotifTableViewCell.xib; sourceTree = "<group>"; };
+		9F14D3931D3E6CE200530EF6 /* NotifClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifClass.swift; sourceTree = "<group>"; };
+		9F14D3951D3E6F4200530EF6 /* OfficialNotifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficialNotifViewController.swift; sourceTree = "<group>"; };
+		9F14D3971D3E710700530EF6 /* BookNotifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookNotifViewController.swift; sourceTree = "<group>"; };
+		9F14D3991D3E715800530EF6 /* RatingNotifViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingNotifViewController.swift; sourceTree = "<group>"; };
+		9F14D39B1D3E766B00530EF6 /* OfficialWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficialWelcomeViewController.swift; sourceTree = "<group>"; };
 		9F2599591D377ACA0064C105 /* BanannyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BanannyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F25995C1D377ACA0064C105 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F25995E1D377ACA0064C105 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +159,7 @@
 			children = (
 				9F76F9B91D37D99C003ABE22 /* SearchResultClass.swift */,
 				9F14D3731D3DD43100530EF6 /* firstIntroDetailClass.swift */,
+				9F14D3931D3E6CE200530EF6 /* NotifClass.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -167,6 +182,8 @@
 				9F14D3891D3E26CD00530EF6 /* ConfirmAlertView.swift */,
 				9F14D38B1D3E2E7D00530EF6 /* ConfirmMsgView.xib */,
 				9F14D38D1D3E31E800530EF6 /* ConfirmMsgView.swift */,
+				9F14D38F1D3E67F500530EF6 /* NotifTableViewCell.swift */,
+				9F14D3901D3E67F500530EF6 /* NotifTableViewCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -186,6 +203,10 @@
 				9FF447161D3A342E00BF0754 /* NotifViewController.swift */,
 				9F3CA68A1D3CCB6E003555F7 /* DashTabBarViewController.swift */,
 				9F14D3791D3DE00300530EF6 /* BookConfirmViewController.swift */,
+				9F14D3951D3E6F4200530EF6 /* OfficialNotifViewController.swift */,
+				9F14D3971D3E710700530EF6 /* BookNotifViewController.swift */,
+				9F14D3991D3E715800530EF6 /* RatingNotifViewController.swift */,
+				9F14D39B1D3E766B00530EF6 /* OfficialWelcomeViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -273,6 +294,7 @@
 			files = (
 				9F2599671D377ACA0064C105 /* LaunchScreen.storyboard in Resources */,
 				9F14D3721D3DC9E300530EF6 /* SecondSearchDetailTableViewCell.xib in Resources */,
+				9F14D3921D3E67F500530EF6 /* NotifTableViewCell.xib in Resources */,
 				9F14D37E1D3DE52A00530EF6 /* ConfirmTableViewCell.xib in Resources */,
 				9F14D36E1D3DC40600530EF6 /* SearchDetailTableViewCell.xib in Resources */,
 				9F76F9B81D37D980003ABE22 /* SearchResultTableViewCell.xib in Resources */,
@@ -346,6 +368,7 @@
 				9F2EE1C61D38855900F05354 /* DemoChatIemFactory.swift in Sources */,
 				9F3CA68B1D3CCB6E003555F7 /* DashTabBarViewController.swift in Sources */,
 				9FB8013C1D378A5E00DE3142 /* BabysitterDashboardViewController.swift in Sources */,
+				9F14D3941D3E6CE200530EF6 /* NotifClass.swift in Sources */,
 				9F2EE1CA1D38859500F05354 /* DemoChatDataSource.swift in Sources */,
 				9F14D36D1D3DC40600530EF6 /* SearchDetailTableViewCell.swift in Sources */,
 				9F25995F1D377ACA0064C105 /* ViewController.swift in Sources */,
@@ -357,12 +380,17 @@
 				9F14D37D1D3DE52A00530EF6 /* ConfirmTableViewCell.swift in Sources */,
 				9F2599771D3783D10064C105 /* BabysitterFirstViewController.swift in Sources */,
 				9F14D3741D3DD43100530EF6 /* firstIntroDetailClass.swift in Sources */,
+				9F14D3981D3E710700530EF6 /* BookNotifViewController.swift in Sources */,
 				9F25995D1D377ACA0064C105 /* AppDelegate.swift in Sources */,
 				9F2EE1C81D38857B00F05354 /* DemoChatItemsDecorator.swift in Sources */,
+				9F14D3911D3E67F500530EF6 /* NotifTableViewCell.swift in Sources */,
 				9F14D37A1D3DE00300530EF6 /* BookConfirmViewController.swift in Sources */,
 				9F2EE1C31D3875CE00F05354 /* SearchDetailViewController.swift in Sources */,
+				9F14D3961D3E6F4200530EF6 /* OfficialNotifViewController.swift in Sources */,
 				9F14D38E1D3E31E800530EF6 /* ConfirmMsgView.swift in Sources */,
+				9F14D39C1D3E766B00530EF6 /* OfficialWelcomeViewController.swift in Sources */,
 				9F76F9BA1D37D99C003ABE22 /* SearchResultClass.swift in Sources */,
+				9F14D39A1D3E715800530EF6 /* RatingNotifViewController.swift in Sources */,
 				9F2EE1CC1D3885AE00F05354 /* TGChatViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
