@@ -15,7 +15,23 @@ class BabysitterSecondViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // trasparent navigation bar
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.translucent = true
+        
+        //configure textfield border
+        babysitterEmailTextField.layer.cornerRadius = 5.0
+        babysitterEmailTextField.layer.masksToBounds = true
+        babysitterEmailTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        babysitterEmailTextField.layer.borderWidth = 1.0
+        
+        babysitterPWTextField.layer.cornerRadius = 5.0
+        babysitterPWTextField.layer.masksToBounds = true
+        babysitterPWTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        babysitterPWTextField.layer.borderWidth = 1.0
+        
         // Do any additional setup after loading the view.
     }
 

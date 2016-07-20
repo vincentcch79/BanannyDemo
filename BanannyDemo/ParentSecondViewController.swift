@@ -10,11 +10,27 @@ import UIKit
 
 class ParentSecondViewController: UIViewController {
     @IBOutlet weak var parentEmailTextField: UITextField!
-
     @IBOutlet weak var parentPWTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        // trasparent navigation bar
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.translucent = true
+        
+        //configure textfield border
+        parentEmailTextField.layer.cornerRadius = 5.0
+        parentEmailTextField.layer.masksToBounds = true
+        parentEmailTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        parentEmailTextField.layer.borderWidth = 1.0
+        
+        parentPWTextField.layer.cornerRadius = 5.0
+        parentPWTextField.layer.masksToBounds = true
+        parentPWTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        parentPWTextField.layer.borderWidth = 1.0
+        
         // Do any additional setup after loading the view.
     }
 

@@ -32,8 +32,8 @@
                             <constraint firstAttribute="height" constant="21" id="6EP-XW-22B"/>
                             <constraint firstAttribute="width" constant="150" id="ePV-a5-6at"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016/08/03" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIo-qM-0MS">
@@ -46,22 +46,22 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請客服幫我這個問題，我看不到保姆的資料..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W94-By-lGA">
-                        <rect key="frame" x="96" y="50" width="216" height="80"/>
+                        <rect key="frame" x="96" y="50" width="212" height="80"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="80" id="tSU-jN-eh8"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
-                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                 <constraints>
                     <constraint firstItem="W94-By-lGA" firstAttribute="leading" secondItem="4Gb-c6-jam" secondAttribute="trailing" constant="8" id="0cZ-Oa-wSN"/>
                     <constraint firstItem="4Gb-c6-jam" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="Bj3-Ay-MC9"/>
                     <constraint firstAttribute="bottom" secondItem="W94-By-lGA" secondAttribute="bottom" constant="19.5" id="Wbi-p4-1a6"/>
                     <constraint firstAttribute="trailing" secondItem="CIo-qM-0MS" secondAttribute="trailing" constant="8" id="aKc-Qg-oEk"/>
-                    <constraint firstAttribute="trailing" secondItem="W94-By-lGA" secondAttribute="trailing" constant="8" id="cxB-1x-2Qy"/>
+                    <constraint firstAttribute="trailing" secondItem="W94-By-lGA" secondAttribute="trailing" constant="12" id="cxB-1x-2Qy"/>
                     <constraint firstItem="AJn-1i-nYI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="eVI-vf-8Bm"/>
                     <constraint firstItem="W94-By-lGA" firstAttribute="top" secondItem="CIo-qM-0MS" secondAttribute="bottom" constant="8" id="fPc-rx-afY"/>
                     <constraint firstItem="CIo-qM-0MS" firstAttribute="leading" secondItem="AJn-1i-nYI" secondAttribute="trailing" id="ge7-18-fbs"/>

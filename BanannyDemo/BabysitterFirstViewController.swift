@@ -14,10 +14,11 @@ class BabysitterFirstViewController: UIViewController {
         super.viewDidLoad()
         
         
-        // Transparent NavigationBar
+        // trasparent navigation bar
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.translucent = true
+        
         // Do any additional setup after loading the view.
     }
 
