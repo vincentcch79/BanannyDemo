@@ -103,10 +103,10 @@ class TGChatViewController: ChatViewController {
         
         alert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default) {
             action -> Void in
-            let nextAlert = UIAlertController(title: "謝謝你！", message: " 已通知，保姆將會以訊息與你確認細節", preferredStyle: UIAlertControllerStyle.Alert)
+            let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let BookConfirmViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("BookConfirm")
+            self.presentViewController(BookConfirmViewController, animated: true, completion: nil)
             
-            nextAlert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default, handler: nil))
-            self.presentViewController(nextAlert, animated: true, completion: nil)
             })
         alert.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
@@ -115,7 +115,7 @@ class TGChatViewController: ChatViewController {
     // tapCancelButton
     func tapCancelButton(sender: AnyObject) {
         
-        let cancelAlert = UIAlertController(title: "取消預約", message: "將會取消跟這位保姆的預約，回到保姆介紹頁面", preferredStyle: UIAlertControllerStyle.Alert)
+        let cancelAlert = UIAlertController(title: "取消對話", message: "將會取消跟這位保姆的對話，回到保姆介紹頁面", preferredStyle: UIAlertControllerStyle.Alert)
         cancelAlert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default) {
             action -> Void in
             self.dismissViewControllerAnimated(true, completion: nil)

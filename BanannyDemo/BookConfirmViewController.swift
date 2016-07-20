@@ -103,6 +103,10 @@ class BookConfirmViewController: UIViewController, UITableViewDelegate, UITableV
             secondAlertView.setActionHandler("secondConfirm") { () -> Void in
                 self.blurView.hidden = true
                 secondAlertView.removeFromSuperview()
+                let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                let DashTabBarViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("DashTabBar")
+                self.presentViewController(DashTabBarViewController, animated: true, completion: nil)
+                
             }
             
         }

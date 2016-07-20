@@ -2079,7 +2079,7 @@
         <!--Book Confirm View Controller-->
         <scene sceneID="jja-Xs-SlT">
             <objects>
-                <viewController id="IiK-Zv-neX" customClass="BookConfirmViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BookConfirm" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IiK-Zv-neX" customClass="BookConfirmViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6qg-e0-N6E"/>
                         <viewControllerLayoutGuide type="bottom" id="Qct-3c-XxZ"/>
@@ -2091,6 +2091,22 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m7l-jf-CEg">
                                 <rect key="frame" x="0.0" y="64" width="600" height="807"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="zif-F0-Coq">
+                                    <rect key="frame" x="0.0" y="136" width="600" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </view>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="rVm-5B-H9q">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rVm-5B-H9q" id="kVA-1r-MNp">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwI-by-v7N">
                                 <rect key="frame" x="200" y="881" width="200" height="50"/>
@@ -2445,7 +2461,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0kG-HP-GWb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4198" y="1803"/>
+            <point key="canvasLocation" x="4206" y="1403"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ij0-Qk-Zid">
@@ -2464,7 +2480,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HO9-EW-exF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5034" y="1803"/>
+            <point key="canvasLocation" x="5138" y="1475"/>
         </scene>
         <!--Msg View Controller-->
         <scene sceneID="uX1-Vc-sCB">
