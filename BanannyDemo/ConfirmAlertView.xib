@@ -45,7 +45,7 @@
                             </constraints>
                         </view>
                     </subviews>
-                    <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="1" green="1" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="M5w-En-VHK" secondAttribute="bottom" id="AII-B4-pIf"/>
                         <constraint firstAttribute="trailing" secondItem="M5w-En-VHK" secondAttribute="trailing" id="BCe-XN-Z6r"/>

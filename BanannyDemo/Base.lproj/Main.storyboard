@@ -2379,9 +2379,7 @@
         <scene sceneID="atL-HA-6vk">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mHI-Lc-MkR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="搜尋" image="search" id="gRC-e5-7Rg">
-                        <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="搜尋" image="search" id="gRC-e5-7Rg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="orJ-Yp-WOc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -2400,9 +2398,7 @@
         <scene sceneID="Sm5-pb-eK9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YNH-dK-EAj" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="通知" image="notification" id="oLo-hP-tfs">
-                        <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="通知" image="notification" id="oLo-hP-tfs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="VZp-sa-FdN">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -2421,9 +2417,7 @@
         <scene sceneID="hOf-OL-Kea">
             <objects>
                 <navigationController id="Ate-Gg-kKh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="訊息" image="mail" id="2w8-op-gwG">
-                        <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="訊息" image="mail" id="2w8-op-gwG"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cuv-F4-je4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2440,9 +2434,7 @@
         <scene sceneID="4rS-Xi-jkX">
             <objects>
                 <navigationController id="jOs-1G-xF5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="設定" image="settings" id="a3n-rH-lDm">
-                        <inset key="imageInsets" minX="5" minY="5" maxX="5" maxY="5"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="設定" image="settings" id="a3n-rH-lDm"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PCe-UY-kBf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2509,7 +2501,9 @@
                             <constraint firstItem="Q71-Jf-bTa" firstAttribute="leading" secondItem="5He-dc-ZX0" secondAttribute="leading" id="jXJ-o4-vzl"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="wLG-Xy-JNE"/>
+                    <navigationItem key="navigationItem" id="wLG-Xy-JNE">
+                        <barButtonItem key="backBarButtonItem" title=" " id="THx-G1-Nin"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="msgTableView" destination="Q71-Jf-bTa" id="tbK-9X-sL2"/>
                     </connections>
@@ -2522,12 +2516,12 @@
     <resources>
         <image name="badge" width="170" height="170"/>
         <image name="confirmIcon" width="85" height="85"/>
-        <image name="mail" width="42" height="42"/>
-        <image name="notification" width="42" height="42"/>
+        <image name="mail" width="23" height="23"/>
+        <image name="notification" width="23" height="23"/>
         <image name="profilePic" width="223" height="125"/>
         <image name="profile_2" width="426" height="240"/>
-        <image name="search" width="42" height="42"/>
-        <image name="settings" width="42" height="42"/>
+        <image name="search" width="23" height="23"/>
+        <image name="settings" width="23" height="23"/>
         <image name="timer" width="42" height="42"/>
     </resources>
 </document>
