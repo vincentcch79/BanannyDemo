@@ -10,9 +10,18 @@ import UIKit
 
 class RatingActionViewController: UIViewController {
 
+    @IBOutlet weak var ratingActionContentView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.title = "請完成評價"
+        
+        //shadow
+        ratingActionContentView.layer.shadowColor = UIColor(white: 0, alpha: 1).CGColor
+        ratingActionContentView.layer.shadowOffset = CGSize(width: 0, height: 5)
+        ratingActionContentView.layer.shadowOpacity = 0.5
+        
         // Do any additional setup after loading the view.
     }
 

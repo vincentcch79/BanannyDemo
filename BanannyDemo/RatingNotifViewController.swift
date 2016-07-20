@@ -65,6 +65,20 @@ class RatingNotifViewController: UIViewController, UITableViewDelegate, UITableV
         cell.separatorInset = UIEdgeInsetsZero
         cell.layoutMargins = UIEdgeInsetsZero
     }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        switch indexPath.row {
+        case 0:
+            break
+        case 1:
+            self.performSegueWithIdentifier("ratingActionSegue", sender: self)
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
+            
+        default:
+            break
+        }
+    }
+
 
 
     /*
