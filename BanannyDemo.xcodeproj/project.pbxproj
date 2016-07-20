@@ -37,6 +37,7 @@
 		9F2599771D3783D10064C105 /* BabysitterFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2599761D3783D10064C105 /* BabysitterFirstViewController.swift */; };
 		9F2C62CD1D3F0C40001195A0 /* paymentConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2C62CC1D3F0C40001195A0 /* paymentConfirmViewController.swift */; };
 		9F2C62CF1D3F16E1001195A0 /* RatingActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2C62CE1D3F16E1001195A0 /* RatingActionViewController.swift */; };
+		9F2C62D11D3F1F59001195A0 /* OtherRatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2C62D01D3F1F59001195A0 /* OtherRatingViewController.swift */; };
 		9F2EE1C31D3875CE00F05354 /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1C21D3875CE00F05354 /* SearchDetailViewController.swift */; };
 		9F2EE1C61D38855900F05354 /* DemoChatIemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1C51D38855900F05354 /* DemoChatIemFactory.swift */; };
 		9F2EE1C81D38857B00F05354 /* DemoChatItemsDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1C71D38857B00F05354 /* DemoChatItemsDecorator.swift */; };
@@ -88,6 +89,7 @@
 		9F2599761D3783D10064C105 /* BabysitterFirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BabysitterFirstViewController.swift; sourceTree = "<group>"; };
 		9F2C62CC1D3F0C40001195A0 /* paymentConfirmViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentConfirmViewController.swift; sourceTree = "<group>"; };
 		9F2C62CE1D3F16E1001195A0 /* RatingActionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingActionViewController.swift; sourceTree = "<group>"; };
+		9F2C62D01D3F1F59001195A0 /* OtherRatingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OtherRatingViewController.swift; sourceTree = "<group>"; };
 		9F2EE1C21D3875CE00F05354 /* SearchDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
 		9F2EE1C51D38855900F05354 /* DemoChatIemFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoChatIemFactory.swift; sourceTree = "<group>"; };
 		9F2EE1C71D38857B00F05354 /* DemoChatItemsDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoChatItemsDecorator.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				9F14D39B1D3E766B00530EF6 /* OfficialWelcomeViewController.swift */,
 				9F2C62CC1D3F0C40001195A0 /* paymentConfirmViewController.swift */,
 				9F2C62CE1D3F16E1001195A0 /* RatingActionViewController.swift */,
+				9F2C62D01D3F1F59001195A0 /* OtherRatingViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -397,6 +400,7 @@
 				9F2C62CF1D3F16E1001195A0 /* RatingActionViewController.swift in Sources */,
 				9F14D38E1D3E31E800530EF6 /* ConfirmMsgView.swift in Sources */,
 				9F14D39C1D3E766B00530EF6 /* OfficialWelcomeViewController.swift in Sources */,
+				9F2C62D11D3F1F59001195A0 /* OtherRatingViewController.swift in Sources */,
 				9F76F9BA1D37D99C003ABE22 /* SearchResultClass.swift in Sources */,
 				9F14D39A1D3E715800530EF6 /* RatingNotifViewController.swift in Sources */,
 				9F2EE1CC1D3885AE00F05354 /* TGChatViewController.swift in Sources */,

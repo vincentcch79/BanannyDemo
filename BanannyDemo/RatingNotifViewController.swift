@@ -69,7 +69,8 @@ class RatingNotifViewController: UIViewController, UITableViewDelegate, UITableV
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         switch indexPath.row {
         case 0:
-            break
+            self.performSegueWithIdentifier("otherRatingSegue", sender: self)
+            tableView.deselectRowAtIndexPath(indexPath, animated: true)
         case 1:
             self.performSegueWithIdentifier("ratingActionSegue", sender: self)
             tableView.deselectRowAtIndexPath(indexPath, animated: true)
