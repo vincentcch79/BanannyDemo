@@ -50,6 +50,28 @@ class ParentFirstViewController: UIViewController {
     @IBAction func parentNormalLoginButton(sender: AnyObject) {
     }
     @IBAction func parentFBLoginButton(sender: AnyObject) {
-       
+        
+        let fbLoginManager : FBSDKLoginManager = FBSDKLoginManager()
+        fbLoginManager.logInWithReadPermissions(["email"], fromViewController: self) { (result, error) -> Void in
+            if (error == nil){
+                let fbloginresult : FBSDKLoginManagerLoginResult = result
+                if(fbloginresult.grantedPermissions.contains("email"))
+                {
+                    self.getFBUserData()
+                }
+            }
+        }
     }
+    
+    func getFBUserData(){
+        if((FBSDKAccessToken.currentAccessToken()) != nil){
+            FBSDKGraphRequest(graphPath: "me", parameters: ["fields": "id, name, first_name, last_name, picture.type(large), email"]).startWithCompletionHandler({ (connection, result, error) -> Void in
+                if (error == nil){
+                    //everything works print the user data
+                    print(result)
+                }
+            })
+        }
+    }
+    
 }
