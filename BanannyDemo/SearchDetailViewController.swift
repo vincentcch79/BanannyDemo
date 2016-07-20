@@ -117,8 +117,9 @@ class SearchDetailViewController: UIViewController, UITableViewDelegate, UITable
         // pass search data to chatVC
         chatVC.searchChatDetail = self.searchDetail
         
-        let navController = UINavigationController(rootViewController: chatVC)
-        self.presentViewController(navController, animated: true, completion: nil)
+//        let navController = UINavigationController(rootViewController: chatVC)
+//        self.presentViewController(navController, animated: true, completion: nil)
+        self.navigationController?.pushViewController(chatVC, animated: true)
 
     }
 

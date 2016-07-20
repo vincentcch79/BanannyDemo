@@ -105,8 +105,7 @@ class TGChatViewController: ChatViewController {
             action -> Void in
             let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let BookConfirmViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("BookConfirm")
-            self.presentViewController(BookConfirmViewController, animated: true, completion: nil)
-            
+            self.navigationController?.pushViewController(BookConfirmViewController, animated: true)
             })
         alert.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil))
         self.presentViewController(alert, animated: true, completion: nil)
@@ -118,7 +117,12 @@ class TGChatViewController: ChatViewController {
         let cancelAlert = UIAlertController(title: "取消對話", message: "將會取消跟這位保姆的對話，回到保姆介紹頁面", preferredStyle: UIAlertControllerStyle.Alert)
         cancelAlert.addAction(UIAlertAction(title: "確定", style: UIAlertActionStyle.Default) {
             action -> Void in
-            self.dismissViewControllerAnimated(true, completion: nil)
+            
+            self.navigationController?.popViewControllerAnimated(true)
+
+//            let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//            let SearchDetailViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("SearchDetailView")
+//            self.navigationController?.popToViewController(SearchDetailViewController, animated: true)
         })
         cancelAlert.addAction(UIAlertAction(title: "取消", style: UIAlertActionStyle.Cancel, handler: nil))
         self.presentViewController(cancelAlert, animated: true, completion: nil)
