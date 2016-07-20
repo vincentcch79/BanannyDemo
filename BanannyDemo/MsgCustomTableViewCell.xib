@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MsgCustomTableViewCell" customModule="BanannyDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="149.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Gb-c6-jam">
+                        <rect key="frame" x="8" y="35" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="aQ1-T0-7Fc"/>
+                            <constraint firstAttribute="height" constant="80" id="ajP-bJ-Xbc"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="40"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bananny 官方訊息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AJn-1i-nYI">
+                        <rect key="frame" x="96" y="21" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="6EP-XW-22B"/>
+                            <constraint firstAttribute="width" constant="150" id="ePV-a5-6at"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016/08/03" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CIo-qM-0MS">
+                        <rect key="frame" x="246" y="21" width="66" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="NjP-fo-JgX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請客服幫我這個問題，我看不到保姆的資料..." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W94-By-lGA">
+                        <rect key="frame" x="96" y="50" width="216" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="tSU-jN-eh8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="W94-By-lGA" firstAttribute="leading" secondItem="4Gb-c6-jam" secondAttribute="trailing" constant="8" id="0cZ-Oa-wSN"/>
+                    <constraint firstItem="4Gb-c6-jam" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="35" id="Bj3-Ay-MC9"/>
+                    <constraint firstAttribute="bottom" secondItem="W94-By-lGA" secondAttribute="bottom" constant="19.5" id="Wbi-p4-1a6"/>
+                    <constraint firstAttribute="trailing" secondItem="CIo-qM-0MS" secondAttribute="trailing" constant="8" id="aKc-Qg-oEk"/>
+                    <constraint firstAttribute="trailing" secondItem="W94-By-lGA" secondAttribute="trailing" constant="8" id="cxB-1x-2Qy"/>
+                    <constraint firstItem="AJn-1i-nYI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="eVI-vf-8Bm"/>
+                    <constraint firstItem="W94-By-lGA" firstAttribute="top" secondItem="CIo-qM-0MS" secondAttribute="bottom" constant="8" id="fPc-rx-afY"/>
+                    <constraint firstItem="CIo-qM-0MS" firstAttribute="leading" secondItem="AJn-1i-nYI" secondAttribute="trailing" id="ge7-18-fbs"/>
+                    <constraint firstItem="AJn-1i-nYI" firstAttribute="leading" secondItem="4Gb-c6-jam" secondAttribute="trailing" constant="8" id="hCO-eX-Uyd"/>
+                    <constraint firstItem="4Gb-c6-jam" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="hZG-99-uni"/>
+                    <constraint firstItem="CIo-qM-0MS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="oFN-J1-Mrq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="msgContentLabel" destination="W94-By-lGA" id="YEI-JY-ntc"/>
+                <outlet property="msgDateLabel" destination="CIo-qM-0MS" id="4MJ-xq-gbQ"/>
+                <outlet property="msgImageView" destination="4Gb-c6-jam" id="XSG-Oa-hTb"/>
+                <outlet property="msgTitleLabel" destination="AJn-1i-nYI" id="X2w-Br-sou"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

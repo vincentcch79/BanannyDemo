@@ -25,6 +25,8 @@ class RatingNotifViewController: UIViewController, UITableViewDelegate, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "評價通知"
+        
         //tableView
         ratingNotifTableView.delegate = self
         ratingNotifTableView.dataSource = self

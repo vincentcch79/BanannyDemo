@@ -354,7 +354,7 @@
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojj-44-PpB" customClass="CosmosView" customModule="Cosmos">
                                         <rect key="frame" x="322" y="109" width="150" height="21"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="I4c-FP-WZ5"/>
                                             <constraint firstAttribute="width" constant="150" id="UYo-qO-bAa"/>
@@ -387,7 +387,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="kES-H7-h3m" firstAttribute="leading" secondItem="Ojj-44-PpB" secondAttribute="trailing" constant="8" id="Nvp-kG-4bF"/>
                                     <constraint firstItem="54S-bH-xAy" firstAttribute="top" secondItem="3Vd-SN-ArW" secondAttribute="top" constant="80" id="Qfh-qh-UM4"/>
@@ -453,7 +453,7 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qN0-zv-3ks">
                                 <rect key="frame" x="80" y="661" width="440" height="50"/>
-                                <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="xmW-Tw-dBE"/>
                                 </constraints>
@@ -937,6 +937,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9s6-oJ-C6q">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="3Sm-IE-n9G">
+                                    <rect key="frame" x="0.0" y="136" width="600" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="cIB-bZ-Qew">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -981,6 +986,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HI9-5h-aIH">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="2rJ-dT-tvz">
+                                    <rect key="frame" x="0.0" y="136" width="600" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="xRc-5L-sAa">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -2464,10 +2474,10 @@
             </objects>
             <point key="canvasLocation" x="5034" y="1803"/>
         </scene>
-        <!--View Controller-->
+        <!--Msg View Controller-->
         <scene sceneID="uX1-Vc-sCB">
             <objects>
-                <viewController id="HhF-iy-SP0" sceneMemberID="viewController">
+                <viewController id="HhF-iy-SP0" customClass="MsgViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="B1x-cX-D6N"/>
                         <viewControllerLayoutGuide type="bottom" id="fFE-KF-CGW"/>
@@ -2475,9 +2485,34 @@
                     <view key="view" contentMode="scaleToFill" id="5He-dc-ZX0">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q71-Jf-bTa">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="O4j-wp-ySV">
+                                        <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="O4j-wp-ySV" id="a9C-zs-2IK">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Q71-Jf-bTa" firstAttribute="top" secondItem="B1x-cX-D6N" secondAttribute="bottom" id="8Dq-IW-gAh"/>
+                            <constraint firstAttribute="trailing" secondItem="Q71-Jf-bTa" secondAttribute="trailing" id="Fp8-UG-ihF"/>
+                            <constraint firstItem="fFE-KF-CGW" firstAttribute="top" secondItem="Q71-Jf-bTa" secondAttribute="bottom" id="g2G-Ns-MZz"/>
+                            <constraint firstItem="Q71-Jf-bTa" firstAttribute="leading" secondItem="5He-dc-ZX0" secondAttribute="leading" id="jXJ-o4-vzl"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wLG-Xy-JNE"/>
+                    <connections>
+                        <outlet property="msgTableView" destination="Q71-Jf-bTa" id="tbK-9X-sL2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KxT-ql-pGa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
