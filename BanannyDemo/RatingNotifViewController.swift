@@ -8,10 +8,30 @@
 
 import UIKit
 
-class RatingNotifViewController: UIViewController {
+class RatingNotifViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    @IBOutlet weak var ratingNotifTableView: UITableView!
+    
+    let customCellIdentifier = "NotifTableViewCell"
+    
+    var ratingNotifs: [NotifViewClass] = [
+        NotifViewClass(notifTitle: "張保姆評價了你", notifDate: "2016/08/03", notifContent: "張保姆在08/03評價了你，請點選查看細節..."),
+        NotifViewClass(notifTitle: "請評價王保姆", notifDate: "2016/08/03", notifContent: "王保姆在08/02完成了托育，請點這裡評價..."),
+        NotifViewClass(notifTitle: "郭保姆評價了你", notifDate: "2016/08/03", notifContent: "郭保姆在08/03評價了你，請點選查看細節..."),
+        NotifViewClass(notifTitle: "李保姆評價了你", notifDate: "2016/08/02", notifContent: "李保姆在08/03評價了你，請點選查看細節...")
+    ]
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //tableView
+        ratingNotifTableView.delegate = self
+        ratingNotifTableView.dataSource = self
+        ratingNotifTableView.estimatedRowHeight = 150
+        ratingNotifTableView.rowHeight = UITableViewAutomaticDimension
+        ratingNotifTableView.registerNib(UINib(nibName: "NotifTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
+
 
         // Do any additional setup after loading the view.
     }
@@ -21,6 +41,31 @@ class RatingNotifViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - tableview datasource
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 4
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCellWithIdentifier("NotifTableViewCell", forIndexPath: indexPath) as! NotifTableViewCell
+        cell.notifCellTitleLabel.text = ratingNotifs[indexPath.row].notifTitle
+        cell.notifCellDateLabel.text = ratingNotifs[indexPath.row].notifDate
+        cell.notifCellContentLabel.text = ratingNotifs[indexPath.row].notifContent
+        
+        return cell
+        
+    }
+    
+    func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
+        cell.separatorInset = UIEdgeInsetsZero
+        cell.layoutMargins = UIEdgeInsetsZero
+    }
+
 
     /*
     // MARK: - Navigation

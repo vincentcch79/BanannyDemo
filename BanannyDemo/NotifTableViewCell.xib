@@ -15,7 +15,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bananny 官方通知" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JE1-gI-wnP">
-                        <rect key="frame" x="37" y="8" width="187" height="53"/>
+                        <rect key="frame" x="23" y="8" width="187" height="53"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="187" id="7KE-wQ-Am5"/>
                             <constraint firstAttribute="height" constant="53" id="bUm-uA-hjA"/>
@@ -35,21 +35,21 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="親愛的會員你好，歡迎使用Bananny。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyk-JK-ad4">
-                        <rect key="frame" x="37" y="69" width="275" height="81.5"/>
+                        <rect key="frame" x="23" y="63" width="275" height="81.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="lyk-JK-ad4" secondAttribute="trailing" constant="8" id="9bu-uX-Giq"/>
+                    <constraint firstAttribute="trailing" secondItem="lyk-JK-ad4" secondAttribute="trailing" constant="22" id="9bu-uX-Giq"/>
                     <constraint firstItem="hwy-aJ-bgF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="G7A-G0-PnQ"/>
                     <constraint firstItem="JE1-gI-wnP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="NZK-gN-FlG"/>
-                    <constraint firstAttribute="bottom" secondItem="lyk-JK-ad4" secondAttribute="bottom" constant="22" id="Olq-Lb-MPM"/>
-                    <constraint firstItem="lyk-JK-ad4" firstAttribute="top" secondItem="hwy-aJ-bgF" secondAttribute="bottom" constant="8.5" id="cPZ-Gm-zlW"/>
-                    <constraint firstItem="lyk-JK-ad4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="37" id="chn-39-hDY"/>
+                    <constraint firstAttribute="bottom" secondItem="lyk-JK-ad4" secondAttribute="bottom" constant="28" id="Olq-Lb-MPM"/>
+                    <constraint firstItem="lyk-JK-ad4" firstAttribute="top" secondItem="hwy-aJ-bgF" secondAttribute="bottom" constant="2.5" id="cPZ-Gm-zlW"/>
+                    <constraint firstItem="lyk-JK-ad4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="chn-39-hDY"/>
                     <constraint firstAttribute="trailing" secondItem="hwy-aJ-bgF" secondAttribute="trailing" constant="8" id="gpt-o3-g4c"/>
-                    <constraint firstItem="JE1-gI-wnP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="37" id="qTN-bg-bSv"/>
+                    <constraint firstItem="JE1-gI-wnP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="qTN-bg-bSv"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
