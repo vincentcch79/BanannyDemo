@@ -22,7 +22,16 @@ class ParentFirstViewController: UIViewController {
         self.navigationController?.navigationBar.translucent = true
         // Do any additional setup after loading the view.
     }
-
+    
+    override func viewDidAppear(animated: Bool) {
+        
+        if FBSDKAccessToken.currentAccessToken() != nil {
+            let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let DashTabBarViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("DashTabBar")
+            self.presentViewController(DashTabBarViewController, animated: true, completion: nil)
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -41,5 +50,6 @@ class ParentFirstViewController: UIViewController {
     @IBAction func parentNormalLoginButton(sender: AnyObject) {
     }
     @IBAction func parentFBLoginButton(sender: AnyObject) {
+       
     }
 }
