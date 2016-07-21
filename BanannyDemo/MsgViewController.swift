@@ -37,7 +37,12 @@ class MsgViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         msgTableView.rowHeight = UITableViewAutomaticDimension
         msgTableView.registerNib(UINib(nibName: "MsgCustomTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
         
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        if let index = msgTableView.indexPathForSelectedRow{
+            msgTableView.deselectRowAtIndexPath(index, animated: false)
+        }
     }
     
     

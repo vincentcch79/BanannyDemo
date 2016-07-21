@@ -38,8 +38,12 @@ class NotifViewController: UIViewController, UITableViewDelegate, UITableViewDat
         notifTableView.rowHeight = UITableViewAutomaticDimension
         notifTableView.registerNib(UINib(nibName: "NotifTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
 
-
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        if let index = notifTableView.indexPathForSelectedRow{
+            notifTableView.deselectRowAtIndexPath(index, animated: false)
+        }
     }
 
     override func didReceiveMemoryWarning() {

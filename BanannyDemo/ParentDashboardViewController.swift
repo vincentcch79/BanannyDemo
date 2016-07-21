@@ -117,6 +117,12 @@ class ParentDashboardViewController: UIViewController, UIPickerViewDelegate, UIP
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.translucent = true
+        
+        // clear textField
+        parentDateDashTextField.text = ""
+        parentStartTimeTextField.text = ""
+        parentFinishedTimeTextField.text = ""
+        parentLocationTextField.text = ""
     }
 
     override func didReceiveMemoryWarning() {

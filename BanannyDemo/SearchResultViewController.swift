@@ -41,10 +41,14 @@ class SearchResultViewController: UIViewController, UITableViewDelegate, UITable
         searchTableView.rowHeight = UITableViewAutomaticDimension
         searchTableView.registerNib(UINib(nibName: "SearchResultTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
         
-
-        
         
     }
+    
+//    override func viewWillAppear(animated: Bool) {
+//        if let index = searchTableView.indexPathForSelectedRow{
+//            searchTableView.deselectRowAtIndexPath(index, animated: true)
+//        }
+//    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
