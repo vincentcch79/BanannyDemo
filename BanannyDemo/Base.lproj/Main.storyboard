@@ -2151,6 +2151,12 @@
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
                         <outlet property="IntroDetailTableView" destination="DGi-zp-zM1" id="6UL-ea-C5g"/>
+                        <outlet property="babysitterFinishedNum" destination="ZdP-AD-yUz" id="WyW-eK-WvA"/>
+                        <outlet property="babysitterFinishedTitle" destination="hYs-BY-QTw" id="J1g-N8-jKK"/>
+                        <outlet property="babysitterIDNumLabel" destination="bfG-zG-zLj" id="szf-YR-KiA"/>
+                        <outlet property="babysitterIDTitle" destination="3Jt-8w-Ioc" id="QRd-83-N5h"/>
+                        <outlet property="babysitterWeekDayNum" destination="eAS-w9-OUL" id="aIN-cY-O6X"/>
+                        <outlet property="babysitterWeekDayTitle" destination="Bq1-3J-RAs" id="lmC-xH-Q6Y"/>
                         <outlet property="detailImageView" destination="B0d-Bg-biJ" id="aOX-Iz-1GZ"/>
                         <outlet property="detailStarRating" destination="3CU-jC-5Ei" id="PeG-SY-QlW"/>
                     </connections>
