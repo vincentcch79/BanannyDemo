@@ -790,7 +790,7 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SaG-Aw-QoN">
-                                        <rect key="frame" x="160" y="167" width="280" height="280"/>
+                                        <rect key="frame" x="160" y="200" width="280" height="247"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="親愛的會員，歡迎你正式成為Bananny的一份子。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOl-nE-thc">
                                                 <rect key="frame" x="8" y="20" width="264" height="53"/>
@@ -811,7 +811,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bananny敬上" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wt-tL-5Jo">
-                                                <rect key="frame" x="8" y="237" width="264" height="20"/>
+                                                <rect key="frame" x="8" y="204" width="264" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="AvB-Fd-CZk"/>
                                                 </constraints>
@@ -826,7 +826,6 @@
                                             <constraint firstItem="FOl-nE-thc" firstAttribute="top" secondItem="SaG-Aw-QoN" secondAttribute="top" constant="20" id="CSW-UO-Q1P"/>
                                             <constraint firstAttribute="bottom" secondItem="3wt-tL-5Jo" secondAttribute="bottom" constant="23" id="NGH-uE-yfU"/>
                                             <constraint firstItem="Mte-dc-kcU" firstAttribute="top" secondItem="FOl-nE-thc" secondAttribute="bottom" constant="8" id="X3I-DV-ngw"/>
-                                            <constraint firstAttribute="height" constant="280" id="euJ-RK-3kY"/>
                                             <constraint firstAttribute="trailing" secondItem="Mte-dc-kcU" secondAttribute="trailing" constant="8" id="i4n-p0-ewQ"/>
                                             <constraint firstItem="Mte-dc-kcU" firstAttribute="leading" secondItem="SaG-Aw-QoN" secondAttribute="leading" constant="8" id="jXd-fI-xBF"/>
                                             <constraint firstItem="Mte-dc-kcU" firstAttribute="top" secondItem="FOl-nE-thc" secondAttribute="bottom" constant="8" id="pjF-Z6-8ik"/>
@@ -847,7 +846,7 @@
                                         </variation>
                                     </view>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge" translatesAutoresizingMaskIntoConstraints="NO" id="dwc-mY-d8n">
-                                        <rect key="frame" x="225" y="45" width="150" height="150"/>
+                                        <rect key="frame" x="225" y="30" width="150" height="150"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="150" id="GDF-A3-ms7"/>
                                             <constraint firstAttribute="width" constant="150" id="btg-yR-4Ru"/>
@@ -856,8 +855,9 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="dwc-mY-d8n" firstAttribute="top" secondItem="5OR-Sw-DYX" secondAttribute="top" constant="45" id="8yq-F6-8MY"/>
+                                    <constraint firstItem="SaG-Aw-QoN" firstAttribute="top" secondItem="dwc-mY-d8n" secondAttribute="bottom" constant="20" id="3mD-16-EqC"/>
                                     <constraint firstItem="dwc-mY-d8n" firstAttribute="centerX" secondItem="5OR-Sw-DYX" secondAttribute="centerX" id="Boj-Bt-LvH"/>
+                                    <constraint firstItem="SaG-Aw-QoN" firstAttribute="top" secondItem="5OR-Sw-DYX" secondAttribute="top" constant="200" id="DdY-ga-E4R"/>
                                     <constraint firstAttribute="bottom" secondItem="SaG-Aw-QoN" secondAttribute="bottom" constant="40" id="Hvk-9n-aZR"/>
                                     <constraint firstItem="dwc-mY-d8n" firstAttribute="top" secondItem="5OR-Sw-DYX" secondAttribute="top" constant="42" id="hzw-op-RoW"/>
                                     <constraint firstItem="SaG-Aw-QoN" firstAttribute="centerX" secondItem="5OR-Sw-DYX" secondAttribute="centerX" id="yFJ-yC-UdI"/>
