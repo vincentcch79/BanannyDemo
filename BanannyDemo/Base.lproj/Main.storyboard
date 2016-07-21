@@ -443,7 +443,7 @@
                                                 <color key="value" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="starSize">
-                                                <real key="value" value="25"/>
+                                                <real key="value" value="24"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="fillMode">
                                                 <integer key="value" value="1"/>
@@ -455,6 +455,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="nrv-MS-pUA" secondAttribute="trailing" id="1kP-A1-siT"/>
                                     <constraint firstItem="kES-H7-h3m" firstAttribute="leading" secondItem="Ojj-44-PpB" secondAttribute="trailing" constant="8" id="Nvp-kG-4bF"/>
+                                    <constraint firstItem="nrv-MS-pUA" firstAttribute="top" secondItem="Ojj-44-PpB" secondAttribute="bottom" constant="-130" id="P0F-Wp-cd2"/>
                                     <constraint firstItem="nrv-MS-pUA" firstAttribute="top" secondItem="3Vd-SN-ArW" secondAttribute="top" id="QaN-qI-gat"/>
                                     <constraint firstItem="54S-bH-xAy" firstAttribute="top" secondItem="3Vd-SN-ArW" secondAttribute="top" constant="80" id="Qfh-qh-UM4"/>
                                     <constraint firstItem="nrv-MS-pUA" firstAttribute="leading" secondItem="3Vd-SN-ArW" secondAttribute="leading" id="QnP-Bh-PSs"/>
@@ -465,6 +466,11 @@
                                     <constraint firstItem="kES-H7-h3m" firstAttribute="leading" secondItem="54S-bH-xAy" secondAttribute="trailing" constant="8" id="uvT-G9-TuT"/>
                                     <constraint firstAttribute="bottom" secondItem="nrv-MS-pUA" secondAttribute="bottom" id="zxH-Vl-tfk"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="P0F-Wp-cd2"/>
+                                    </mask>
+                                </variation>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="請輸入想托育的細節" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6h-NJ-nV2">
                                 <rect key="frame" x="20" y="305" width="560" height="21"/>

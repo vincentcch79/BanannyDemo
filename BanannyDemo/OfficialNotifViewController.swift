@@ -24,6 +24,7 @@ class OfficialNotifViewController: UIViewController, UITableViewDelegate, UITabl
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.title = "官方通知"
         
         //tableView
         officialNotifTableView.delegate = self
