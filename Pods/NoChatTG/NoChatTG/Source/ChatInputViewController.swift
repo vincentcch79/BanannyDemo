@@ -203,7 +203,7 @@ public class ChatInputViewController: UIViewController, ChatInputControllerProto
     private func setupKeyboardAnimation() {
         keyboardMan.postKeyboardInfo = { [unowned self] _, info in
             let oldH = self.inputViewHeight
-            let newH = info.action == .Hide ? self.inputBarHeight :  self.inputBarHeight + info.height
+            let newH = info.action == .Hide ? self.inputBarHeight :  self.inputBarHeight + info.height - 50
             
             self.onHeightChange?(HeightChange(oldHeight: oldH, newHeight: newH))
             
