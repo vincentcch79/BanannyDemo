@@ -17,15 +17,21 @@ class searchResult {
     var imageResult = ""
     var starResult = 0.0
     var numResult = ""
+    var hourRseult = ""
+    var finishResult = ""
+    var startDay = ""
     var introClasses:[introClass] = []
 
     
     
-    init(nameResult:String, imageResult:String, starResult: Double, numResult: String, introClasses: [introClass]){
+    init(nameResult:String, imageResult:String, starResult: Double, numResult: String, hourResult: String, finishResult: String, startDay: String, introClasses: [introClass]){
         self.nameResult = nameResult
         self.imageResult = imageResult
         self.starResult = starResult
         self.numResult = numResult
+        self.hourRseult = hourResult
+        self.finishResult = finishResult
+        self.startDay = startDay
         self.introClasses = introClasses
     }
     

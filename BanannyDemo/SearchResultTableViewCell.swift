@@ -13,10 +13,11 @@ import Cosmos
 class SearchResultTableViewCell: UITableViewCell {
 
     @IBOutlet weak var ResultCellImageView: UIImageView!
-    
     @IBOutlet weak var ResultNameLabel: UILabel!
-    
     @IBOutlet weak var ResultStarRating: CosmosView!
+    @IBOutlet weak var ResultHourlyNum: UILabel!
+    @IBOutlet weak var ResultFinishedNum: UILabel!
+    @IBOutlet weak var ResultStartNum: UILabel!
     
     
     override func awakeFromNib() {

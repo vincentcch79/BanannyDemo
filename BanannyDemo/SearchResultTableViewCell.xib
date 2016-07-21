@@ -221,8 +221,11 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="ResultCellImageView" destination="PjD-Ks-1Vz" id="UtH-L5-IZu"/>
+                <outlet property="ResultFinishedNum" destination="LxC-oz-9jH" id="6Fb-Nn-MeA"/>
+                <outlet property="ResultHourlyNum" destination="z7l-wc-Gif" id="rjX-Ck-CbB"/>
                 <outlet property="ResultNameLabel" destination="UCz-mh-tE6" id="cgg-7S-Vpu"/>
                 <outlet property="ResultStarRating" destination="r1T-lR-gNI" id="0aS-gF-vcf"/>
+                <outlet property="ResultStartNum" destination="dvZ-GJ-sXO" id="pDa-M4-sLE"/>
             </connections>
             <point key="canvasLocation" x="359.5" y="281"/>
         </tableViewCell>
