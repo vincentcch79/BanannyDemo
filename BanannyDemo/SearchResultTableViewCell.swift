@@ -18,11 +18,16 @@ class SearchResultTableViewCell: UITableViewCell {
     @IBOutlet weak var ResultHourlyNum: UILabel!
     @IBOutlet weak var ResultFinishedNum: UILabel!
     @IBOutlet weak var ResultStartNum: UILabel!
+    @IBOutlet weak var searchBackgroundView: UIView!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        searchBackgroundView.layer.shadowOpacity = 0.5
+        searchBackgroundView.layer.shadowOffset = CGSize(width: 0, height: 2)
+        searchBackgroundView.layer.shadowRadius = 3.0
+        searchBackgroundView.layer.shadowColor = UIColor(red: 99/255, green: 108/255, blue: 163/255, alpha: 0.49).CGColor
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

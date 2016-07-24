@@ -726,17 +726,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="751"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="At9-4Z-vSU">
-                                        <rect key="frame" x="8" y="0.0" width="584" height="751"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="751"/>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="scrollIndicatorInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                         <color key="separatorColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="tOD-7v-Zwk">
-                                                <rect key="frame" x="0.0" y="28" width="584" height="44"/>
+                                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tOD-7v-Zwk" id="xDG-We-Xtz">
-                                                    <rect key="frame" x="0.0" y="0.0" width="584" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </tableViewCellContentView>
                                             </tableViewCell>
@@ -745,8 +745,8 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="At9-4Z-vSU" secondAttribute="trailing" constant="8" id="5vH-UF-9gh"/>
-                                    <constraint firstItem="At9-4Z-vSU" firstAttribute="leading" secondItem="2GU-to-Wnh" secondAttribute="leading" constant="8" id="8fc-yl-ZXR"/>
+                                    <constraint firstAttribute="trailing" secondItem="At9-4Z-vSU" secondAttribute="trailing" id="5vH-UF-9gh"/>
+                                    <constraint firstItem="At9-4Z-vSU" firstAttribute="leading" secondItem="2GU-to-Wnh" secondAttribute="leading" id="8fc-yl-ZXR"/>
                                     <constraint firstItem="At9-4Z-vSU" firstAttribute="top" secondItem="2GU-to-Wnh" secondAttribute="top" id="I1I-fQ-aEl"/>
                                     <constraint firstAttribute="bottom" secondItem="At9-4Z-vSU" secondAttribute="bottom" id="tzo-gV-TAb"/>
                                 </constraints>
