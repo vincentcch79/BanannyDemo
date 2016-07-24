@@ -18,7 +18,8 @@ class ParentDashboardViewController: UIViewController, UIPickerViewDelegate, UIP
     @IBOutlet weak var parentStartTimeTextField: UITextField!
     @IBOutlet weak var parentFinishedTimeTextField: UITextField!
     @IBOutlet weak var parentLocationTextField: UITextField!
-    
+    @IBOutlet weak var searchButton: UIButton!
+    @IBOutlet weak var typingLabel: UILabel!
     // monitor textfield
     var activeTextField:UITextField?
     
@@ -29,6 +30,8 @@ class ParentDashboardViewController: UIViewController, UIPickerViewDelegate, UIP
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
         
         // trasparent navigation bar
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), forBarMetrics: .Default)
@@ -41,26 +44,35 @@ class ParentDashboardViewController: UIViewController, UIPickerViewDelegate, UIP
         parentFinishedTimeTextField.delegate = self
         parentLocationTextField.delegate = self
         
-        //Textfield border
-        parentDateDashTextField.layer.cornerRadius = 2.0
+        //UI Setting
+
+        
+        typingLabel.tintColor = UIColor(red: 162/255, green: 162/255, blue: 162/255, alpha: 1)
+        
         parentDateDashTextField.layer.masksToBounds = true
-        parentDateDashTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        parentDateDashTextField.layer.borderColor = UIColor(red: 167/255, green: 167/255, blue: 167/255, alpha: 1).CGColor
         parentDateDashTextField.layer.borderWidth = 1.0
+
         
-        parentStartTimeTextField.layer.cornerRadius = 2.0
         parentStartTimeTextField.layer.masksToBounds = true
-        parentStartTimeTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        parentStartTimeTextField.layer.borderColor = UIColor(red: 167/255, green: 167/255, blue: 167/255, alpha: 1).CGColor
         parentStartTimeTextField.layer.borderWidth = 1.0
+
         
-        parentFinishedTimeTextField.layer.cornerRadius = 2.0
+        
         parentFinishedTimeTextField.layer.masksToBounds = true
-        parentFinishedTimeTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        parentFinishedTimeTextField.layer.borderColor = UIColor(red: 167/255, green: 167/255, blue: 167/255, alpha: 1).CGColor
         parentFinishedTimeTextField.layer.borderWidth = 1.0
         
-        parentLocationTextField.layer.cornerRadius = 2.0
+        
+        
         parentLocationTextField.layer.masksToBounds = true
-        parentLocationTextField.layer.borderColor = UIColor.lightGrayColor().CGColor
+        parentLocationTextField.layer.borderColor = UIColor(red: 167/255, green: 167/255, blue: 167/255, alpha: 1).CGColor
         parentLocationTextField.layer.borderWidth = 1.0
+
+        searchButton.backgroundColor = UIColor(red: 99/255, green: 108/255, blue: 163/255, alpha: 1)
+        
+        
         
         // Toolbar
         
