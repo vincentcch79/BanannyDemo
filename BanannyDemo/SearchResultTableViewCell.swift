@@ -19,11 +19,13 @@ class SearchResultTableViewCell: UITableViewCell {
     @IBOutlet weak var ResultFinishedNum: UILabel!
     @IBOutlet weak var ResultStartNum: UILabel!
     @IBOutlet weak var searchBackgroundView: UIView!
+    @IBOutlet weak var lowerBackgroundView: UIView!
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        lowerBackgroundView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
         searchBackgroundView.layer.shadowOpacity = 0.5
         searchBackgroundView.layer.shadowOffset = CGSize(width: 0, height: 2)
         searchBackgroundView.layer.shadowRadius = 3.0

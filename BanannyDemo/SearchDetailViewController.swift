@@ -16,13 +16,7 @@ class SearchDetailViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var detailStarRating: CosmosView!
     @IBOutlet weak var IntroDetailTableView: UITableView!
     
-    // TableView Header outlet
-    @IBOutlet weak var babysitterIDTitle: UILabel!
-    @IBOutlet weak var babysitterIDNumLabel: UILabel!
-    @IBOutlet weak var babysitterWeekDayTitle: UILabel!
-    @IBOutlet weak var babysitterWeekDayNum: UILabel!
-    @IBOutlet weak var babysitterFinishedTitle: UILabel!
-    @IBOutlet weak var babysitterFinishedNum: UILabel!
+
     
     let customCellIdentifier = "SearchDetailTableViewCell"
     let secondCustomCellIdentifier = "SecondSearchDetailTableViewCell"
@@ -57,13 +51,7 @@ class SearchDetailViewController: UIViewController, UITableViewDelegate, UITable
         IntroDetailTableView.registerNib(UINib(nibName: "SearchDetailTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
         IntroDetailTableView.registerNib(UINib(nibName: "SecondSearchDetailTableViewCell", bundle: nil), forCellReuseIdentifier: secondCustomCellIdentifier)
         
-        //table headerView Datersource
-        babysitterIDTitle.text = searchDetail.introClasses[8].introClassTitle
-        babysitterIDNumLabel.text = searchDetail.introClasses[8].introClassContent
-        babysitterWeekDayTitle.text = searchDetail.introClasses[0].introClassTitle
-        babysitterWeekDayNum.text = searchDetail.introClasses[0].introClassContent
-        babysitterFinishedTitle.text = searchDetail.introClasses[9].introClassTitle
-        babysitterFinishedNum.text = searchDetail.introClasses[9].introClassContent
+
         
 
         // Do any additional setup after loading the view.
@@ -85,28 +73,28 @@ class SearchDetailViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if indexPath.row == 6 || indexPath.row == 7 {
+        if indexPath.row == 0 {
         let cell = tableView.dequeueReusableCellWithIdentifier("SecondSearchDetailTableViewCell", forIndexPath: indexPath) as! SecondSearchDetailTableViewCell
             
-//            cell.secondIntroCellTitleLabel.text = firstIntros[indexPath.row].introTitle
-//            cell.secondIntroCellContentLabel.text = firstIntros[indexPath.row].introContent
+            cell.secondIntroCellTitleLabel.text = searchDetail.introClasses[7].introClassTitle
+            cell.secondIntroCellContentLabel.text = searchDetail.introClasses[7].introClassContent
             
-            // refactor as struct
+            return cell
+        } else if indexPath.row == 6 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("SecondSearchDetailTableViewCell", forIndexPath: indexPath) as! SecondSearchDetailTableViewCell
             
-            cell.secondIntroCellTitleLabel.text = searchDetail.introClasses[indexPath.row].introClassTitle
-            cell.secondIntroCellContentLabel.text = searchDetail.introClasses[indexPath.row].introClassContent
+            cell.secondIntroCellTitleLabel.text = searchDetail.introClasses[6].introClassTitle
+            cell.secondIntroCellContentLabel.text = searchDetail.introClasses[6].introClassContent
             
             return cell
         } else {
         let cell = tableView.dequeueReusableCellWithIdentifier("SearchDetailTableViewCell", forIndexPath: indexPath) as! SearchDetailTableViewCell
             
-//            cell.firstIntroCellTitleLabel.text = firstIntros[indexPath.row].introTitle
-//            cell.firstIntroCellContentLabel.text = firstIntros[indexPath.row].introContent
             
             // refactor as struct
             
-            cell.firstIntroCellTitleLabel.text = searchDetail.introClasses[indexPath.row].introClassTitle
-            cell.firstIntroCellContentLabel.text = searchDetail.introClasses[indexPath.row].introClassContent
+            cell.firstIntroCellTitleLabel.text = searchDetail.introClasses[indexPath.row + 1].introClassTitle
+            cell.firstIntroCellContentLabel.text = searchDetail.introClasses[indexPath.row + 1].introClassContent
             
             return cell
         }

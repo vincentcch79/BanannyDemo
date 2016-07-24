@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -14,42 +15,33 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="69.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特殊時段每小時加收費" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="577-7J-L3G">
-                        <rect key="frame" x="62" y="8" width="100" height="42"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="42" id="GG3-EN-jAe"/>
-                            <constraint firstAttribute="width" constant="100" id="t6T-sz-eLD"/>
-                        </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="500/hr" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Hc-Qu-5Tz">
-                        <rect key="frame" x="222" y="24" width="90" height="20"/>
+                        <rect key="frame" x="230" y="25" width="82" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="20" id="1Hx-vy-LLf"/>
-                            <constraint firstAttribute="width" constant="90" id="4tf-lJ-pFB"/>
+                            <constraint firstAttribute="width" constant="82" id="Sqd-83-YOX"/>
+                            <constraint firstAttribute="height" constant="20" id="Udd-Hs-9Js"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timer" translatesAutoresizingMaskIntoConstraints="NO" id="TX9-hh-cZq">
-                        <rect key="frame" x="23" y="25" width="20" height="20"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特殊時段每小時加收費" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="577-7J-L3G">
+                        <rect key="frame" x="35" y="22" width="195" height="25"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="20" id="Gj4-Hk-sww"/>
-                            <constraint firstAttribute="height" constant="20" id="VmN-gD-gku"/>
+                            <constraint firstAttribute="width" constant="195" id="j0p-ib-g0V"/>
+                            <constraint firstAttribute="height" constant="25" id="zyY-2k-928"/>
                         </constraints>
-                    </imageView>
+                        <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="16"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="TX9-hh-cZq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="23" id="QA8-Ek-2Zs"/>
-                    <constraint firstAttribute="bottom" secondItem="TX9-hh-cZq" secondAttribute="bottom" constant="24.5" id="SXv-tD-fab"/>
-                    <constraint firstItem="577-7J-L3G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="hgs-ww-OJt"/>
-                    <constraint firstAttribute="trailing" secondItem="8Hc-Qu-5Tz" secondAttribute="trailing" constant="8" id="j13-o4-vu7"/>
-                    <constraint firstItem="577-7J-L3G" firstAttribute="leading" secondItem="TX9-hh-cZq" secondAttribute="trailing" constant="19" id="mAM-Uz-767"/>
-                    <constraint firstItem="TX9-hh-cZq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="oA0-Yg-dBZ"/>
-                    <constraint firstItem="8Hc-Qu-5Tz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="swg-US-dAy"/>
+                    <constraint firstItem="577-7J-L3G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="5XA-dk-zrD"/>
+                    <constraint firstItem="577-7J-L3G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="35" id="V3A-dk-cfb"/>
+                    <constraint firstAttribute="trailing" secondItem="8Hc-Qu-5Tz" secondAttribute="trailing" constant="8" id="YZ9-ue-F8C"/>
+                    <constraint firstItem="8Hc-Qu-5Tz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="hEo-2H-7LD"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="577-7J-L3G" secondAttribute="bottom" constant="14.5" id="ygP-WV-v1W"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,7 +52,4 @@
             <point key="canvasLocation" x="200" y="329"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="timer" width="42" height="42"/>
-    </resources>
 </document>

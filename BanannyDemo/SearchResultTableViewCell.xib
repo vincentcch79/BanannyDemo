@@ -182,7 +182,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
@@ -217,6 +217,7 @@
                 <outlet property="ResultNameLabel" destination="UCz-mh-tE6" id="cgg-7S-Vpu"/>
                 <outlet property="ResultStarRating" destination="r1T-lR-gNI" id="0aS-gF-vcf"/>
                 <outlet property="ResultStartNum" destination="dvZ-GJ-sXO" id="pDa-M4-sLE"/>
+                <outlet property="lowerBackgroundView" destination="hg5-vU-OV1" id="pX9-IY-Z1t"/>
                 <outlet property="searchBackgroundView" destination="j05-53-7rb" id="Ebx-di-rT9"/>
             </connections>
             <point key="canvasLocation" x="359.5" y="281"/>
