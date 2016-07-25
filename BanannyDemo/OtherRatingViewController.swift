@@ -12,15 +12,18 @@ class OtherRatingViewController: UIViewController {
     
     @IBOutlet weak var otherRatingContentView: UIView!
 
+    @IBOutlet weak var otherRatingView: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "張保姆評價了你"
+        self.title = "張保母評價了你"
         
         //shadow
-        otherRatingContentView.layer.shadowColor = UIColor(white: 0, alpha: 1).CGColor
-        otherRatingContentView.layer.shadowOffset = CGSize(width: 0, height: 5)
+        otherRatingContentView.layer.shadowColor = UIColor(white: 0, alpha: 0.22).CGColor
+        otherRatingContentView.layer.shadowOffset = CGSize(width: 0, height: 2)
         otherRatingContentView.layer.shadowOpacity = 0.5
+        otherRatingView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
 
         // Do any additional setup after loading the view.
     }
