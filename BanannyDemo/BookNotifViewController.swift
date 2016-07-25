@@ -38,6 +38,7 @@ class BookNotifViewController: UIViewController, UITableViewDelegate, UITableVie
         bookNotifFooter.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
         
         // Do any additional setup after loading the view.
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
     }
 
     override func didReceiveMemoryWarning() {

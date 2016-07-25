@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
+
 
 class ViewController: UIViewController {
 
@@ -25,13 +28,22 @@ class ViewController: UIViewController {
             self.signupButton.tintColor = UIColor(red: 99/255, green: 108/255, blue: 163/255, alpha: 1)
             self.signupButton.layer.borderWidth = 1
             self.signupButton.layer.borderColor = UIColor(red: 99/255, green: 108/255, blue: 163/255, alpha: 1).CGColor
-        
+
         
     }
+    
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    @IBAction func parentLoginButton(sender: AnyObject) {
+        if FBSDKAccessToken.currentAccessToken() != nil {
+            let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let DashTabBarViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("DashTabBar")
+            self.presentViewController(DashTabBarViewController, animated: false, completion: nil)
+        }
     }
 
 

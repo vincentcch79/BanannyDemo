@@ -49,6 +49,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="parentLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S96-K4-5Jc"/>
                                     <segue destination="S3h-QU-f2y" kind="show" id="9QX-NX-PnQ"/>
                                 </connections>
                             </button>

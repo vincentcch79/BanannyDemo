@@ -32,16 +32,17 @@ class ParentFirstViewController: UIViewController {
         self.parentFBLoginButton.backgroundColor = UIColor(red: 99/255, green: 108/255, blue: 163/255, alpha: 1)
         
         // Do any additional setup after loading the view.
+
     }
     
-    override func viewDidAppear(animated: Bool) {
-        
-        if FBSDKAccessToken.currentAccessToken() != nil {
-            let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let DashTabBarViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("DashTabBar")
-            self.presentViewController(DashTabBarViewController, animated: false, completion: nil)
-        }
-    }
+//    override func viewDidAppear(animated: Bool) {
+//        
+//        if FBSDKAccessToken.currentAccessToken() != nil {
+//            let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//            let DashTabBarViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("DashTabBar")
+//            self.presentViewController(DashTabBarViewController, animated: false, completion: nil)
+//        }
+//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
