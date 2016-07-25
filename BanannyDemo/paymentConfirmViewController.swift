@@ -10,8 +10,10 @@ import UIKit
 
 class paymentConfirmViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var paymentTableHeader: UIView!
     @IBOutlet weak var paymentTableView: UITableView!
-    
+    @IBOutlet weak var paymentButton: UIButton!
+    @IBOutlet weak var paymentTableFooter: UIView!
     let customCellIdentifier = "ConfirmTableViewCell"
     
     var confirmDetail:[paymentClass] = [
@@ -36,6 +38,10 @@ class paymentConfirmViewController: UIViewController, UITableViewDelegate, UITab
         paymentTableView.estimatedRowHeight = 80
         paymentTableView.rowHeight = UITableViewAutomaticDimension
         paymentTableView.registerNib(UINib(nibName: "ConfirmTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
+        
+        paymentTableHeader.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+        paymentTableFooter.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+        paymentButton.backgroundColor = UIColor(red: 99/255, green: 108/255, blue: 163/255, alpha: 1)
         
         // Do any additional setup after loading the view.
     }

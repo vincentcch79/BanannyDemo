@@ -82,7 +82,7 @@
                                     <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="confirmIcon" translatesAutoresizingMaskIntoConstraints="NO" id="vEi-e0-GWb">
+                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_tick" translatesAutoresizingMaskIntoConstraints="NO" id="vEi-e0-GWb">
                                     <rect key="frame" x="128" y="16" width="44" height="31"/>
                                     <constraints>
                                         <constraint firstAttribute="width" constant="44" id="13e-z6-qzw"/>
@@ -134,6 +134,6 @@
         </view>
     </objects>
     <resources>
-        <image name="confirmIcon" width="85" height="85"/>
+        <image name="icon_tick" width="24" height="18"/>
     </resources>
 </document>

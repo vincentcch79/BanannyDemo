@@ -945,60 +945,59 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="887"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="WW4-nU-wqH">
-                                    <rect key="frame" x="0.0" y="64" width="600" height="300"/>
+                                    <rect key="frame" x="0.0" y="64" width="600" height="240"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="confirmIcon" translatesAutoresizingMaskIntoConstraints="NO" id="JDI-Sl-2ho">
-                                            <rect key="frame" x="240" y="0.0" width="120" height="120"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_tick" translatesAutoresizingMaskIntoConstraints="NO" id="JDI-Sl-2ho">
+                                            <rect key="frame" x="260" y="30" width="80" height="57"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="120" id="hEi-wF-0ny"/>
-                                                <constraint firstAttribute="width" constant="120" id="iCu-p0-P9t"/>
+                                                <constraint firstAttribute="width" constant="80" id="GAd-3f-cR8"/>
+                                                <constraint firstAttribute="height" constant="57" id="Vv2-Iq-czu"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你與保姆的預約已確認完成。            請查看細節並到這邊來完成手續。" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKp-lx-wpF">
-                                            <rect key="frame" x="177" y="182" width="247" height="110"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜你！" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDf-au-1zL">
+                                            <rect key="frame" x="154" y="116" width="292" height="24"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="110" id="AJ8-SB-Jbc"/>
-                                                <constraint firstAttribute="width" constant="247" id="Clq-gR-ZiZ"/>
+                                                <constraint firstAttribute="width" constant="292" id="oWl-zR-oPW"/>
+                                                <constraint firstAttribute="height" constant="24" id="ykc-vz-C7E"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="18"/>
                                             <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜你！" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDf-au-1zL">
-                                            <rect key="frame" x="177" y="128" width="247" height="46"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你與保姆的預約已確認完成。       請查看細節並到這邊來完成手續。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKp-lx-wpF">
+                                            <rect key="frame" x="154" y="148" width="292" height="60"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="247" id="EVy-LU-hYB"/>
-                                                <constraint firstAttribute="height" constant="46" id="Njz-4Y-uVq"/>
+                                                <constraint firstAttribute="width" constant="292" id="A2e-2c-S6f"/>
+                                                <constraint firstAttribute="height" constant="60" id="vDo-fI-ajG"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="18"/>
                                             <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstItem="JDI-Sl-2ho" firstAttribute="centerX" secondItem="WW4-nU-wqH" secondAttribute="centerX" id="4kX-mu-dXC"/>
-                                        <constraint firstItem="MDf-au-1zL" firstAttribute="centerX" secondItem="JDI-Sl-2ho" secondAttribute="centerX" id="J8Y-F1-ae4"/>
-                                        <constraint firstItem="RKp-lx-wpF" firstAttribute="top" secondItem="MDf-au-1zL" secondAttribute="bottom" constant="8" id="Mcq-w5-DRq"/>
-                                        <constraint firstItem="MDf-au-1zL" firstAttribute="top" secondItem="JDI-Sl-2ho" secondAttribute="bottom" constant="8" id="NsE-xL-Snh"/>
-                                        <constraint firstAttribute="bottom" secondItem="RKp-lx-wpF" secondAttribute="bottom" constant="8" id="iFf-HH-th6"/>
-                                        <constraint firstItem="JDI-Sl-2ho" firstAttribute="top" secondItem="WW4-nU-wqH" secondAttribute="top" id="iNG-h6-2Dp"/>
-                                        <constraint firstItem="RKp-lx-wpF" firstAttribute="centerX" secondItem="JDI-Sl-2ho" secondAttribute="centerX" id="vmc-Oa-o5m"/>
+                                        <constraint firstItem="JDI-Sl-2ho" firstAttribute="top" secondItem="WW4-nU-wqH" secondAttribute="top" constant="30" id="1LH-Ni-bjC"/>
+                                        <constraint firstItem="JDI-Sl-2ho" firstAttribute="centerX" secondItem="WW4-nU-wqH" secondAttribute="centerX" id="6oG-OB-p2t"/>
+                                        <constraint firstItem="MDf-au-1zL" firstAttribute="top" secondItem="JDI-Sl-2ho" secondAttribute="bottom" constant="29" id="UeO-wr-wBW"/>
+                                        <constraint firstItem="RKp-lx-wpF" firstAttribute="top" secondItem="MDf-au-1zL" secondAttribute="bottom" constant="8" id="d3o-pj-sri"/>
+                                        <constraint firstItem="RKp-lx-wpF" firstAttribute="centerX" secondItem="MDf-au-1zL" secondAttribute="centerX" id="mYm-Nl-B6O"/>
+                                        <constraint firstItem="MDf-au-1zL" firstAttribute="centerX" secondItem="WW4-nU-wqH" secondAttribute="centerX" id="puc-uS-MFj"/>
                                     </constraints>
                                 </view>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="dSw-gI-qFg">
-                                    <rect key="frame" x="0.0" y="436" width="600" height="80"/>
+                                    <rect key="frame" x="0.0" y="376" width="600" height="80"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S4T-SY-DyX">
-                                            <rect key="frame" x="196" y="21" width="209" height="57"/>
+                                            <rect key="frame" x="152" y="42" width="297" height="54"/>
                                             <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="57" id="NiD-bk-bH1"/>
-                                                <constraint firstAttribute="width" constant="209" id="UcA-XK-Qy1"/>
+                                                <constraint firstAttribute="height" constant="54" id="NiD-bk-bH1"/>
+                                                <constraint firstAttribute="width" constant="297" id="UcA-XK-Qy1"/>
                                             </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                            <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="18"/>
                                             <state key="normal" title="付款">
                                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
@@ -1006,13 +1005,13 @@
                                     </subviews>
                                     <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
-                                        <constraint firstItem="S4T-SY-DyX" firstAttribute="top" secondItem="dSw-gI-qFg" secondAttribute="top" constant="21" id="Rd7-3n-Gzf"/>
+                                        <constraint firstItem="S4T-SY-DyX" firstAttribute="top" secondItem="dSw-gI-qFg" secondAttribute="top" constant="42" id="Rd7-3n-Gzf"/>
                                         <constraint firstItem="S4T-SY-DyX" firstAttribute="centerX" secondItem="dSw-gI-qFg" secondAttribute="centerX" id="TB6-4n-l6L"/>
                                     </constraints>
                                 </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="teb-Lq-EIa">
-                                        <rect key="frame" x="0.0" y="392" width="600" height="44"/>
+                                        <rect key="frame" x="0.0" y="332" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="teb-Lq-EIa" id="cSD-Xa-PJQ">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
@@ -1033,6 +1032,9 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="1000"/>
                     <connections>
+                        <outlet property="paymentButton" destination="S4T-SY-DyX" id="Ky8-6g-CWd"/>
+                        <outlet property="paymentTableFooter" destination="dSw-gI-qFg" id="GD3-lf-QGA"/>
+                        <outlet property="paymentTableHeader" destination="WW4-nU-wqH" id="dJd-5g-Ygp"/>
                         <outlet property="paymentTableView" destination="uRW-4b-0d9" id="LRF-XC-Yg4"/>
                     </connections>
                 </viewController>
@@ -2646,8 +2648,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="confirmIcon" width="85" height="85"/>
         <image name="icon_msg_congrats" width="54" height="54"/>
+        <image name="icon_tick" width="24" height="18"/>
         <image name="ios_opening_bg" width="187" height="333"/>
         <image name="logo_white" width="131" height="76"/>
         <image name="mail" width="23" height="23"/>
