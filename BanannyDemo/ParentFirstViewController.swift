@@ -35,14 +35,6 @@ class ParentFirstViewController: UIViewController {
 
     }
     
-//    override func viewDidAppear(animated: Bool) {
-//        
-//        if FBSDKAccessToken.currentAccessToken() != nil {
-//            let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-//            let DashTabBarViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("DashTabBar")
-//            self.presentViewController(DashTabBarViewController, animated: false, completion: nil)
-//        }
-//    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

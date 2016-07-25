@@ -41,8 +41,11 @@ class ViewController: UIViewController {
     @IBAction func parentLoginButton(sender: AnyObject) {
         if FBSDKAccessToken.currentAccessToken() != nil {
             let mainStoryBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let DashTabBarViewController: UIViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("DashTabBar")
-            self.presentViewController(DashTabBarViewController, animated: false, completion: nil)
+            let DashTabBarViewController = mainStoryBoard.instantiateViewControllerWithIdentifier("DashTabBarViewController")
+            self.presentViewController(DashTabBarViewController, animated: true, completion: nil)
+        } else {
+            let viewcontroller = self.storyboard?.instantiateViewControllerWithIdentifier("ParentFirstViewController") as! ParentFirstViewController
+            self.presentViewController(viewcontroller, animated: false, completion: nil)
         }
     }
 

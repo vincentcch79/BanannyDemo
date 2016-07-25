@@ -50,7 +50,6 @@
                                 </state>
                                 <connections>
                                     <action selector="parentLoginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S96-K4-5Jc"/>
-                                    <segue destination="S3h-QU-f2y" kind="show" id="9QX-NX-PnQ"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_white" translatesAutoresizingMaskIntoConstraints="NO" id="3Ef-y3-sop">
@@ -396,7 +395,7 @@
         <!--Parent Dashboard View Controller-->
         <scene sceneID="Cve-6T-Xz2">
             <objects>
-                <viewController storyboardIdentifier="parentDashView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bsk-De-nVa" customClass="ParentDashboardViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ParentDashboardViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bsk-De-nVa" customClass="ParentDashboardViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Avz-Mk-Nuj"/>
                         <viewControllerLayoutGuide type="bottom" id="TnA-I1-Y0j"/>
@@ -640,7 +639,7 @@
         <!--Dash Tab Bar View Controller-->
         <scene sceneID="tuM-Ao-XXv">
             <objects>
-                <tabBarController storyboardIdentifier="DashTabBar" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5YG-gY-LHh" customClass="DashTabBarViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="DashTabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5YG-gY-LHh" customClass="DashTabBarViewController" customModule="BanannyDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="qxz-rY-l2x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
