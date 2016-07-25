@@ -11,9 +11,9 @@ import UIKit
 class NotifViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var notifTableView: UITableView!
-    
+    @IBOutlet weak var notifTableFooter: UIView!
     var notifViewClasses: [NotifViewClass] = [
-        NotifViewClass(notifTitle: "Bananny官方通知", notifDate: "2016/08/03", notifContent: "親愛的用戶你好，歡迎使用Bananny。"),
+        NotifViewClass(notifTitle: "Bananny官方通知", notifDate: "2016/08/03", notifContent: "親愛的用戶你好，你的試用期已到。"),
         NotifViewClass(notifTitle: "預約通知", notifDate: "2016/08/03", notifContent: "王保姆 已經接受了你的預約，預約細節如下："),
         NotifViewClass(notifTitle: "評價通知", notifDate: "2016/08/02", notifContent: "張保姆 已經評價了你，請點選查看細節...")
     ]
@@ -26,10 +26,14 @@ class NotifViewController: UIViewController, UITableViewDelegate, UITableViewDat
         
         //navigationBar setting
         self.navigationController?.navigationBar.translucent = false
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 255/255, green: 250/255, blue: 205/255, alpha: 1)
-        self.navigationController?.navigationBar.tintColor = UIColor.grayColor()
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.grayColor()]
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 255/255, green: 238/255, blue: 184/255, alpha: 1)
+        self.navigationController?.navigationBar.tintColor = UIColor(red: 139/255, green: 133/255, blue: 101/255, alpha: 1)
         self.title = "通知"
+        self.navigationController?.navigationBar.titleTextAttributes = ([NSFontAttributeName: UIFont(name: "PingFangTC-SemiBold", size: 18)!, NSForegroundColorAttributeName: UIColor(red: 138/255, green: 132/255, blue: 101/255, alpha: 1)])
+        self.navigationController?.navigationBar.layer.shadowRadius = 2.0
+        self.navigationController?.navigationBar.layer.shadowOpacity = 0.18
+        self.navigationController?.navigationBar.layer.shadowOffset = CGSize(width: 0, height: 2)
+
         
         // tableview setting
         notifTableView.delegate = self
@@ -37,7 +41,9 @@ class NotifViewController: UIViewController, UITableViewDelegate, UITableViewDat
         notifTableView.estimatedRowHeight = 150
         notifTableView.rowHeight = UITableViewAutomaticDimension
         notifTableView.registerNib(UINib(nibName: "NotifTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
-
+        notifTableView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+        notifTableFooter.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+    
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -70,6 +76,7 @@ class NotifViewController: UIViewController, UITableViewDelegate, UITableViewDat
         return cell
     
     }
+    
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.separatorInset = UIEdgeInsetsZero

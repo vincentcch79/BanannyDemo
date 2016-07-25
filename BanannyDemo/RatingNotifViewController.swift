@@ -11,7 +11,7 @@ import UIKit
 class RatingNotifViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var ratingNotifTableView: UITableView!
-    
+    @IBOutlet weak var ratingNotifFooter: UIView!
     let customCellIdentifier = "NotifTableViewCell"
     
     var ratingNotifs: [NotifViewClass] = [
@@ -33,7 +33,8 @@ class RatingNotifViewController: UIViewController, UITableViewDelegate, UITableV
         ratingNotifTableView.estimatedRowHeight = 150
         ratingNotifTableView.rowHeight = UITableViewAutomaticDimension
         ratingNotifTableView.registerNib(UINib(nibName: "NotifTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
-
+        ratingNotifTableView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+        ratingNotifFooter.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
 
         // Do any additional setup after loading the view.
     }
@@ -58,6 +59,7 @@ class RatingNotifViewController: UIViewController, UITableViewDelegate, UITableV
         cell.notifCellTitleLabel.text = ratingNotifs[indexPath.row].notifTitle
         cell.notifCellDateLabel.text = ratingNotifs[indexPath.row].notifDate
         cell.notifCellContentLabel.text = ratingNotifs[indexPath.row].notifContent
+        cell.newNotifButton.hidden = true
         
         return cell
         

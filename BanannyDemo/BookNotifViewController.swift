@@ -11,6 +11,7 @@ import UIKit
 class BookNotifViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var bookNotifTableView: UITableView!
+    @IBOutlet weak var bookNotifFooter: UIView!
     
     var bookNotifs:[NotifViewClass] = [
         NotifViewClass(notifTitle: "預約完成！請付款", notifDate: "2016/08/03", notifContent: "你好，你的預約已完成，請按這邊完成付款手續。"),
@@ -33,7 +34,8 @@ class BookNotifViewController: UIViewController, UITableViewDelegate, UITableVie
         bookNotifTableView.estimatedRowHeight = 150
         bookNotifTableView.rowHeight = UITableViewAutomaticDimension
         bookNotifTableView.registerNib(UINib(nibName: "NotifTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
-        
+        bookNotifTableView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+        bookNotifFooter.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
         
         // Do any additional setup after loading the view.
     }
@@ -59,6 +61,7 @@ class BookNotifViewController: UIViewController, UITableViewDelegate, UITableVie
         cell.notifCellTitleLabel.text = bookNotifs[indexPath.row].notifTitle
         cell.notifCellDateLabel.text = bookNotifs[indexPath.row].notifDate
         cell.notifCellContentLabel.text = bookNotifs[indexPath.row].notifContent
+        cell.newNotifButton.hidden = true
         
         return cell
         

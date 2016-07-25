@@ -700,6 +700,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="PD3-jk-TIT"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="notifTableFooter" destination="Q8b-bH-TtM" id="ZKi-be-V1B"/>
                         <outlet property="notifTableView" destination="qHc-8q-cux" id="byW-qe-Rlk"/>
                         <segue destination="gKO-y6-ruZ" kind="show" identifier="officialNotifSegue" id="emP-eR-eB3"/>
                         <segue destination="P6h-mp-nVj" kind="show" identifier="bookNotifSegue" id="epu-xW-Bkc"/>
@@ -813,6 +814,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="officialNotifFooter" destination="aj5-zq-hf1" id="uIK-WA-jVV"/>
                         <outlet property="officialNotifTableView" destination="IjS-zu-ztn" id="Eui-ja-nOJ"/>
                         <segue destination="xLz-h0-jUs" kind="show" identifier="officialWelcomeSegue" id="pWM-Az-OPa"/>
                     </connections>
@@ -837,53 +839,62 @@
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SaG-Aw-QoN">
-                                        <rect key="frame" x="160" y="200" width="280" height="247"/>
+                                        <rect key="frame" x="23" y="42" width="554" height="395"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="親愛的會員，歡迎你正式成為Bananny的一份子。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOl-nE-thc">
-                                                <rect key="frame" x="8" y="20" width="264" height="53"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bananny敬上" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wt-tL-5Jo">
+                                                <rect key="frame" x="29" y="350" width="496" height="20"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="53" id="GX4-NT-ibO"/>
+                                                    <constraint firstAttribute="height" constant="20" id="45b-mZ-1dW"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在第一個月是完全免費的試用期，希望你在Bananny能有愉快的臨托體驗！" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mte-dc-kcU">
-                                                <rect key="frame" x="8" y="81" width="264" height="95"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="95" id="bBs-Ra-pFi"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
-                                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bananny敬上" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3wt-tL-5Jo">
-                                                <rect key="frame" x="8" y="204" width="264" height="20"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="AvB-Fd-CZk"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="18"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_msg_congrats" translatesAutoresizingMaskIntoConstraints="NO" id="dwc-mY-d8n">
+                                                <rect key="frame" x="223" y="28" width="108" height="108"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="108" id="uRA-jy-YQc"/>
+                                                    <constraint firstAttribute="height" constant="108" id="xzX-IE-aVf"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="親愛的會員，歡迎你正式成為Bananny的一份子。" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOl-nE-thc">
+                                                <rect key="frame" x="145" y="199" width="264" height="53"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="264" id="YcP-u6-dEP"/>
+                                                    <constraint firstAttribute="height" constant="53" id="m9x-uZ-KOV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="18"/>
+                                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="在第一個月是完全免費的試用期，希望你在Bananny能有愉快的臨托體驗！" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mte-dc-kcU">
+                                                <rect key="frame" x="145" y="260" width="264" height="80"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="H0q-5p-dng"/>
+                                                    <constraint firstAttribute="width" constant="264" id="fly-k6-pJg"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="PingFangTC-Regular" family="PingFang TC" pointSize="18"/>
+                                                <color key="textColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="3wt-tL-5Jo" secondAttribute="trailing" constant="8" id="6gW-Fm-fPL"/>
-                                            <constraint firstItem="FOl-nE-thc" firstAttribute="top" secondItem="SaG-Aw-QoN" secondAttribute="top" constant="20" id="CSW-UO-Q1P"/>
-                                            <constraint firstAttribute="bottom" secondItem="3wt-tL-5Jo" secondAttribute="bottom" constant="23" id="NGH-uE-yfU"/>
-                                            <constraint firstItem="Mte-dc-kcU" firstAttribute="top" secondItem="FOl-nE-thc" secondAttribute="bottom" constant="8" id="X3I-DV-ngw"/>
-                                            <constraint firstAttribute="trailing" secondItem="Mte-dc-kcU" secondAttribute="trailing" constant="8" id="i4n-p0-ewQ"/>
-                                            <constraint firstItem="Mte-dc-kcU" firstAttribute="leading" secondItem="SaG-Aw-QoN" secondAttribute="leading" constant="8" id="jXd-fI-xBF"/>
+                                            <constraint firstItem="3wt-tL-5Jo" firstAttribute="centerX" secondItem="SaG-Aw-QoN" secondAttribute="centerX" id="BIl-Vn-yLP"/>
+                                            <constraint firstItem="FOl-nE-thc" firstAttribute="top" secondItem="dwc-mY-d8n" secondAttribute="bottom" constant="63" id="FTZ-ia-F69"/>
+                                            <constraint firstItem="dwc-mY-d8n" firstAttribute="top" secondItem="SaG-Aw-QoN" secondAttribute="top" constant="28" id="Ssp-qD-m2G"/>
+                                            <constraint firstItem="3wt-tL-5Jo" firstAttribute="leading" secondItem="SaG-Aw-QoN" secondAttribute="leading" constant="29" id="dso-jX-amJ"/>
+                                            <constraint firstItem="FOl-nE-thc" firstAttribute="centerX" secondItem="dwc-mY-d8n" secondAttribute="centerX" id="gyh-tw-ylf"/>
+                                            <constraint firstAttribute="bottom" secondItem="3wt-tL-5Jo" secondAttribute="bottom" constant="25" id="igB-aR-Fyp"/>
+                                            <constraint firstItem="dwc-mY-d8n" firstAttribute="centerX" secondItem="SaG-Aw-QoN" secondAttribute="centerX" id="lDA-9J-lzd"/>
+                                            <constraint firstItem="Mte-dc-kcU" firstAttribute="top" secondItem="FOl-nE-thc" secondAttribute="bottom" constant="8" id="lrU-Rr-KSo"/>
                                             <constraint firstItem="Mte-dc-kcU" firstAttribute="top" secondItem="FOl-nE-thc" secondAttribute="bottom" constant="8" id="pjF-Z6-8ik"/>
-                                            <constraint firstAttribute="trailing" secondItem="FOl-nE-thc" secondAttribute="trailing" constant="8" id="q4r-af-5De"/>
-                                            <constraint firstAttribute="width" constant="280" id="tCf-xO-vHB"/>
-                                            <constraint firstItem="3wt-tL-5Jo" firstAttribute="leading" secondItem="SaG-Aw-QoN" secondAttribute="leading" constant="8" id="xmv-EB-pSu"/>
-                                            <constraint firstItem="FOl-nE-thc" firstAttribute="leading" secondItem="SaG-Aw-QoN" secondAttribute="leading" constant="8" id="zlG-wn-fCl"/>
+                                            <constraint firstAttribute="trailing" secondItem="3wt-tL-5Jo" secondAttribute="trailing" constant="29" id="ypn-bY-e5Y"/>
+                                            <constraint firstItem="Mte-dc-kcU" firstAttribute="centerX" secondItem="FOl-nE-thc" secondAttribute="centerX" id="z78-wb-qeV"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                <integer key="value" value="15"/>
+                                                <integer key="value" value="16"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <variation key="default">
@@ -892,28 +903,14 @@
                                             </mask>
                                         </variation>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="badge" translatesAutoresizingMaskIntoConstraints="NO" id="dwc-mY-d8n">
-                                        <rect key="frame" x="225" y="30" width="150" height="150"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="150" id="GDF-A3-ms7"/>
-                                            <constraint firstAttribute="width" constant="150" id="btg-yR-4Ru"/>
-                                        </constraints>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="SaG-Aw-QoN" firstAttribute="top" secondItem="dwc-mY-d8n" secondAttribute="bottom" constant="20" id="3mD-16-EqC"/>
-                                    <constraint firstItem="dwc-mY-d8n" firstAttribute="centerX" secondItem="5OR-Sw-DYX" secondAttribute="centerX" id="Boj-Bt-LvH"/>
-                                    <constraint firstItem="SaG-Aw-QoN" firstAttribute="top" secondItem="5OR-Sw-DYX" secondAttribute="top" constant="200" id="DdY-ga-E4R"/>
-                                    <constraint firstAttribute="bottom" secondItem="SaG-Aw-QoN" secondAttribute="bottom" constant="40" id="Hvk-9n-aZR"/>
-                                    <constraint firstItem="dwc-mY-d8n" firstAttribute="top" secondItem="5OR-Sw-DYX" secondAttribute="top" constant="42" id="hzw-op-RoW"/>
-                                    <constraint firstItem="SaG-Aw-QoN" firstAttribute="centerX" secondItem="5OR-Sw-DYX" secondAttribute="centerX" id="yFJ-yC-UdI"/>
+                                    <constraint firstItem="SaG-Aw-QoN" firstAttribute="leading" secondItem="5OR-Sw-DYX" secondAttribute="leading" constant="23" id="6b2-ji-kFm"/>
+                                    <constraint firstAttribute="bottom" secondItem="SaG-Aw-QoN" secondAttribute="bottom" constant="50" id="IHD-z9-w7p"/>
+                                    <constraint firstAttribute="trailing" secondItem="SaG-Aw-QoN" secondAttribute="trailing" constant="23" id="pse-V7-I1i"/>
+                                    <constraint firstItem="SaG-Aw-QoN" firstAttribute="top" secondItem="5OR-Sw-DYX" secondAttribute="top" constant="42" id="xcJ-dH-6vU"/>
                                 </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="hzw-op-RoW"/>
-                                    </mask>
-                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1084,6 +1081,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bookNotifFooter" destination="3Sm-IE-n9G" id="aFr-cp-X0C"/>
                         <outlet property="bookNotifTableView" destination="9s6-oJ-C6q" id="Vsv-4i-Ooh"/>
                         <segue destination="Erg-zC-gP7" kind="show" identifier="bookDetailConfirmSegue" id="wta-zB-gGI"/>
                     </connections>
@@ -1133,6 +1131,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ratingNotifFooter" destination="2rJ-dT-tvz" id="VxE-O7-9pA"/>
                         <outlet property="ratingNotifTableView" destination="HI9-5h-aIH" id="HFt-6K-gsf"/>
                         <segue destination="fAb-fV-Owz" kind="show" identifier="ratingActionSegue" id="yhz-WH-iUG"/>
                         <segue destination="ccn-JL-zww" kind="show" identifier="otherRatingSegue" id="YHK-zg-BOa"/>
@@ -2640,6 +2639,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Q71-Jf-bTa">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Tg8-Qk-tSv">
+                                    <rect key="frame" x="0.0" y="136" width="600" height="60"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="O4j-wp-ySV">
                                         <rect key="frame" x="0.0" y="92" width="600" height="44"/>
@@ -2664,6 +2668,7 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="THx-G1-Nin"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="msgTableFooter" destination="Tg8-Qk-tSv" id="qc7-aj-wwC"/>
                         <outlet property="msgTableView" destination="Q71-Jf-bTa" id="tbK-9X-sL2"/>
                     </connections>
                 </viewController>
@@ -2673,8 +2678,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="badge" width="170" height="170"/>
         <image name="confirmIcon" width="85" height="85"/>
+        <image name="icon_msg_congrats" width="54" height="54"/>
         <image name="ios_opening_bg" width="187" height="333"/>
         <image name="logo_white" width="131" height="76"/>
         <image name="mail" width="23" height="23"/>

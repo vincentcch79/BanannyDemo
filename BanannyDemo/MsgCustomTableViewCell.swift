@@ -10,6 +10,7 @@ import UIKit
 
 class MsgCustomTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var msgBackgroundView: UIView!
     @IBOutlet weak var msgImageView: UIImageView!
     @IBOutlet weak var msgTitleLabel: UILabel!
     @IBOutlet weak var msgDateLabel: UILabel!
@@ -17,7 +18,7 @@ class MsgCustomTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        msgBackgroundView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

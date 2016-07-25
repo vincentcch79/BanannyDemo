@@ -11,7 +11,7 @@ import UIKit
 class OfficialNotifViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var officialNotifTableView: UITableView!
-    
+    @IBOutlet weak var officialNotifFooter: UIView!
     let customCellIdentifier = "NotifTableViewCell"
     
     var officialNotifs: [NotifViewClass] = [
@@ -25,15 +25,16 @@ class OfficialNotifViewController: UIViewController, UITableViewDelegate, UITabl
         super.viewDidLoad()
         
         self.title = "官方通知"
-        
+        self.view.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
         //tableView
         officialNotifTableView.delegate = self
         officialNotifTableView.dataSource = self
         officialNotifTableView.estimatedRowHeight = 150
         officialNotifTableView.rowHeight = UITableViewAutomaticDimension
         officialNotifTableView.registerNib(UINib(nibName: "NotifTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
+        officialNotifTableView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
         
-        
+        officialNotifFooter.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
         // Do any additional setup after loading the view.
     }
 
@@ -57,6 +58,8 @@ class OfficialNotifViewController: UIViewController, UITableViewDelegate, UITabl
         cell.notifCellTitleLabel.text = officialNotifs[indexPath.row].notifTitle
         cell.notifCellDateLabel.text = officialNotifs[indexPath.row].notifDate
         cell.notifCellContentLabel.text = officialNotifs[indexPath.row].notifContent
+        cell.newNotifButton.hidden = true
+        
         
         return cell
         

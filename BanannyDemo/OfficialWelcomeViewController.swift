@@ -16,10 +16,11 @@ class OfficialWelcomeViewController: UIViewController {
         super.viewDidLoad()
         
         self.title = "Bananny 歡迎你！"
+        self.view.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
         //contentView shadow
         
-        welcomeContentView.layer.shadowColor = UIColor(white: 0, alpha: 1).CGColor
-        welcomeContentView.layer.shadowOffset = CGSize(width: 0, height: 5)
+        welcomeContentView.layer.shadowColor = UIColor(white: 0, alpha: 0.22).CGColor
+        welcomeContentView.layer.shadowOffset = CGSize(width: 0, height: 2)
         welcomeContentView.layer.shadowOpacity = 0.5
 
         // Do any additional setup after loading the view.

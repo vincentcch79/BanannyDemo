@@ -13,10 +13,12 @@ class NotifTableViewCell: UITableViewCell {
     @IBOutlet weak var notifCellTitleLabel: UILabel!
     @IBOutlet weak var notifCellDateLabel: UILabel!
     @IBOutlet weak var notifCellContentLabel: UILabel!
+    @IBOutlet weak var newNotifButton: UIButton!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
     }
 
     override func setSelected(selected: Bool, animated: Bool) {
