@@ -11,11 +11,11 @@ import Foundation
 class FirstIntro {
     
     var introTitle = ""
-    var introContent = ""
     
-    init(introTitle: String, introContent: String) {
+    
+    init(introTitle: String) {
         self.introTitle = introTitle
-        self.introContent = introContent
+        
     }
     
 }

@@ -14,14 +14,14 @@ class paymentConfirmViewController: UIViewController, UITableViewDelegate, UITab
     
     let customCellIdentifier = "ConfirmTableViewCell"
     
-    var confirmDetail:[FirstIntro] = [
-        FirstIntro(introTitle: "托育人員", introContent: "王保姆"),
-        FirstIntro(introTitle: "托育日期", introContent: "6月7日"),
-        FirstIntro(introTitle: "托育時間", introContent: "14:00 - 19:00(5hr)"),
-        FirstIntro(introTitle: "每小時收費", introContent: "500/hr"),
-        FirstIntro(introTitle: "總金額", introContent: "$2500"),
-        FirstIntro(introTitle: "托育地址", introContent: "新北市淡水區中正東路二段100巷3號"),
-        FirstIntro(introTitle: "備註", introContent: "我家小孩很愛流口水")
+    var confirmDetail:[paymentClass] = [
+        paymentClass(paymentTitle: "托育人員", paymentContent: "王保姆"),
+        paymentClass(paymentTitle: "托育日期", paymentContent: "6月7日"),
+        paymentClass(paymentTitle: "托育時間", paymentContent: "14:00 - 19:00(5hr)"),
+        paymentClass(paymentTitle: "每小時收費", paymentContent: "500/hr"),
+        paymentClass(paymentTitle: "總金額", paymentContent: "$2500"),
+        paymentClass(paymentTitle: "托育地址", paymentContent: "新北市淡水區中正東路二段100巷3號"),
+        paymentClass(paymentTitle: "備註", paymentContent: "我家小孩很愛流口水")
     ]
     
     override func viewDidLoad() {
@@ -59,8 +59,8 @@ class paymentConfirmViewController: UIViewController, UITableViewDelegate, UITab
         
         let cell = tableView.dequeueReusableCellWithIdentifier("ConfirmTableViewCell", forIndexPath: indexPath) as! ConfirmTableViewCell
         
-        cell.confirmTitle.text = confirmDetail[indexPath.row].introTitle
-        cell.confirmContent.text = confirmDetail[indexPath.row].introContent
+        cell.confirmTitle.text = confirmDetail[indexPath.row].paymentTitle
+        cell.confirmContent.text = confirmDetail[indexPath.row].paymentContent
         
         
         return cell

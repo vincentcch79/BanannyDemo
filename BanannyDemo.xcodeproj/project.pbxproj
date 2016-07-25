@@ -47,6 +47,7 @@
 		9F2EE1C81D38857B00F05354 /* DemoChatItemsDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1C71D38857B00F05354 /* DemoChatItemsDecorator.swift */; };
 		9F2EE1CA1D38859500F05354 /* DemoChatDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1C91D38859500F05354 /* DemoChatDataSource.swift */; };
 		9F2EE1CC1D3885AE00F05354 /* TGChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2EE1CB1D3885AE00F05354 /* TGChatViewController.swift */; };
+		9F31214B1D45A6E70082D80C /* paymentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F31214A1D45A6E70082D80C /* paymentClass.swift */; };
 		9F3CA68B1D3CCB6E003555F7 /* DashTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F3CA68A1D3CCB6E003555F7 /* DashTabBarViewController.swift */; };
 		9F76F9B41D37A7C0003ABE22 /* SearchResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76F9B31D37A7C0003ABE22 /* SearchResultViewController.swift */; };
 		9F76F9B71D37D980003ABE22 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F76F9B51D37D980003ABE22 /* SearchResultTableViewCell.swift */; };
@@ -103,6 +104,7 @@
 		9F2EE1C71D38857B00F05354 /* DemoChatItemsDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoChatItemsDecorator.swift; sourceTree = "<group>"; };
 		9F2EE1C91D38859500F05354 /* DemoChatDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoChatDataSource.swift; sourceTree = "<group>"; };
 		9F2EE1CB1D3885AE00F05354 /* TGChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TGChatViewController.swift; sourceTree = "<group>"; };
+		9F31214A1D45A6E70082D80C /* paymentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = paymentClass.swift; sourceTree = "<group>"; };
 		9F3CA68A1D3CCB6E003555F7 /* DashTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashTabBarViewController.swift; sourceTree = "<group>"; };
 		9F76F9B31D37A7C0003ABE22 /* SearchResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultViewController.swift; sourceTree = "<group>"; };
 		9F76F9B51D37D980003ABE22 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 				9F14D3731D3DD43100530EF6 /* firstIntroDetailClass.swift */,
 				9F14D3931D3E6CE200530EF6 /* NotifClass.swift */,
 				9F2C62D81D3F26DD001195A0 /* MsgClass.swift */,
+				9F31214A1D45A6E70082D80C /* paymentClass.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				9F76F9BA1D37D99C003ABE22 /* SearchResultClass.swift in Sources */,
 				9F14D39A1D3E715800530EF6 /* RatingNotifViewController.swift in Sources */,
 				9F2EE1CC1D3885AE00F05354 /* TGChatViewController.swift in Sources */,
+				9F31214B1D45A6E70082D80C /* paymentClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,12 +11,12 @@ import Cosmos
 import NoChat
 
 class SearchDetailViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var detailStarRating: CosmosView!
     @IBOutlet weak var IntroDetailTableView: UITableView!
     
-
+    
     
     let customCellIdentifier = "SearchDetailTableViewCell"
     let secondCustomCellIdentifier = "SecondSearchDetailTableViewCell"
@@ -25,14 +25,15 @@ class SearchDetailViewController: UIViewController, UITableViewDelegate, UITable
     
     //first detail cell class
     var firstIntros:[FirstIntro] = [
-        FirstIntro(introTitle: "平日每小時收費", introContent: "500/hr"),
-        FirstIntro(introTitle: "六日及國定假日每小時收費", introContent: "500/hr"),
-        FirstIntro(introTitle: "特殊時段每小時加收費", introContent: "500/hr"),
-        FirstIntro(introTitle: "特殊時段備註", introContent: "24小時"),
-        FirstIntro(introTitle: "每趟最低時限", introContent: "6小時"),
-        FirstIntro(introTitle: "托育經驗起始日", introContent: "2016/08/03"),
-        FirstIntro(introTitle: "特殊托育經驗", introContent: "我有帶過自閉症兒童，過動兒"),
-        FirstIntro(introTitle: "自我介紹", introContent: "親愛的爸爸媽媽你們好，我有過十年的托育經驗。我自己非常愛小孩子，家中有四個小孩，最大的已經高中，希望有機會合作。")
+        FirstIntro(introTitle: "自我介紹"),
+        FirstIntro(introTitle: "托育人員登記號碼"),
+        FirstIntro(introTitle: "平日每小時收費"),
+        FirstIntro(introTitle: "六日及國定假日每小時收費"),
+        FirstIntro(introTitle: "特殊時段每小時加收費"),
+        FirstIntro(introTitle: "特殊時段備註"),
+        FirstIntro(introTitle: "每趟最低時限"),
+        FirstIntro(introTitle: "托育經驗起始日"),
+        FirstIntro(introTitle: "特殊托育經驗")
         
     ]
     
@@ -42,7 +43,7 @@ class SearchDetailViewController: UIViewController, UITableViewDelegate, UITable
         detailImageView.image = UIImage(named: searchDetail.imageResult)
         self.title = searchDetail.nameResult
         detailStarRating.rating = searchDetail.starResult
-
+        
         //detailTableView
         IntroDetailTableView.delegate = self
         IntroDetailTableView.dataSource = self
@@ -51,12 +52,12 @@ class SearchDetailViewController: UIViewController, UITableViewDelegate, UITable
         IntroDetailTableView.registerNib(UINib(nibName: "SearchDetailTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
         IntroDetailTableView.registerNib(UINib(nibName: "SecondSearchDetailTableViewCell", bundle: nil), forCellReuseIdentifier: secondCustomCellIdentifier)
         
-
         
-
+        
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -69,54 +70,87 @@ class SearchDetailViewController: UIViewController, UITableViewDelegate, UITable
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 8
+        return firstIntros.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
-        let cell = tableView.dequeueReusableCellWithIdentifier("SecondSearchDetailTableViewCell", forIndexPath: indexPath) as! SecondSearchDetailTableViewCell
-            
-            cell.secondIntroCellTitleLabel.text = searchDetail.introClasses[7].introClassTitle
-            cell.secondIntroCellContentLabel.text = searchDetail.introClasses[7].introClassContent
-            
-            return cell
-        } else if indexPath.row == 6 {
             let cell = tableView.dequeueReusableCellWithIdentifier("SecondSearchDetailTableViewCell", forIndexPath: indexPath) as! SecondSearchDetailTableViewCell
             
-            cell.secondIntroCellTitleLabel.text = searchDetail.introClasses[6].introClassTitle
-            cell.secondIntroCellContentLabel.text = searchDetail.introClasses[6].introClassContent
+            cell.secondIntroCellTitleLabel.text = firstIntros[indexPath.row].introTitle
+            cell.secondIntroCellContentLabel.text = searchDetail.nannyIntro
             
+            return cell
+        } else if indexPath.row == 8 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("SecondSearchDetailTableViewCell", forIndexPath: indexPath) as! SecondSearchDetailTableViewCell
+            
+            cell.secondIntroCellTitleLabel.text = firstIntros[indexPath.row].introTitle
+            cell.secondIntroCellContentLabel.text = searchDetail.specialExp
+            
+            return cell
+        } else if indexPath.row == 1 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("SearchDetailTableViewCell", forIndexPath: indexPath) as! SearchDetailTableViewCell
+            
+            cell.firstIntroCellTitleLabel.text = firstIntros[indexPath.row].introTitle
+            cell.firstIntroCellContentLabel.text = searchDetail.nannyId
+            return cell
+        } else if indexPath.row == 2 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("SearchDetailTableViewCell", forIndexPath: indexPath) as! SearchDetailTableViewCell
+            
+            cell.firstIntroCellTitleLabel.text = firstIntros[indexPath.row].introTitle
+            cell.firstIntroCellContentLabel.text = searchDetail.hourRseult
+            return cell
+        } else if indexPath.row == 3 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("SearchDetailTableViewCell", forIndexPath: indexPath) as! SearchDetailTableViewCell
+            
+            cell.firstIntroCellTitleLabel.text = firstIntros[indexPath.row].introTitle
+            cell.firstIntroCellContentLabel.text = searchDetail.vacationRate
+            return cell
+        } else if indexPath.row == 4 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("SearchDetailTableViewCell", forIndexPath: indexPath) as! SearchDetailTableViewCell
+            
+            cell.firstIntroCellTitleLabel.text = firstIntros[indexPath.row].introTitle
+            cell.firstIntroCellContentLabel.text = searchDetail.specialRate
+            return cell
+        } else if indexPath.row == 5 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("SearchDetailTableViewCell", forIndexPath: indexPath) as! SearchDetailTableViewCell
+            
+            cell.firstIntroCellTitleLabel.text = firstIntros[indexPath.row].introTitle
+            cell.firstIntroCellContentLabel.text = searchDetail.specialText
+            return cell
+        } else if indexPath.row == 6 {
+            let cell = tableView.dequeueReusableCellWithIdentifier("SearchDetailTableViewCell", forIndexPath: indexPath) as! SearchDetailTableViewCell
+            
+            cell.firstIntroCellTitleLabel.text = firstIntros[indexPath.row].introTitle
+            cell.firstIntroCellContentLabel.text = searchDetail.minimalHour
             return cell
         } else {
-        let cell = tableView.dequeueReusableCellWithIdentifier("SearchDetailTableViewCell", forIndexPath: indexPath) as! SearchDetailTableViewCell
+            let cell = tableView.dequeueReusableCellWithIdentifier("SearchDetailTableViewCell", forIndexPath: indexPath) as! SearchDetailTableViewCell
             
-            
-            // refactor as struct
-            
-            cell.firstIntroCellTitleLabel.text = searchDetail.introClasses[indexPath.row + 1].introClassTitle
-            cell.firstIntroCellContentLabel.text = searchDetail.introClasses[indexPath.row + 1].introClassContent
-            
+            cell.firstIntroCellTitleLabel.text = firstIntros[indexPath.row].introTitle
+            cell.firstIntroCellContentLabel.text = searchDetail.startDay
             return cell
         }
+
     }
     
     func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
         cell.separatorInset = UIEdgeInsetsZero
         cell.layoutMargins = UIEdgeInsetsZero
     }
-
     
-
+    
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
     @IBAction func ChatViewButton(sender: AnyObject) {
         
         let chatItemsDecorator = TGChatItemsDecorator()
@@ -131,10 +165,10 @@ class SearchDetailViewController: UIViewController, UITableViewDelegate, UITable
         // pass search data to chatVC
         chatVC.searchChatDetail = self.searchDetail
         
-//        let navController = UINavigationController(rootViewController: chatVC)
-//        self.presentViewController(navController, animated: true, completion: nil)
+        //        let navController = UINavigationController(rootViewController: chatVC)
+        //        self.presentViewController(navController, animated: true, completion: nil)
         self.navigationController?.pushViewController(chatVC, animated: true)
-
+        
     }
-
+    
 }
