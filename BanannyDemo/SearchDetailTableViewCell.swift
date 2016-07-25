@@ -16,6 +16,8 @@ class SearchDetailTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+        
     }
 
     override func setSelected(selected: Bool, animated: Bool) {

@@ -15,8 +15,9 @@ class SearchDetailViewController: UIViewController, UITableViewDelegate, UITable
     @IBOutlet weak var detailImageView: UIImageView!
     @IBOutlet weak var detailStarRating: CosmosView!
     @IBOutlet weak var IntroDetailTableView: UITableView!
-    
-    
+    @IBOutlet weak var introTableViewSeperator: UIView!
+    @IBOutlet weak var introFooterView: UIView!
+    @IBOutlet weak var introTopView: UIView!
     
     let customCellIdentifier = "SearchDetailTableViewCell"
     let secondCustomCellIdentifier = "SecondSearchDetailTableViewCell"
@@ -51,6 +52,12 @@ class SearchDetailViewController: UIViewController, UITableViewDelegate, UITable
         IntroDetailTableView.rowHeight = UITableViewAutomaticDimension
         IntroDetailTableView.registerNib(UINib(nibName: "SearchDetailTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
         IntroDetailTableView.registerNib(UINib(nibName: "SecondSearchDetailTableViewCell", bundle: nil), forCellReuseIdentifier: secondCustomCellIdentifier)
+        IntroDetailTableView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+        // tableViewUISetting
+        introTableViewSeperator.backgroundColor = UIColor(red: 224/255, green: 224/255, blue: 224/255, alpha: 1)
+        introTopView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+        introFooterView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+        self.view.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
         
         
         
