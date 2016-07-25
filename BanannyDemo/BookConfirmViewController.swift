@@ -10,8 +10,10 @@ import UIKit
 
 class BookConfirmViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var confirmTableFooter: UIView!
     @IBOutlet weak var blurView: UIView!
     @IBOutlet weak var confirmTableView: UITableView!
+    @IBOutlet weak var confirmButtonOutlet: UIButton!
     
     let customCellIdentifier = "ConfirmTableViewCell"
     
@@ -24,18 +26,25 @@ class BookConfirmViewController: UIViewController, UITableViewDelegate, UITableV
     paymentClass(paymentTitle: "備註", paymentContent: "我家小孩很愛流口水")
     ]
     
+    var confirmImageView = ["icon_details_01", "icon_details_02", "icon_details_02", "icon_details_03", "icon_details_04", "icon_details_05"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         self.title = "預約確認"
-        
+        self.view.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
         //confirmTableView
         confirmTableView.delegate = self
         confirmTableView.dataSource = self
         confirmTableView.estimatedRowHeight = 80
         confirmTableView.rowHeight = UITableViewAutomaticDimension
         confirmTableView.registerNib(UINib(nibName: "ConfirmTableViewCell", bundle: nil), forCellReuseIdentifier: customCellIdentifier)
+        confirmTableView.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+        confirmTableFooter.backgroundColor = UIColor(red: 246/255, green: 246/255, blue: 246/255, alpha: 1)
+        //ui setting
+        confirmButtonOutlet.backgroundColor = UIColor(red: 99/255, green: 108/255, blue: 163/255, alpha: 1)
+        
         
         // Do any additional setup after loading the view.
     }
@@ -61,7 +70,7 @@ class BookConfirmViewController: UIViewController, UITableViewDelegate, UITableV
         
         cell.confirmTitle.text = confirmDetail[indexPath.row].paymentTitle
         cell.confirmContent.text = confirmDetail[indexPath.row].paymentContent
-       
+        cell.confirmImage.image = UIImage(named: confirmImageView[indexPath.row])
         
         return cell
 

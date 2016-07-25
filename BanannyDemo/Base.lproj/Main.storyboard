@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5YG-gY-LHh">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -2237,12 +2237,13 @@
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwI-by-v7N">
-                                <rect key="frame" x="200" y="881" width="200" height="50"/>
+                                <rect key="frame" x="151.5" y="861" width="297" height="54"/>
                                 <color key="backgroundColor" red="0.40000000000000002" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="TD9-X7-ElN"/>
-                                    <constraint firstAttribute="height" constant="50" id="dBg-lw-5Iz"/>
+                                    <constraint firstAttribute="width" constant="297" id="TD9-X7-ElN"/>
+                                    <constraint firstAttribute="height" constant="54" id="dBg-lw-5Iz"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="16"/>
                                 <state key="normal" title="確認預約">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -2265,12 +2266,14 @@
                             <constraint firstItem="m7l-jf-CEg" firstAttribute="leading" secondItem="PC7-Xs-QWM" secondAttribute="leading" id="cZf-75-KQq"/>
                             <constraint firstItem="HwI-by-v7N" firstAttribute="centerX" secondItem="PC7-Xs-QWM" secondAttribute="centerX" id="hv0-jn-MRU"/>
                             <constraint firstItem="vPV-M3-RpV" firstAttribute="top" secondItem="PC7-Xs-QWM" secondAttribute="top" id="oiu-Ts-eXt"/>
-                            <constraint firstItem="Qct-3c-XxZ" firstAttribute="top" secondItem="HwI-by-v7N" secondAttribute="bottom" constant="20" id="uHC-tJ-xk6"/>
+                            <constraint firstItem="Qct-3c-XxZ" firstAttribute="top" secondItem="HwI-by-v7N" secondAttribute="bottom" constant="36" id="uHC-tJ-xk6"/>
                             <constraint firstItem="Qct-3c-XxZ" firstAttribute="top" secondItem="vPV-M3-RpV" secondAttribute="bottom" constant="-49" id="zNR-mN-SiS"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="blurView" destination="vPV-M3-RpV" id="fmb-iw-rlA"/>
+                        <outlet property="confirmButtonOutlet" destination="HwI-by-v7N" id="DUe-eX-5aA"/>
+                        <outlet property="confirmTableFooter" destination="zif-F0-Coq" id="cyB-mO-Kdi"/>
                         <outlet property="confirmTableView" destination="m7l-jf-CEg" id="gIH-jp-fjL"/>
                     </connections>
                 </viewController>
